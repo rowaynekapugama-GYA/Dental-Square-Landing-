@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex, follow">
+<title>All-on-4 &amp; Dental Implants Sydney — Flexible Payment Plans | Dental Square</title>
+<meta name="description" content="Replace missing or failing teeth with fixed All-on-4® implants by Dr Karim Habib at Dental Square, West Ryde. Free consultation with 3D scans, smile preview & super / payment-plan options.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111513'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='15' font-weight='bold' text-anchor='middle' fill='%238fd3bd'%3EDS%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#111513">
+<meta property="og:type" content="website">
+<meta property="og:title" content="All-on-4 & Dental Implants Sydney — Flexible Payment Plans | Dental Square">
+<meta property="og:description" content="Fixed full-arch teeth on as few as four implants by Dr Karim Habib. Free consultation; super & payment-plan options.">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Fonts: Fraunces (display serif) + Plus Jakarta Sans (UI / body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* =========================================================================
+   DENTAL SQUARE — All-on-4 & Dental Implants · Liquid Glass Landing Page
+   Single file. Desktop = vertical scroll. Mobile = horizontal swipe deck.
+   ========================================================================= */
+
+:root{
+  /* Brand palette (Dental Square — sage green on deep charcoal) */
+  --ink:        #0c0f0d;   /* near-black green-charcoal */
+  --navy-900:   #111513;   /* deep base */
+  --navy-800:   #1a201d;
+  --steel:      #8fd3bd;   /* PRIMARY brand green (buttons / accent) */
+  --steel-deep: #69b9a1;
+  --steel-lite: #a9d9cb;
+  --aqua:       #b9e6d8;   /* accent / checkmarks / glass edge glow (mint) */
+  --mist:       #aec0b9;   /* muted green-grey text */
+  --mist-dim:   #7c8c85;
+  --cloud:      #eef4f1;   /* near white */
+  --cream:      #f4f9f6;   /* form surface */
+
+  /* Glass */
+  --glass:        rgba(255,255,255,.07);
+  --glass-2:      rgba(255,255,255,.045);
+  --glass-edge:   rgba(255,255,255,.18);
+  --glass-edge-2: rgba(255,255,255,.30);
+  --glass-blur:   blur(22px) saturate(135%);
+  --r:   24px;    /* radius */
+  --r-s: 16px;
+  --r-l: 32px;
+
+  /* Layout */
+  --bar-h: 68px;
+  --dock-h: 84px;
+  --maxw: 1200px;
+
+  --shadow-soft: 0 18px 50px -20px rgba(0,0,0,.55);
+  --shadow-card: 0 22px 60px -24px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.22);
+
+  --ease: cubic-bezier(.16,.84,.34,1);
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
+body{
+  margin:0;
+  font-family:"Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  color:var(--cloud);
+  background:var(--navy-900);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{ max-width:100%; display:block; }
+button{ font-family:inherit; cursor:pointer; }
+a{ color:inherit; }
+:focus-visible{ outline:2px solid var(--aqua); outline-offset:3px; border-radius:6px; }
+
+/* ---------- Ambient liquid-glass background ---------- */
+.bg{ position:fixed; inset:0; z-index:-2; overflow:hidden;
+  background:
+    radial-gradient(120% 100% at 80% -10%, #14302a 0%, transparent 55%),
+    radial-gradient(120% 120% at -10% 110%, #122620 0%, transparent 50%),
+    linear-gradient(160deg, var(--ink) 0%, var(--navy-900) 45%, var(--navy-800) 100%);
+}
+.orb{ position:absolute; border-radius:50%; filter:blur(70px); opacity:.55; will-change:transform; }
+.orb.a{ width:46vmax; height:46vmax; top:-14vmax; right:-10vmax;
+  background:radial-gradient(circle at 30% 30%, var(--steel-lite), transparent 65%); animation:drift1 26s var(--ease) infinite alternate; }
+.orb.b{ width:40vmax; height:40vmax; bottom:-14vmax; left:-12vmax;
+  background:radial-gradient(circle at 60% 40%, var(--aqua), transparent 62%); opacity:.4; animation:drift2 32s var(--ease) infinite alternate; }
+.orb.c{ width:30vmax; height:30vmax; top:35%; left:48%;
+  background:radial-gradient(circle at 50% 50%, var(--steel), transparent 60%); opacity:.32; animation:drift3 38s var(--ease) infinite alternate; }
+@keyframes drift1{ to{ transform:translate3d(-6vmax,5vmax,0) scale(1.1);} }
+@keyframes drift2{ to{ transform:translate3d(7vmax,-4vmax,0) scale(1.12);} }
+@keyframes drift3{ to{ transform:translate3d(-5vmax,-6vmax,0) scale(.92);} }
+/* grain */
+.bg::after{ content:""; position:absolute; inset:0; opacity:.05; mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+
+/* ---------- Hero background video ---------- */
+#hero{ position:relative; isolation:isolate; }
+.hero-video-wrap{ position:absolute; inset:0; z-index:0; overflow:hidden; pointer-events:none; background:var(--navy-900); }
+.hero-video{ width:100%; height:100%; object-fit:cover; display:block; }
+.hero-video-wrap iframe{ position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+  width:max(100vw,177.78vh); height:max(100vh,56.25vw); border:0; pointer-events:none; }
+.hero-veil{ position:absolute; inset:0; z-index:1; pointer-events:none;
+  background:
+    linear-gradient(100deg, rgba(12,15,13,.92) 0%, rgba(12,15,13,.72) 34%, rgba(12,15,13,.34) 62%, rgba(12,15,13,.5) 100%),
+    linear-gradient(180deg, rgba(12,15,13,.45) 0%, transparent 22%, transparent 70%, rgba(12,15,13,.55) 100%); }
+#hero .panel-inner{ position:relative; z-index:2; }
+@media (max-width:880px){
+  .hero-veil{ background:linear-gradient(180deg, rgba(12,15,13,.74) 0%, rgba(12,15,13,.62) 45%, rgba(12,15,13,.9) 100%); }
+}
+
+/* ---------- Glass utility ---------- */
+.glass{
+  position:relative;
+  background:linear-gradient(155deg, var(--glass) 0%, var(--glass-2) 100%);
+  -webkit-backdrop-filter:var(--glass-blur);
+  backdrop-filter:var(--glass-blur);
+  border:1px solid var(--glass-edge);
+  border-radius:var(--r);
+  box-shadow:var(--shadow-card);
+}
+.glass::before{ /* specular sheen on top edge */
+  content:""; position:absolute; inset:0; border-radius:inherit; pointer-events:none;
+  background:linear-gradient(180deg, rgba(255,255,255,.16), transparent 26%);
+  -webkit-mask:linear-gradient(#fff 0 0); mask:linear-gradient(#fff 0 0);
+}
+
+/* ---------- Buttons ---------- */
+.btn{ display:inline-flex; align-items:center; justify-content:center; gap:.55em;
+  font-weight:600; font-size:.98rem; letter-spacing:.01em; line-height:1;
+  padding:.95em 1.5em; border-radius:999px; border:1px solid transparent;
+  text-decoration:none; transition:transform .25s var(--ease), box-shadow .25s var(--ease), background .25s; white-space:nowrap; }
+.btn svg{ width:1.05em; height:1.05em; }
+.btn-primary{ color:#0b1310;
+  background:linear-gradient(180deg, #9ad9c4, #6cbca4);
+  box-shadow:0 12px 28px -10px rgba(60,120,105,.9), inset 0 1px 0 rgba(255,255,255,.4), inset 0 -1px 0 rgba(0,0,0,.12);
+  border-color:rgba(255,255,255,.18); font-weight:700; }
+.btn-primary:hover{ transform:translateY(-2px); box-shadow:0 18px 40px -12px rgba(105,185,161,.7), inset 0 1px 0 rgba(255,255,255,.5); }
+.btn-ghost{ color:var(--cloud); background:var(--glass); -webkit-backdrop-filter:var(--glass-blur); backdrop-filter:var(--glass-blur); border:1px solid var(--glass-edge); }
+.btn-ghost:hover{ transform:translateY(-2px); border-color:var(--glass-edge-2); background:rgba(255,255,255,.12); }
+.btn-block{ width:100%; }
+.btn-lg{ padding:1.1em 1.8em; font-size:1.05rem; }
+
+/* ---------- Persistent top bar ---------- */
+.topbar{ position:fixed; top:0; left:0; right:0; height:var(--bar-h); z-index:60;
+  display:flex; align-items:center; justify-content:space-between; gap:1rem;
+  padding:0 clamp(16px,4vw,40px);
+  background:linear-gradient(180deg, rgba(12,15,13,.72), rgba(12,15,13,.32));
+  -webkit-backdrop-filter:blur(18px) saturate(140%); backdrop-filter:blur(18px) saturate(140%);
+  border-bottom:1px solid rgba(255,255,255,.08); }
+.brand{ display:flex; flex-direction:column; line-height:1.1; text-decoration:none; }
+.brand b{ font-family:"Fraunces", serif; font-weight:600; font-size:1.08rem; letter-spacing:.01em; color:#fff; }
+.brand span{ font-size:.62rem; letter-spacing:.18em; text-transform:uppercase; color:var(--mist-dim); margin-top:3px; }
+.topbar .btn{ padding:.72em 1.25em; font-size:.9rem; }
+
+/* ---------- Deck / panels ---------- */
+.deck{ position:relative; }
+.panel{ position:relative; padding:calc(var(--bar-h) + clamp(28px,6vh,72px)) clamp(20px,5vw,48px) clamp(48px,8vh,90px);
+  min-height:100svh; display:flex; align-items:center; }
+.panel-inner{ width:100%; max-width:var(--maxw); margin:0 auto; }
+
+/* ---------- Section header ---------- */
+.eyebrow{ display:inline-flex; align-items:center; gap:.6em; font-size:.7rem; font-weight:600;
+  letter-spacing:.22em; text-transform:uppercase; color:var(--aqua); margin:0 0 1rem; }
+.eyebrow::before{ content:""; width:26px; height:1px; background:linear-gradient(90deg,var(--aqua),transparent); }
+h1,h2,h3{ font-family:"Fraunces", serif; font-weight:500; line-height:1.04; margin:0; letter-spacing:-.01em; }
+h2.title{ font-size:clamp(2rem,5vw,3.4rem); color:#fff; max-width:16ch; }
+.lede{ color:var(--mist); font-size:clamp(1rem,1.6vw,1.18rem); max-width:54ch; margin:1.1rem 0 0; }
+.title em{ font-style:italic; color:var(--aqua); }
+
+/* ---------- HERO ---------- */
+#hero .panel-inner{ display:grid; grid-template-columns:1.05fr .95fr; gap:clamp(28px,4vw,64px); align-items:center; }
+.hero-copy h1{ font-size:clamp(2.7rem,6.2vw,5.1rem); color:#fff; margin:.4rem 0 0; }
+.hero-copy h1 .pop{ display:block; position:relative; }
+.hero-copy h1 .pop em{ font-style:italic; color:var(--aqua); }
+.hero-sub{ color:var(--mist); font-size:clamp(1.02rem,1.6vw,1.2rem); max-width:46ch; margin:1.3rem 0 0; }
+.hero-sub b{ color:var(--cloud); font-weight:600; }
+
+.pay-chip{ display:flex; gap:.95rem; align-items:flex-start; padding:1rem 1.2rem; margin:1.6rem 0 0; border-radius:var(--r-s); }
+.pay-chip .ico{ flex:0 0 auto; width:42px; height:42px; border-radius:12px; display:grid; place-items:center;
+  background:linear-gradient(180deg,var(--steel-lite),var(--steel-deep)); box-shadow:inset 0 1px 0 rgba(255,255,255,.4); color:#fff; }
+.pay-chip .ico svg{ width:20px; height:20px; }
+.pay-chip b{ display:block; color:#fff; font-weight:600; font-size:1rem; }
+.pay-chip p{ margin:.2rem 0 0; color:var(--mist); font-size:.9rem; line-height:1.45; }
+
+.trust{ display:flex; flex-wrap:wrap; gap:.6rem 1.4rem; margin:1.7rem 0 0; padding:0; list-style:none; }
+.trust li{ display:flex; align-items:center; gap:.5rem; font-size:.92rem; color:var(--cloud); font-weight:500; }
+.check{ flex:0 0 auto; width:20px; height:20px; border-radius:50%; display:grid; place-items:center;
+  background:rgba(143,211,189,.16); border:1px solid rgba(143,211,189,.5); color:var(--aqua); }
+.check svg{ width:11px; height:11px; }
+
+.hero-cta{ display:flex; flex-wrap:wrap; gap:.8rem; margin:2rem 0 0; }
+
+.scroll-hint{ display:inline-flex; align-items:center; gap:.5rem; margin-top:1.8rem; color:var(--mist-dim); font-size:.78rem; letter-spacing:.12em; text-transform:uppercase; }
+.scroll-hint .dot{ width:7px; height:7px; border-radius:50%; background:var(--aqua); animation:pulse 1.8s ease infinite; }
+.hint-desktop{ display:inline; } .hint-mobile{ display:none; }
+@keyframes pulse{ 0%,100%{ opacity:.4; transform:scale(.8);} 50%{ opacity:1; transform:scale(1.3);} }
+
+/* ---------- Lead form (liquid glass) ---------- */
+.form-card{ overflow:hidden; }
+.form-head{ padding:1.5rem 1.6rem 1.3rem; background:linear-gradient(160deg, var(--ink), #101a16);
+  border-bottom:1px solid rgba(255,255,255,.07); }
+.form-title{ font-size:1.45rem; color:#fff; }
+.form-sub{ margin:.4rem 0 0; color:var(--mist); font-size:.9rem; }
+.form-body{ padding:1.4rem 1.6rem 1.6rem; }
+fieldset.q{ border:0; margin:0 0 1.15rem; padding:0; }
+fieldset.q legend{ font-size:.86rem; font-weight:600; color:var(--cloud); margin-bottom:.6rem; padding:0; }
+.req{ color:var(--aqua); }
+.opts{ display:flex; flex-wrap:wrap; gap:.5rem; }
+.opt{ flex:1 1 auto; text-align:left; padding:.7em .9em; border-radius:12px; font-size:.86rem; color:var(--mist);
+  background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.12); transition:.18s var(--ease); position:relative; }
+.opt:hover{ border-color:rgba(255,255,255,.3); color:var(--cloud); }
+.opt.is-selected{ color:#fff; border-color:var(--aqua); background:rgba(143,211,189,.16);
+  box-shadow:0 0 0 3px rgba(143,211,189,.14), inset 0 1px 0 rgba(255,255,255,.2); }
+.opt.is-selected::after{ content:"✓"; margin-left:.45em; color:var(--aqua); font-weight:700; }
+.field{ display:block; margin:0 0 1rem; }
+.field-label{ display:block; font-size:.86rem; font-weight:600; color:var(--cloud); margin-bottom:.45rem; }
+.field input{ width:100%; padding:.85em 1em; border-radius:12px; font-size:1rem; color:#fff;
+  background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.16); transition:.18s; }
+.field input::placeholder{ color:var(--mist-dim); }
+.field input:focus{ outline:none; border-color:var(--aqua); background:rgba(255,255,255,.08); box-shadow:0 0 0 3px rgba(143,211,189,.16); }
+.field.err input{ border-color:#e0857d; box-shadow:0 0 0 3px rgba(224,133,125,.18); }
+.err-msg{ display:none; color:#f0a7a0; font-size:.78rem; margin-top:.35rem; }
+.q.err .err-msg, .field.err .err-msg{ display:block; }
+.hp{ position:absolute; left:-9999px; width:1px; height:1px; opacity:0; }
+.submit-btn{ margin-top:.4rem; }
+.form-foot{ margin:.9rem 0 0; font-size:.76rem; color:var(--mist-dim); text-align:center; line-height:1.5; }
+.form-success{ padding:2.4rem 1.7rem; text-align:center; }
+.form-success .sx{ width:62px; height:62px; margin:0 auto 1rem; border-radius:50%; display:grid; place-items:center;
+  background:rgba(143,211,189,.16); border:1px solid rgba(143,211,189,.5); color:var(--aqua); }
+.form-success .sx svg{ width:28px; height:28px; }
+.form-success h3{ font-size:1.5rem; color:#fff; }
+.form-success p{ color:var(--mist); margin:.6rem 0 0; font-size:.95rem; }
+.field-row{ display:grid; grid-template-columns:1fr 1fr; gap:.7rem; }
+@media (max-width:400px){ .field-row{ grid-template-columns:1fr; gap:0; } }
+
+/* ---------- Thank-you panel (revealed only after the form is submitted) ---------- */
+#thanks{ display:none; }
+body.lead-submitted #thanks{ display:flex; }
+.thanks-card{ max-width:640px; margin:0 auto; text-align:center; padding:clamp(2rem,5vw,3.2rem); }
+.thanks-badge{ width:78px; height:78px; margin:0 auto 1.5rem; border-radius:50%; display:grid; place-items:center;
+  background:radial-gradient(circle at 30% 25%, var(--steel-lite), var(--steel-deep)); color:#fff;
+  box-shadow:0 16px 44px rgba(60,120,105,.5), inset 0 1px 0 rgba(255,255,255,.45); }
+.thanks-badge svg{ width:36px; height:36px; }
+.thanks-card h2{ font-size:clamp(1.9rem,5vw,3rem); color:#fff; }
+.thanks-card .lede{ margin:1rem auto 0; }
+.next-steps{ list-style:none; margin:1.9rem auto 0; padding:0; max-width:460px; text-align:left; display:grid; gap:.8rem; }
+.next-steps li{ display:flex; gap:.75rem; align-items:flex-start; color:var(--mist); font-size:.94rem; line-height:1.5; }
+.next-steps .num{ flex:0 0 auto; width:25px; height:25px; border-radius:50%; display:grid; place-items:center; margin-top:.05rem;
+  background:rgba(143,211,189,.16); border:1px solid rgba(143,211,189,.5); color:var(--aqua); font-size:.78rem; font-weight:700; }
+.thanks-call{ margin-top:2rem; justify-content:center; }
+.thanks-call a{ font-size:1.15rem; }
+
+/* ---------- Ticks list (reusable) ---------- */
+.ticks{ list-style:none; padding:0; margin:1.4rem 0 0; display:grid; gap:.7rem; }
+.ticks li{ display:flex; gap:.7rem; align-items:flex-start; color:var(--cloud); font-size:.98rem; }
+.ticks .check{ margin-top:2px; }
+
+/* ---------- Two-column media section ---------- */
+.media-grid{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(28px,4vw,60px); align-items:center; }
+.frame{ padding:14px; border-radius:var(--r-l); }
+.frame img{ border-radius:calc(var(--r-l) - 12px); width:100%; height:auto; }
+.frame .cap{ display:block; text-align:center; font-size:.78rem; color:var(--mist-dim); margin-top:.7rem; letter-spacing:.04em; }
+
+/* ---------- Before & After ---------- */
+.ba-gallery{ display:grid; grid-template-columns:repeat(2,1fr); gap:1.2rem; margin-top:2rem; align-items:start; }
+.ba-item{ position:relative; margin:0; padding:8px; border-radius:var(--r); overflow:hidden; }
+.ba-item img{ display:block; width:100%; height:auto; border-radius:var(--r-s); }
+.ba-tag{ position:absolute; top:18px; font-size:.62rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+  padding:.3em .7em; border-radius:999px; background:rgba(12,15,13,.62); -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px);
+  color:#fff; border:1px solid rgba(255,255,255,.22); z-index:2; }
+.ba-tag-before{ left:18px; }
+.ba-tag-after{ right:18px; }
+@media (max-width:880px){ .ba-gallery{ grid-template-columns:1fr; } }
+.disclaimer{ margin-top:1.6rem; font-size:.78rem; color:var(--mist-dim); line-height:1.6; max-width:80ch; }
+
+/* ---------- Section imagery + map ---------- */
+.dentist-photo{ display:block; width:100%; height:300px; object-fit:cover; object-position:center 20%; border-radius:var(--r-s); margin-bottom:1.3rem; }
+.section-banner{ display:block; width:100%; height:340px; object-fit:cover; border-radius:var(--r); margin-top:2rem; box-shadow:0 18px 50px rgba(0,0,0,.3); }
+.map-embed{ display:block; width:100%; height:240px; border:0; border-radius:var(--r-s); margin-top:1rem; background:var(--navy-800); }
+@media (max-width:880px){
+  .dentist-photo{ height:260px; }
+  .section-banner{ height:220px; margin-top:1.6rem; }
+}
+
+/* ---------- Video ---------- */
+.video-wrap{ position:relative; margin-top:2rem; padding:14px; border-radius:var(--r-l); }
+.video-shell{ position:relative; border-radius:calc(var(--r-l) - 12px); overflow:hidden; aspect-ratio:16/9; background:#000; }
+.video-shell video{ width:100%; height:100%; object-fit:cover; display:block; }
+.video-poster{ position:absolute; inset:0; background-size:cover; background-position:center; display:grid; place-items:center;
+  cursor:pointer; transition:opacity .4s; }
+.video-poster::before{ content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(12,15,13,.15),rgba(12,15,13,.55)); }
+.play-btn{ position:relative; width:84px; height:84px; border-radius:50%; border:1px solid rgba(255,255,255,.5);
+  background:rgba(255,255,255,.14); -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px); display:grid; place-items:center;
+  box-shadow:0 12px 40px rgba(0,0,0,.5); transition:transform .25s var(--ease); }
+.video-poster:hover .play-btn{ transform:scale(1.08); }
+.play-btn svg{ width:30px; height:30px; fill:#fff; margin-left:4px; }
+.is-playing .video-poster{ opacity:0; pointer-events:none; }
+
+/* ---------- Card grids (treatments / funding / journey) ---------- */
+.cards{ display:grid; gap:1.2rem; margin-top:2rem; }
+.cards.two{ grid-template-columns:1fr 1fr; }
+.cards.three{ grid-template-columns:repeat(3,1fr); }
+.card{ padding:1.6rem 1.5rem; border-radius:var(--r); }
+.card .num{ font-family:"Fraunces",serif; font-size:1.05rem; color:var(--aqua); }
+.card h3{ font-size:1.45rem; color:#fff; margin:.3rem 0 .6rem; }
+.card p{ color:var(--mist); font-size:.95rem; margin:0; }
+.card .ticks{ margin-top:1.1rem; }
+.card .ticks li{ font-size:.9rem; }
+.badge{ position:absolute; top:1.2rem; right:1.2rem; font-size:.66rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase;
+  padding:.34em .75em; border-radius:999px; color:var(--ink); background:linear-gradient(180deg,var(--aqua),var(--steel-lite)); }
+/* duration/label badge that sits ABOVE the card title — avoids overlap with long titles */
+.badge.flow{ position:static; display:inline-block; margin:0 0 .8rem; top:auto; right:auto; }
+/* Instagram reels (social proof) */
+.reels{ display:grid; grid-template-columns:1fr 1fr; gap:1.4rem; margin-top:2rem; justify-items:center; align-items:start; }
+.reels .instagram-media{ margin:0 auto !important; }
+@media (max-width:880px){ .reels{ grid-template-columns:1fr; } }
+/* click-to-play explainer video */
+.video-embed{ position:relative; width:100%; margin:2.2rem 0 0; aspect-ratio:16/9;
+  border-radius:var(--r); overflow:hidden; border:1px solid rgba(255,255,255,.1); box-shadow:0 30px 80px rgba(0,0,0,.5); background:#000; }
+.video-embed iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; display:block; }
+/* hero Google-reviews badge */
+.reviews{ display:flex; align-items:center; gap:.7rem; margin-top:1.9rem; flex-wrap:wrap; }
+.reviews .stars{ color:#f0c24c; font-size:1.35rem; letter-spacing:.12em; line-height:1; white-space:nowrap; }
+.reviews .reviews-text{ color:var(--mist); font-size:1rem; }
+.reviews .reviews-text strong{ color:#fff; font-weight:700; }
+.note-chip{ margin-top:1.6rem; padding:1.2rem 1.4rem; border-radius:var(--r-s); display:flex; gap:1rem; align-items:flex-start; }
+.note-chip .ico{ flex:0 0 auto; width:40px; height:40px; border-radius:11px; display:grid; place-items:center;
+  background:rgba(143,211,189,.16); border:1px solid rgba(143,211,189,.4); color:var(--aqua); }
+.note-chip b{ color:#fff; display:block; margin-bottom:.2rem; }
+.note-chip p{ color:var(--mist); font-size:.9rem; margin:0; }
+
+/* ---------- Steps (journey) ---------- */
+.steps{ display:grid; grid-template-columns:repeat(4,1fr); gap:1.1rem; margin-top:2rem; counter-reset:step; }
+.step{ padding:1.5rem 1.3rem; border-radius:var(--r); position:relative; }
+.step .sn{ width:40px; height:40px; border-radius:12px; display:grid; place-items:center; font-family:"Fraunces",serif; font-size:1.15rem;
+  color:#fff; background:linear-gradient(180deg,var(--steel-lite),var(--steel-deep)); box-shadow:inset 0 1px 0 rgba(255,255,255,.35); margin-bottom:.9rem; }
+.step h3{ font-size:1.15rem; color:#fff; margin-bottom:.4rem; }
+.step p{ color:var(--mist); font-size:.88rem; margin:0; }
+
+/* ---------- Dentist ---------- */
+.dentist-grid{ display:grid; grid-template-columns:.9fr 1.1fr; gap:clamp(28px,4vw,56px); align-items:center; }
+.dentist-card{ padding:1.8rem; border-radius:var(--r-l); }
+.dentist-card .role{ color:var(--aqua); font-size:.92rem; font-weight:600; margin:.2rem 0 1.2rem; }
+.dentist-card .creds{ list-style:none; padding:0; margin:1.4rem 0 0; display:flex; flex-wrap:wrap; gap:.6rem; }
+.dentist-card .creds li{ font-size:.82rem; color:var(--cloud); padding:.5em .9em; border-radius:999px;
+  background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.14); }
+.mini-trust{ display:grid; gap:1.1rem; }
+.mini-trust .mt{ display:flex; gap:.9rem; align-items:flex-start; }
+.mini-trust .mt .ico{ flex:0 0 auto; width:38px; height:38px; border-radius:11px; display:grid; place-items:center; color:var(--aqua);
+  background:rgba(143,211,189,.14); border:1px solid rgba(143,211,189,.4); }
+.mini-trust b{ color:#fff; display:block; font-size:1rem; }
+.mini-trust p{ color:var(--mist); font-size:.88rem; margin:.15rem 0 0; }
+
+/* ---------- FAQ ---------- */
+.faq{ margin-top:2rem; display:grid; gap:.8rem; max-width:880px; }
+.faq-item{ border-radius:var(--r-s); overflow:hidden; }
+.faq-q{ width:100%; text-align:left; background:transparent; border:0; color:#fff; padding:1.15rem 1.3rem;
+  font-size:1.05rem; font-weight:600; font-family:"Fraunces",serif; display:flex; justify-content:space-between; gap:1rem; align-items:center; }
+.faq-q .pm{ flex:0 0 auto; width:26px; height:26px; border-radius:50%; border:1px solid var(--glass-edge); display:grid; place-items:center;
+  color:var(--aqua); transition:transform .3s var(--ease); font-size:1.1rem; }
+.faq-item.open .faq-q .pm{ transform:rotate(45deg); }
+.faq-a{ max-height:0; overflow:hidden; transition:max-height .35s var(--ease); }
+.faq-a p{ padding:0 1.3rem 1.2rem; margin:0; color:var(--mist); font-size:.94rem; }
+
+/* ---------- Book panel ---------- */
+#book .panel-inner{ display:grid; grid-template-columns:1fr; gap:clamp(28px,4vw,56px); }
+.book-grid{ display:grid; grid-template-columns:1.05fr .95fr; gap:clamp(28px,4vw,56px); align-items:center; }
+.book-points{ list-style:none; padding:0; margin:1.5rem 0 0; display:grid; gap:.9rem; }
+.book-points li{ display:flex; gap:.75rem; align-items:center; color:var(--cloud); font-size:1.02rem; }
+.book-call{ margin-top:1.8rem; display:flex; align-items:center; gap:1rem; flex-wrap:wrap; }
+.book-call a{ font-family:"Fraunces",serif; font-size:1.6rem; color:#fff; text-decoration:none; display:inline-flex; align-items:center; gap:.5rem; }
+.book-call a svg{ width:1.1em; height:1.1em; color:var(--aqua); }
+.book-cta-wrap{ display:none; } /* desktop final CTA (mobile uses the form panel) */
+
+/* ---------- Footer ---------- */
+.footer{ padding:clamp(40px,6vh,72px) clamp(20px,5vw,48px) 3rem; border-top:1px solid rgba(255,255,255,.08);
+  background:linear-gradient(180deg, transparent, rgba(12,15,13,.6)); }
+.footer-inner{ max-width:var(--maxw); margin:0 auto; }
+.footer-top{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:2rem; align-items:flex-start; }
+.footer-brand b{ font-family:"Fraunces",serif; font-size:1.3rem; color:#fff; display:block; }
+.footer-brand span{ color:var(--mist-dim); font-size:.85rem; letter-spacing:.04em; }
+.footer-contact{ color:var(--mist); font-size:.95rem; }
+.footer-contact a{ color:#fff; text-decoration:none; font-weight:600; }
+.legal{ margin-top:2.4rem; padding-top:2rem; border-top:1px solid rgba(255,255,255,.07); }
+.legal p{ font-size:.76rem; color:var(--mist-dim); line-height:1.65; margin:0 0 .8rem; max-width:100ch; }
+.legal .reg{ color:var(--mist); }
+.copy{ margin-top:1.6rem; font-size:.78rem; color:var(--mist-dim); }
+.copy a{ color:var(--mist); }
+
+/* ---------- Desktop side nav (vertical progress) ---------- */
+.sidenav{ position:fixed; right:22px; top:50%; transform:translateY(-50%); z-index:40; display:flex; flex-direction:column; gap:.7rem; }
+.sidenav button{ width:11px; height:11px; padding:0; border-radius:50%; border:1px solid rgba(255,255,255,.35); background:transparent; transition:.25s var(--ease); position:relative; }
+.sidenav button:hover{ background:rgba(255,255,255,.4); }
+.sidenav button.active{ background:var(--aqua); border-color:var(--aqua); box-shadow:0 0 0 5px rgba(143,211,189,.18); }
+.sidenav button .lbl{ position:absolute; right:22px; top:50%; transform:translateY(-50%); white-space:nowrap; font-size:.72rem;
+  padding:.35em .7em; border-radius:8px; background:rgba(12,15,13,.85); color:#fff; opacity:0; pointer-events:none; transition:.2s; border:1px solid rgba(255,255,255,.12); }
+.sidenav button:hover .lbl{ opacity:1; }
+
+/* ---------- Mobile dock (hidden on desktop) ---------- */
+.dock{ display:none; }
+
+/* ============================ MOBILE ============================ */
+@media (max-width:880px){
+  body{ height:100svh; overflow:hidden; }
+  .hint-desktop{ display:none; } .hint-mobile{ display:inline; }
+  .sidenav{ display:none; }
+
+  .deck{ height:100svh; display:flex; flex-direction:row; flex-wrap:nowrap;
+    overflow-x:auto; overflow-y:hidden; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch;
+    scrollbar-width:none; }
+  .deck::-webkit-scrollbar{ display:none; }
+
+  .panel{ flex:0 0 100vw; width:100vw; height:100svh; min-height:0; overflow-y:auto; overscroll-behavior:contain;
+    scroll-snap-align:start; scroll-snap-stop:always; align-items:flex-start;
+    padding:calc(var(--bar-h) + 18px) 22px calc(var(--dock-h) + 18px); -webkit-overflow-scrolling:touch; }
+  .deck::-webkit-scrollbar, .panel::-webkit-scrollbar{ display:none; }
+  .panel-inner{ min-height:min-content; }
+
+  /* stack all multi-column layouts */
+  #hero .panel-inner, .media-grid, .dentist-grid, .book-grid{ grid-template-columns:1fr; gap:1.8rem; }
+  .cards.two, .cards.three, .ba-grid, .steps{ grid-template-columns:1fr; }
+  .steps{ gap:.9rem; }
+
+  .hero-copy h1{ font-size:clamp(2.5rem,11vw,3.4rem); }
+  h2.title{ font-size:clamp(1.85rem,8vw,2.6rem); }
+  .hero-cta{ flex-direction:column; }
+  .hero-cta .btn{ width:100%; }
+
+  /* On mobile the form lives only in the Book panel */
+  .hero-form-wrap{ display:none; }
+  .book-form-wrap{ display:block; }
+  .book-cta-wrap{ display:none; }
+
+  /* reveal disabled (panels animate in via active state instead) */
+  .reveal{ opacity:1 !important; transform:none !important; }
+
+  .footer{ display:none; } /* legal shown inside the Book panel on mobile */
+  .legal-mobile{ display:block; }
+
+  /* Bottom dock */
+  .dock{ display:flex; position:fixed; left:0; right:0; bottom:0; height:var(--dock-h); z-index:55;
+    align-items:center; justify-content:space-between; gap:.8rem; padding:0 16px calc(env(safe-area-inset-bottom));
+    background:linear-gradient(0deg, rgba(12,15,13,.85), rgba(12,15,13,.4));
+    -webkit-backdrop-filter:blur(18px) saturate(140%); backdrop-filter:blur(18px) saturate(140%);
+    border-top:1px solid rgba(255,255,255,.1); }
+  .dock-arrow{ width:46px; height:46px; flex:0 0 auto; border-radius:50%; border:1px solid var(--glass-edge);
+    background:var(--glass); color:#fff; display:grid; place-items:center; transition:.2s; }
+  .dock-arrow:disabled{ opacity:.3; }
+  .dock-arrow svg{ width:18px; height:18px; }
+  .dock-center{ flex:1 1 auto; text-align:center; min-width:0; }
+  .dock-label{ font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--aqua); font-weight:600; }
+  .dock-dots{ display:flex; justify-content:center; gap:6px; margin-top:7px; }
+  .dock-dots button{ width:7px; height:7px; padding:0; border-radius:50%; border:0; background:rgba(255,255,255,.28); transition:.2s; }
+  .dock-dots button.active{ background:var(--aqua); width:20px; border-radius:4px; }
+}
+@media (min-width:881px){ .legal-mobile{ display:none; } }
+
+/* tablet tweak */
+@media (max-width:1080px) and (min-width:881px){
+  .cards.three, .ba-grid, .steps{ grid-template-columns:repeat(2,1fr); }
+}
+
+/* ---------- Reveal animation (desktop) ---------- */
+.reveal{ opacity:0; transform:translateY(26px); transition:opacity .7s var(--ease), transform .7s var(--ease); }
+.reveal.in{ opacity:1; transform:none; }
+.reveal.d1{ transition-delay:.08s; } .reveal.d2{ transition-delay:.16s; }
+.reveal.d3{ transition-delay:.24s; } .reveal.d4{ transition-delay:.32s; }
+
+@media (prefers-reduced-motion:reduce){
+  html{ scroll-behavior:auto; }
+  .orb{ animation:none; }
+  .reveal{ opacity:1; transform:none; transition:none; }
+  .scroll-hint .dot{ animation:none; }
+}
+/* A/B test variant switcher */
+.ab-switch{ position:fixed; left:16px; bottom:18px; z-index:58; display:inline-flex; align-items:center; gap:.4em;
+  padding:.6em 1.05em; border-radius:999px; font-size:.78rem; font-weight:600; letter-spacing:.01em;
+  background:rgba(12,15,13,.82); -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px); color:var(--cloud);
+  border:1px solid rgba(143,211,189,.4); text-decoration:none; box-shadow:0 10px 34px rgba(0,0,0,.45);
+  transition:transform .2s var(--ease), border-color .2s, background .2s; }
+.ab-switch:hover{ transform:translateY(-2px); border-color:var(--aqua); background:rgba(38,41,32,.92); }
+@media (max-width:880px){ .ab-switch{ bottom:calc(var(--dock-h) + 12px); left:12px; padding:.5em .85em; font-size:.72rem; } }
+/* ===== Dental Square components ===== */
+/* before/after gallery */
+.ba-grid{ display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; margin-top:2.2rem; }
+.ba-item{ border-radius:var(--r); overflow:hidden; background:var(--glass); border:1px solid var(--glass-edge); box-shadow:var(--shadow-card); }
+.ba-item img{ width:100%; display:block; }
+.ba-cap{ padding:.8rem 1.05rem; font-size:.83rem; color:var(--mist); display:flex; align-items:center; gap:.6rem; flex-wrap:wrap; }
+.ba-cap .tag{ font-size:.6rem; letter-spacing:.13em; text-transform:uppercase; color:#0b1310; background:var(--steel); padding:.28em .6em; border-radius:999px; font-weight:800; }
+@media (max-width:560px){ .ba-grid{ grid-template-columns:1fr; } }
+
+/* diagram cards (white-bg 3D renders sit on white) */
+.dia-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.1rem; margin-top:2rem; align-items:start; }
+.dia-card{ background:#fff; border-radius:var(--r); overflow:hidden; box-shadow:var(--shadow-card); display:flex; flex-direction:column; }
+.dia-card img{ width:100%; display:block; }
+.dia-cap{ padding:.8rem 1rem; font-size:.8rem; color:#33433d; font-weight:600; border-top:1px solid #eef2f0; }
+@media (max-width:880px){ .dia-grid{ grid-template-columns:1fr; max-width:440px; margin-inline:auto; } }
+
+/* prosthesis craftsmanship gallery */
+.pros-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:1.4rem; }
+.pros-grid img{ width:100%; border-radius:var(--r-s); display:block; border:1px solid var(--glass-edge); }
+@media (max-width:620px){ .pros-grid{ grid-template-columns:1fr 1fr; } }
+
+/* numbered steps */
+.steps{ display:grid; gap:1rem; margin-top:2rem; }
+.step{ display:flex; gap:1.1rem; padding:1.25rem 1.4rem; border-radius:var(--r); background:linear-gradient(155deg,var(--glass),var(--glass-2)); border:1px solid var(--glass-edge); }
+.step-n{ flex:none; width:42px; height:42px; border-radius:50%; display:grid; place-items:center; background:var(--steel); color:#0b1310; font-weight:800; font-size:1.05rem; }
+.step h4{ margin:0 0 .25rem; color:#fff; font-size:1.06rem; }
+.step p{ margin:0; color:var(--mist); font-size:.9rem; line-height:1.55; }
+
+/* Dr Karim portrait */
+.karim-photo{ border-radius:var(--r); overflow:hidden; border:1px solid var(--glass-edge); box-shadow:var(--shadow-card); align-self:start; }
+.karim-photo img{ width:100%; display:block; }
+
+/* SuperCare chip */
+.supercare{ display:flex; align-items:center; gap:1.2rem; flex-wrap:wrap; margin-top:1.6rem; padding:1.2rem 1.4rem; border-radius:var(--r); background:linear-gradient(155deg,var(--glass),var(--glass-2)); border:1px solid var(--glass-edge); }
+.supercare img{ height:44px; width:auto; background:#fff; padding:8px 14px; border-radius:10px; }
+.supercare p{ margin:0; color:var(--mist); font-size:.9rem; flex:1 1 240px; line-height:1.55; }
+
+/* FREE badge (inline in headings) */
+.free-badge{ display:inline-flex; align-items:center; background:var(--steel); color:#0b1310; font-weight:800; padding:.1em .55em; border-radius:10px; letter-spacing:.01em; }
+
+/* Instagram teaser grid */
+.ig-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; margin-top:2rem; }
+.ig-grid a{ display:block; border-radius:14px; overflow:hidden; border:1px solid var(--glass-edge); }
+.ig-grid img{ width:100%; aspect-ratio:1/1; object-fit:cover; display:block; transition:transform .3s var(--ease); }
+.ig-grid a:hover img{ transform:scale(1.06); }
+@media (max-width:620px){ .ig-grid{ grid-template-columns:1fr 1fr; } }
+
+</style>
+</head>
+
+<body>
+<!-- ambient background -->
+<div class="bg" aria-hidden="true">
+  <span class="orb a"></span><span class="orb b"></span><span class="orb c"></span>
+</div>
+
+<!-- persistent top bar -->
+<header class="topbar">
+  <a class="brand" href="#hero" aria-label="Dental Square — All-on-4 and dental implants" style="display:flex;align-items:center;text-decoration:none;">
+    <img src="ds-logo-light.png" alt="Dental Square" style="height:40px;width:auto;display:block">
+  </a>
+  <button class="btn btn-primary js-book" type="button">Free consult</button>
+</header>
+
+<main class="deck" id="deck">
+
+  <!-- ================= 1. HERO ================= -->
+  <section class="panel" id="hero">
+    <div class="panel-inner">
+      <div class="hero-copy">
+        <p class="eyebrow reveal">Dental Square · West Ryde · All-on-4 &amp; dental implants</p>
+        <h1 class="reveal d1">Stop hiding your smile —
+          <span class="pop"><em>All-on-4 could change everything</em></span></h1>
+        <p class="hero-sub reveal d2">Replace a full arch of missing or failing teeth with a fixed, natural-looking set of teeth on as few as four implants — often fitted within days. At your free consultation we'll talk you through the possible payment plans — including early release of super — to find an option that works for you.</p>
+
+        <div class="pay-chip glass reveal d2">
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3l7 4v5a8 8 0 0 1-7 8 8 8 0 0 1-7-8V7z"/><path d="M9 12l2 2 4-4"/></svg>
+          </span>
+          <div>
+            <b>Completely FREE consultation</b>
+            <p>Includes 3D scans, a digital smile preview, your personalised treatment plan and a full payment-options discussion — no cost, no obligation.</p>
+          </div>
+        </div>
+
+        <ul class="trust reveal d3">
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>By Dr Karim Habib — highest implant accreditation (ASID)</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Authorised provider of the original All-on-4® concept</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Early release of super available for eligible patients</li>
+        </ul>
+
+        <p class="scroll-hint reveal d4"><span class="dot"></span>
+          <span class="hint-desktop">Scroll to explore</span>
+          <span class="hint-mobile">Swipe to explore →</span>
+        </p>
+      </div>
+
+      <div class="hero-form-wrap reveal d2">
+        <div class="glass form-card" id="heroFormMount"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 2. RESULTS (before/after) ================= -->
+  <section class="panel" id="results">
+    <div class="panel-inner">
+      <p class="eyebrow reveal">Real patients · real results</p>
+      <h2 class="title reveal d1">Life-changing smiles by Dr Karim Habib</h2>
+      <p class="lede reveal d2">These are real full-arch and implant transformations from Dr Karim's own patients — the kind of result we'd love to plan for you at your free consultation.</p>
+      <div class="ba-grid reveal d2">
+        <div class="ba-item"><img src="ba-1.webp" alt="Before and after full-mouth dental implants by Dr Karim Habib"><div class="ba-cap"><span class="tag">Before / After</span>Full-mouth implant transformation</div></div>
+        <div class="ba-item"><img src="ba-2.webp" alt="Close-up before and after of failing teeth restored with implants"><div class="ba-cap"><span class="tag">Before / After</span>Worn, failing teeth → a fixed new smile</div></div>
+        <div class="ba-item"><img src="ba-3.webp" alt="Before and after full-arch implant smile transformation"><div class="ba-cap"><span class="tag">Before / After</span>Restored confidence</div></div>
+        <div class="ba-item"><img src="ba-4.webp" alt="Hand-crafted zirconia full-arch prosthesis"><div class="ba-cap"><span class="tag">The result</span>Hand-crafted zirconia full arch — natural-looking aesthetics</div></div>
+      </div>
+      <div class="hero-cta reveal d3" style="margin-top:1.8rem">
+        <button class="btn btn-primary btn-lg js-book" type="button">Book my free consultation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 3. DR KARIM ================= -->
+  <section class="panel" id="dentist">
+    <div class="panel-inner">
+      <div class="dentist-grid">
+        <div class="karim-photo reveal d2"><img src="karim.webp" alt="Dr Karim Habib, Principal Dentist at Dental Square"></div>
+        <div>
+          <p class="eyebrow reveal">Meet your implant dentist</p>
+          <h2 class="title reveal d1">Dr Karim Habib</h2>
+          <p class="creds reveal d2">BSc Hons (Toronto) · BDent Hons (Syd) · PGDip Dental Implantology (CSU) · FICCDE</p>
+          <p class="lede reveal d2">Principal Dentist at Dental Square, Dr Karim holds the <b>highest accreditation awarded by the Australian Society of Implant Dentistry</b> and is experienced in placing and restoring full-arch implants, including the All-on-4® procedure.</p>
+          <p class="reveal d3" style="color:var(--mist)">Widely recognised for his natural-looking results, he attracts patients from across Australia and is an active member of the American Academy of Cosmetic Dentistry and the Australasian Osseointegration Society. Every smile is planned with a focus on both function and aesthetics.</p>
+          <div class="hero-cta reveal d3" style="margin-top:1.6rem">
+            <button class="btn btn-primary btn-lg js-book" type="button">Book with Dr Karim</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4. ALL-ON-4 EXPLAINED ================= -->
+  <section class="panel" id="allon4">
+    <div class="panel-inner">
+      <p class="eyebrow reveal">The treatment</p>
+      <h2 class="title reveal d1">A full new smile on just four implants</h2>
+      <p class="lede reveal d2">All-on-4® replaces an entire arch of missing or failing teeth with a fixed, non-removable bridge anchored to as few as four implants — no more loose dentures, and far fewer implants than replacing teeth one by one.</p>
+      <div class="dia-grid reveal d2">
+        <div class="dia-card"><img src="dia-lower.webp" alt="All-on-4 lower arch on four implants"><div class="dia-cap">Four implants support a full fixed arch</div></div>
+        <div class="dia-card"><img src="dia-upper.webp" alt="All-on-4 upper arch components"><div class="dia-cap">The bridge attaches securely to the implants</div></div>
+        <div class="dia-card"><img src="dia-labeled.webp" alt="Implant-supported fixed replacement teeth"><div class="dia-cap">Fixed replacement teeth that don't move</div></div>
+      </div>
+      <div class="cards three reveal d3" style="margin-top:1.6rem">
+        <div class="card"><h3>Fewer implants, lower cost</h3><p>Maximum teeth on minimum implants — a more affordable, less invasive approach.</p></div>
+        <div class="card"><h3>Fixed teeth in days</h3><p>A fixed provisional bridge is often fitted within 1–3 days of surgery.</p></div>
+        <div class="card"><h3>Look &amp; feel real</h3><p>Better fit, comfort, aesthetics and confidence than removable dentures.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 5. PROCEDURE / JOURNEY ================= -->
+  <section class="panel" id="procedure">
+    <div class="panel-inner">
+      <p class="eyebrow reveal">What to expect</p>
+      <h2 class="title reveal d1">Your All-on-4 journey</h2>
+      <div class="steps reveal d2">
+        <div class="step"><span class="step-n" aria-hidden="true">1</span><div><h4>Plan &amp; design</h4><p>3D scans and Digital Smile Design map out the shape, size and colour of your new teeth.</p></div></div>
+        <div class="step"><span class="step-n" aria-hidden="true">2</span><div><h4>Surgery — asleep if you prefer</h4><p>Any failing teeth are removed and the implants placed, with a sleep-dentistry (IV sedation) option available.</p></div></div>
+        <div class="step"><span class="step-n" aria-hidden="true">3</span><div><h4>Fixed teeth in 1–3 days</h4><p>A fixed provisional bridge is attached to your implants within days — you leave with teeth that look and feel real.</p></div></div>
+        <div class="step"><span class="step-n" aria-hidden="true">4</span><div><h4>Your final bridge</h4><p>After healing (around six months) we fit your final, perfectly-adapted All-on-4 bridge — smile with confidence.</p></div></div>
+      </div>
+      <p class="lede reveal d3" style="margin:2rem 0 .4rem;">Crafted in-house — a few of Dr Karim's zirconia full-arch bridges:</p>
+      <div class="pros-grid reveal d3">
+        <div><img src="pros-2.webp" alt="Upper All-on-4 zirconia prosthesis"></div>
+        <div><img src="pros-3.webp" alt="Lower All-on-4 zirconia prosthesis"></div>
+        <div><img src="pros-1.webp" alt="Upper and lower All-on-4 in place"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 6. FREE CONSULTATION ================= -->
+  <section class="panel" id="consult">
+    <div class="panel-inner">
+      <p class="eyebrow reveal">No cost · no obligation</p>
+      <h2 class="title reveal d1">Your <span class="free-badge">100% FREE</span> implant consultation</h2>
+      <p class="lede reveal d2">Find out exactly what's possible for your smile — and what it would cost — before you decide anything. Your complimentary consultation includes:</p>
+      <div class="cards two reveal d2">
+        <div class="card"><h3>3D scans &amp; X-rays</h3><p>A detailed look at your teeth, jaw and bone to plan treatment accurately.</p></div>
+        <div class="card"><h3>Digital smile preview</h3><p>See the shape, size and colour of your potential new smile before you start.</p></div>
+        <div class="card"><h3>Personalised treatment plan</h3><p>A clear, tailored plan from Dr Karim for your specific situation.</p></div>
+        <div class="card"><h3>Payment-options discussion</h3><p>We'll walk you through the possible payment plans, including early release of super, so you leave knowing exactly what could work for you.</p></div>
+      </div>
+      <div class="hero-cta reveal d3" style="margin-top:1.8rem">
+        <button class="btn btn-primary btn-lg js-book" type="button">Claim my free consultation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 7. PAYMENT / SUPER ================= -->
+  <section class="panel" id="payment">
+    <div class="panel-inner">
+      <p class="eyebrow reveal">Flexible payment options</p>
+      <h2 class="title reveal d1">Pay with your super — or a payment plan</h2>
+      <p class="lede reveal d2">Many patients fund their All-on-4 treatment through a <b>payment plan or the early release of their superannuation</b> — spreading the cost into manageable repayments. We'll talk through the possible options with you at your free consultation.</p>
+      <div class="supercare reveal d2">
+        <img src="supercare.webp" alt="SuperCare — early release of super">
+        <p><b>Early release of super</b> — for eligible patients, SuperCare can help you access your superannuation to pay for treatment. We'll guide you through it at your free consult.</p>
+      </div>
+      <div class="cards two reveal d3" style="margin-top:1.4rem">
+        <div class="card"><h3>Early release of super</h3><p>Access your super for dental treatment if eligible (via SuperCare) — subject to approval.</p></div>
+        <div class="card"><h3>Flexible payment plans</h3><p>Options including MediPay and TLC to spread the cost into manageable repayments.</p></div>
+      </div>
+      <p class="reveal d3" style="color:var(--mist-dim); font-size:.8rem; margin-top:1.2rem; line-height:1.6;">Funding via early release of super or a payment plan is subject to eligibility, provider terms and approval. A consultation is required to determine suitability and treatment cost.</p>
+    </div>
+  </section>
+
+  <!-- ================= 8. INSTAGRAM ================= -->
+  <section class="panel" id="social">
+    <div class="panel-inner">
+      <p class="eyebrow reveal">See more on Instagram</p>
+      <h2 class="title reveal d1">Follow Dr Karim's work <span style="color:var(--steel)">@drkarimhabib</span></h2>
+      <p class="lede reveal d2">Dr Karim shares real cases, transformations and behind-the-scenes from the practice. Take a look — then come and plan yours.</p>
+      <!-- To embed reels: replace this grid with Instagram reel <blockquote class="instagram-media"> embeds (embed.js is already loaded). -->
+      <div class="ig-grid reveal d2">
+        <a href="https://www.instagram.com/drkarimhabib/" target="_blank" rel="noopener"><img src="ba-after.webp" alt="Dental Square implant smile result on Instagram"></a>
+        <a href="https://www.instagram.com/drkarimhabib/" target="_blank" rel="noopener"><img src="pros-2.webp" alt="All-on-4 zirconia prosthesis on Instagram"></a>
+        <a href="https://www.instagram.com/drkarimhabib/" target="_blank" rel="noopener"><img src="ba-1.webp" alt="Before and after dental implants on Instagram"></a>
+        <a href="https://www.instagram.com/drkarimhabib/" target="_blank" rel="noopener"><img src="pros-3.webp" alt="Lower All-on-4 prosthesis on Instagram"></a>
+      </div>
+      <div class="hero-cta reveal d3" style="margin-top:1.6rem; gap:.8rem; flex-wrap:wrap;">
+        <a class="btn btn-ghost btn-lg" href="https://www.instagram.com/drkarimhabib/" target="_blank" rel="noopener">Follow @drkarimhabib →</a>
+        <button class="btn btn-primary btn-lg js-book" type="button">Book my free consult</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 9. BOOK ================= -->
+  <section class="panel" id="book">
+    <div class="panel-inner">
+      <div class="book-grid">
+        <div>
+          <p class="eyebrow reveal">Book your free consultation</p>
+          <h2 class="title reveal d1">Your new smile starts here</h2>
+          <p class="lede reveal d2" style="margin-bottom:1.2rem">No cost, no obligation — just a clear picture of what's possible and what it would cost.</p>
+          <ul class="book-points reveal d2">
+            <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>3D scans, smile preview &amp; treatment plan — free</li>
+            <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Payment options incl. early release of super</li>
+            <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Planned by Dr Karim Habib — highest implant accreditation</li>
+            <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Sleep-dentistry (IV sedation) option available</li>
+          </ul>
+          <div class="pay-chip glass reveal d3" style="margin-top:1.2rem">
+            <span class="ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </span>
+            <div>
+              <b>Payment plans available</b>
+              <p>We'll talk you through the possible payment plans, including early release of super — subject to eligibility &amp; approval.</p>
+            </div>
+          </div>
+          <div class="book-cta-wrap reveal d3" style="margin-top:1.6rem">
+            <button class="btn btn-primary btn-lg js-book" type="button">Request my free consultation</button>
+            <p style="color:var(--mist-dim); font-size:.82rem; margin-top:.8rem;">Takes under a minute — we'll call you to arrange a time.</p>
+          </div>
+        </div>
+
+        <div class="book-form-wrap reveal d2">
+          <div class="glass form-card" id="bookFormMount"></div>
+        </div>
+      </div>
+
+      <div class="legal-mobile" style="margin-top:2.6rem; border-top:1px solid rgba(255,255,255,.08); padding-top:1.8rem;">
+        <div style="margin-bottom:1.8rem;">
+          <p style="font-size:.85rem; color:var(--cloud); font-weight:600; margin:0 0 .3rem;">Visit us — West Ryde</p>
+          <p style="font-size:.82rem; color:var(--mist); margin:0 0 .8rem;">5 Chatham Rd, West Ryde NSW 2114 · (02) 8068 2109</p>
+          <iframe class="map-embed" title="Map to Dental Square, 5 Chatham Rd West Ryde" src="https://www.google.com/maps?q=Dental%20Square%205%20Chatham%20Rd%20West%20Ryde%20NSW%202114&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p style="font-size:.72rem; color:var(--mist-dim); line-height:1.6;">All-on-4® is a registered trademark of Nobel Biocare. Any surgical or invasive procedure carries risks. Treatment outcomes vary between individuals and a consultation is required to determine suitability and cost. Funding via early release of super or payment plans is subject to eligibility, provider terms and approval. Before proceeding, seek a second opinion from an appropriately qualified health practitioner.</p>
+        <p style="font-size:.72rem; color:var(--mist); margin-top:.8rem;">Dr Karim Habib — Principal Dentist, Dental Square.</p>
+        <p style="font-size:.72rem; color:var(--mist-dim); margin-top:1rem;">© Dental Square. All rights reserved.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= THANK YOU ================= -->
+  <section class="panel" id="thanks" aria-live="polite">
+    <div class="panel-inner">
+      <div class="glass thanks-card reveal">
+        <div class="thanks-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>
+        </div>
+        <p class="eyebrow" style="justify-content:center">Request received</p>
+        <h2 id="thanksHeading" tabindex="-1">Thank you</h2>
+        <p class="lede" id="thanksMessage">We've received your details and our team will be in touch shortly to arrange your free implant consultation.</p>
+        <ol class="next-steps">
+          <li><span class="num">1</span><span>Our team will call you to find a time that suits and answer any questions you have.</span></li>
+          <li><span class="num">2</span><span>At your free consult, Dr Karim takes 3D scans, designs your smile and builds your treatment plan.</span></li>
+          <li><span class="num">3</span><span>You'll get a clear plan and quote — with payment options including early release of super.</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER (desktop) ================= -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="ds-logo-light.png" alt="Dental Square" style="height:46px;width:auto;display:block;margin-bottom:1rem;">
+        <span>All-on-4 &amp; Dental Implants · West Ryde, Sydney</span>
+      </div>
+      <div class="footer-contact" style="max-width:340px;">
+        5 Chatham Rd, West Ryde NSW 2114<br>
+        <a href="tel:+61280682109" style="color:inherit;text-decoration:none;">(02) 8068 2109</a> · <a href="mailto:info@dentalsquare.com.au" style="color:inherit;text-decoration:none;">info@dentalsquare.com.au</a>
+        <iframe class="map-embed" title="Map to Dental Square, 5 Chatham Rd West Ryde" src="https://www.google.com/maps?q=Dental%20Square%205%20Chatham%20Rd%20West%20Ryde%20NSW%202114&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <button class="btn btn-ghost js-book" type="button" style="margin-top:1rem;">Book a free consultation →</button>
+      </div>
+    </div>
+    <div class="legal">
+      <p>All-on-4® is a registered trademark of Nobel Biocare. For suitable patients only — results may vary between individuals, and a consultation is required to determine suitability and treatment cost.</p>
+      <p>Any surgical or invasive procedure carries risks. Before proceeding, you should seek a second opinion from an appropriately qualified health practitioner.</p>
+      <p>Funding via early release of super or payment plans (incl. MediPay, TLC) is subject to eligibility, provider terms and approval.</p>
+      <p class="reg">Dr Karim Habib — Principal Dentist, Dental Square.</p>
+      <p class="copy">© Dental Square, All rights reserved · Website Design by <a href="https://generateyouraudience.com/" target="_blank" rel="noopener">Generate Your Audience</a></p>
+    </div>
+  </div>
+  <p class="lp-switch" style="opacity:.55;font-size:.72rem;margin-top:.8rem">Pages: <a href="/all-on-4/" style="text-decoration:none">All-on-4</a> &nbsp;·&nbsp; <a href="/new-patients/" style="text-decoration:none">New patients</a> &nbsp;·&nbsp; <a href="/veneers/" style="text-decoration:none">Veneers</a></p>
+</footer>
+
+<!-- ================= Desktop side progress nav ================= -->
+<nav class="sidenav" id="sidenav" aria-label="Section navigation"></nav>
+
+<!-- ================= Mobile dock ================= -->
+<div class="dock" id="dock">
+  <button class="dock-arrow" id="prevBtn" type="button" aria-label="Previous section">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <div class="dock-center">
+    <div class="dock-label" id="dockLabel">Welcome</div>
+    <div class="dock-dots" id="dockDots"></div>
+  </div>
+  <button class="dock-arrow" id="nextBtn" type="button" aria-label="Next section">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 18l6-6-6-6"/></svg>
+  </button>
+</div>
+
+<noscript>
+  <div style="position:fixed;inset:0;display:grid;place-items:center;background:var(--navy-900);z-index:999;padding:2rem;text-align:center;color:#fff">
+    <div>
+      <h2 style="font-family:'Fraunces',serif">Book your free implant consultation</h2>
+      <p style="color:var(--mist)">Please enable JavaScript in your browser to request your free consultation online, or call (02) 8068 2109.</p>
+    </div>
+  </div>
+</noscript>
+
+<script>
+/* =========================================================================
+   CONFIG — edit these to connect the form and add your real photos
+   ========================================================================= */
+const CONFIG = {
+  // Where to send leads. Set to "/api/lead" — the included serverless relay
+  // (api/lead.js) lives on the SAME Vercel project/domain as this page, so a
+  // same-origin path is all that's needed (no CORS to configure). That relay
+  // emails your SmileOx CRM intake address over SMTP/TLS, because a browser
+  // cannot send SMTP email directly.
+  // NOTE: submitting only works once deployed on Vercel. Opening this file
+  // straight off your computer will show an error on submit — that's expected.
+  FORM_ENDPOINT: "/api/lead"
+};
+
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const mqMobile = window.matchMedia("(max-width: 880px)");
+const isMobile = () => mqMobile.matches;
+
+/* ---------- Build the lead form ---------- */
+function buildForm(mount, prefix){
+  mount.innerHTML =
+    '<form class="lead-form" novalidate>'
+    + '<div class="form-head"><h3 class="form-title">Book your FREE consultation</h3>'
+    + '<p class="form-sub">3D scans, smile preview, treatment plan &amp; payment options — free, with no obligation. We\'ll be in touch to arrange a time.</p></div>'
+    + '<div class="form-body">'
+    + '<div class="field-row">'
+    +   '<label class="field" data-field="firstName"><span class="field-label">First name <span class="req">*</span></span>'
+    +   '<input type="text" name="firstName" autocomplete="given-name" placeholder="First name" required>'
+    +   '<span class="err-msg">Please enter your first name.</span></label>'
+    +   '<label class="field" data-field="lastName"><span class="field-label">Last name <span class="req">*</span></span>'
+    +   '<input type="text" name="lastName" autocomplete="family-name" placeholder="Last name" required>'
+    +   '<span class="err-msg">Please enter your last name.</span></label>'
+    + '</div>'
+    + '<label class="field" data-field="email"><span class="field-label">Email <span class="req">*</span></span>'
+    + '<input type="email" name="email" inputmode="email" autocomplete="email" placeholder="you@email.com" required>'
+    + '<span class="err-msg">Please enter a valid email address.</span></label>'
+    + '<label class="field" data-field="phone"><span class="field-label">Phone <span class="req">*</span></span>'
+    + '<input type="tel" name="phone" inputmode="tel" autocomplete="tel" placeholder="04xx xxx xxx" required>'
+    + '<span class="err-msg">Please enter a valid phone number.</span></label>'
+    + '<fieldset class="q" data-q="situation" data-multi="1"><legend>What are you looking to replace? (tick any)</legend><div class="opts">'
+    +   '<button type="button" class="opt" data-value="All upper teeth">All upper teeth</button>'
+    +   '<button type="button" class="opt" data-value="All lower teeth">All lower teeth</button>'
+    +   '<button type="button" class="opt" data-value="Both arches">Both arches</button>'
+    +   '<button type="button" class="opt" data-value="Several teeth">Several teeth</button>'
+    +   '<button type="button" class="opt" data-value="Replacing loose dentures">Loose dentures</button>'
+    +   '<button type="button" class="opt" data-value="Not sure yet">Not sure yet</button>'
+    + '</div></fieldset>'
+    + '<fieldset class="q" data-q="funding" data-multi="1"><legend>Keen to explore? (optional)</legend><div class="opts">'
+    +   '<button type="button" class="opt" data-value="Early release of super">Early release of super</button>'
+    +   '<button type="button" class="opt" data-value="A payment plan">Payment plan</button>'
+    +   '<button type="button" class="opt" data-value="Paying directly">Pay directly</button>'
+    +   '<button type="button" class="opt" data-value="Not sure yet">Not sure</button>'
+    + '</div></fieldset>'
+    + '<input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">'
+    + '<button type="submit" class="btn btn-primary btn-block btn-lg submit-btn">Request my free consultation</button>'
+    + '<p class="form-foot">100% free &amp; no obligation. Your details are kept private and used only to arrange your consultation.</p>'
+    + '</div>'
+    + '<div class="form-success" hidden><div class="sx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg></div>'
+    + '<h3>Thank you</h3><p class="sx-msg"></p></div>'
+    + '</form>';
+
+  wireForm(mount.querySelector("form"));
+}
+
+function wireForm(form){
+  form.querySelectorAll("input").forEach(i=>{
+    i.addEventListener("input", ()=> i.closest(".field") && i.closest(".field").classList.remove("err"));
+  });
+  // option chips — single-select, or multi-select when the fieldset has data-multi
+  form.querySelectorAll("fieldset.q").forEach(fs=>{
+    const multi = fs.hasAttribute("data-multi");
+    fs.querySelectorAll(".opt").forEach(btn=>{
+      btn.addEventListener("click", ()=>{
+        if(multi){
+          btn.classList.toggle("is-selected");
+        } else {
+          fs.querySelectorAll(".opt").forEach(b=> b.classList.remove("is-selected"));
+          btn.classList.add("is-selected");
+        }
+        fs.classList.remove("err");
+      });
+    });
+  });
+
+  form.addEventListener("submit", e=>{
+    e.preventDefault();
+    // honeypot — silently drop bots
+    if(form.querySelector(".hp").value){ return; }
+
+    let ok = true;
+    const grab = key => { const f=form.querySelector('[data-field="'+key+'"]'); return { f, v:f.querySelector("input").value.trim() }; };
+    const fail = f => { f.classList.add("err"); ok=false; };
+
+    const first = grab("firstName"); if(first.v.length < 1) fail(first.f);
+    const last  = grab("lastName");  if(last.v.length  < 1) fail(last.f);
+    const email = grab("email");     if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.v)) fail(email.f);
+    const phone = grab("phone");     if(!/^[\d\s()+\-]{8,}$/.test(phone.v)) fail(phone.f);
+
+    if(!ok){
+      const firstErr = form.querySelector(".field.err");
+      if(firstErr) firstErr.scrollIntoView({behavior: reduceMotion?"auto":"smooth", block:"center"});
+      return;
+    }
+
+    // Payload uses the field names the SmileOx CRM intake expects.
+    const chips = q => { const fs=form.querySelector('fieldset.q[data-q="'+q+'"]'); if(!fs) return "";
+      return Array.from(fs.querySelectorAll(".opt.is-selected")).map(b=>b.dataset.value).join(", "); };
+    const data = { firstName:first.v, lastName:last.v, email:email.v, phoneNumber:phone.v,
+      situation: chips("situation"), funding: chips("funding") };
+
+    const submitBtn = form.querySelector(".submit-btn");
+    submitBtn.disabled = true; submitBtn.textContent = "Sending…";
+
+    const finish = ()=>{
+      // collapse this form to a short confirmation…
+      form.querySelector(".form-body").style.display = "none";
+      const succ = form.querySelector(".form-success");
+      succ.hidden = false;
+      succ.querySelector(".sx-msg").textContent =
+        "Thanks " + data.firstName + " — we'll be in touch shortly to arrange your free consultation.";
+      // …and move the visitor on to the dedicated thank-you section.
+      leadSuccess(data);
+    };
+
+    if(CONFIG.FORM_ENDPOINT){
+      fetch(CONFIG.FORM_ENDPOINT, {
+        method:"POST", headers:{ "Content-Type":"application/json", "Accept":"application/json" },
+        body: JSON.stringify(data)
+      }).then(async r=>{
+          let info = null;
+          try { info = await r.json(); } catch(e){}
+          if(!r.ok || (info && info.ok === false)){
+            let reason = info && info.missing ? ("missing env vars: " + info.missing.join(", "))
+              : (info && (info.detail || info.error)) || ("HTTP " + r.status);
+            if(reason && typeof reason === "object") reason = JSON.stringify(reason);
+            throw new Error(String(reason));
+          }
+          return r;
+        })
+        .then(finish)
+        .catch(err=>{ submitBtn.disabled=false; submitBtn.textContent="Request my free consultation";
+          console.error("Lead submit failed:", err);
+          alert("Sorry, something went wrong sending your details.\n\nReason: " + (err && err.message ? err.message : err) + "\n\nPlease try again in a moment."); });
+    } else {
+      setTimeout(finish, 450); // demo mode (no endpoint set yet)
+    }
+  });
+}
+
+buildForm(document.getElementById("heroFormMount"), "h");
+buildForm(document.getElementById("bookFormMount"), "b");
+
+/* ---------- FAQ accordion ---------- */
+document.querySelectorAll(".faq-item").forEach(item=>{
+  const btn = item.querySelector(".faq-q");
+  const a = item.querySelector(".faq-a");
+  btn.addEventListener("click", ()=>{
+    const open = item.classList.toggle("open");
+    btn.setAttribute("aria-expanded", open);
+    a.style.maxHeight = open ? a.scrollHeight + "px" : 0;
+  });
+});
+
+/* ---------- Navigation (dots / dock / side nav) ---------- */
+const deck = document.getElementById("deck");
+const panels = Array.from(deck.querySelectorAll(".panel"));
+const chapters = [
+  {id:"hero",label:"Welcome"},{id:"results",label:"Results"},{id:"dentist",label:"Dr Karim"},{id:"allon4",label:"All-on-4"},
+  {id:"procedure",label:"The journey"},{id:"consult",label:"Free consult"},{id:"payment",label:"Pay with super"},
+  {id:"social",label:"Instagram"},
+  {id:"book",label:"Book"}
+];
+const bookIndex = chapters.findIndex(c=>c.id==="book");
+let current = 0;
+
+const sidenav = document.getElementById("sidenav");
+const dockDots = document.getElementById("dockDots");
+const dockLabel = document.getElementById("dockLabel");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+chapters.forEach((c,i)=>{
+  const s = document.createElement("button");
+  s.type="button"; s.setAttribute("aria-label","Go to "+c.label);
+  s.innerHTML = '<span class="lbl">'+c.label+'</span>';
+  s.addEventListener("click", ()=>goTo(i));
+  sidenav.appendChild(s);
+
+  const d = document.createElement("button");
+  d.type="button"; d.setAttribute("aria-label","Go to "+c.label);
+  d.addEventListener("click", ()=>goTo(i));
+  dockDots.appendChild(d);
+});
+const sideBtns = Array.from(sidenav.children);
+const dotBtns = Array.from(dockDots.children);
+
+function setActive(i){
+  if(i<0 || i>=chapters.length || i===current) return;
+  current = i;
+  sideBtns.forEach((b,k)=>b.classList.toggle("active", k===i));
+  dotBtns.forEach((b,k)=>b.classList.toggle("active", k===i));
+  dockLabel.textContent = chapters[i].label;
+  prevBtn.disabled = i===0;
+  nextBtn.disabled = i===chapters.length-1;
+}
+
+function goTo(i, focusForm){
+  i = Math.max(0, Math.min(chapters.length-1, i));
+  const beh = reduceMotion ? "auto" : "smooth";
+  if(isMobile()){
+    deck.scrollTo({ left: i*deck.clientWidth, behavior: beh });
+  } else {
+    document.getElementById(chapters[i].id).scrollIntoView({ behavior: beh, block:"start" });
+  }
+  setActive(i);
+  if(focusForm){
+    setTimeout(()=>{
+      const wrap = isMobile() ? document.querySelector(".book-form-wrap") : document.querySelector(".hero-form-wrap");
+      const first = wrap && wrap.querySelector("input:not(.hp)");
+      if(first) first.focus({preventScroll:true});
+    }, reduceMotion?0:600);
+  }
+}
+
+/* "Book" buttons everywhere */
+function bookAction(){ goTo(isMobile() ? bookIndex : 0, true); }
+document.querySelectorAll(".js-book").forEach(b=> b.addEventListener("click", bookAction));
+
+/* Reveal + move to the thank-you section once a lead is captured */
+function leadSuccess(data){
+  const h = document.getElementById("thanksHeading");
+  const m = document.getElementById("thanksMessage");
+  if(h) h.textContent = "Thank you, " + data.firstName;
+  if(m) m.textContent = "We've received your details and our team will call you on "
+        + data.phoneNumber + " shortly to arrange your free implant consultation.";
+
+  document.body.classList.add("lead-submitted");      // un-hides #thanks
+  const thanksPanelIndex = panels.length - 1;          // #thanks is the last panel in the deck
+  const beh = reduceMotion ? "auto" : "smooth";
+
+  // wait a frame so the panel leaves display:none before we scroll to it
+  requestAnimationFrame(()=>{
+    if(isMobile()){
+      deck.scrollTo({ left: thanksPanelIndex * deck.clientWidth, behavior: beh });
+    } else {
+      document.getElementById("thanks").scrollIntoView({ behavior: beh, block:"start" });
+    }
+    const card = document.querySelector(".thanks-card");
+    if(card) card.classList.add("in");
+    if(h) h.focus({ preventScroll:true });
+  });
+}
+
+prevBtn.addEventListener("click", ()=>goTo(current-1));
+nextBtn.addEventListener("click", ()=>goTo(current+1));
+
+/* keyboard arrows on mobile */
+window.addEventListener("keydown", e=>{
+  if(!isMobile()) return;
+  const tag = (e.target.tagName||"").toLowerCase();
+  if(tag==="input"||tag==="textarea") return;
+  if(e.key==="ArrowRight"){ goTo(current+1); }
+  if(e.key==="ArrowLeft"){ goTo(current-1); }
+});
+
+/* track active section */
+let scrollT;
+deck.addEventListener("scroll", ()=>{
+  if(!isMobile()) return;
+  clearTimeout(scrollT);
+  scrollT = setTimeout(()=>{ setActive(Math.round(deck.scrollLeft / deck.clientWidth)); }, 60);
+}, {passive:true});
+
+const io = new IntersectionObserver(entries=>{
+  entries.forEach(en=>{
+    if(en.isIntersecting){
+      // reveal children as soon as the panel enters view (works for tall panels too)
+      en.target.querySelectorAll(".reveal").forEach(r=>r.classList.add("in"));
+      // highlight the side-nav / dock once the panel is meaningfully in view
+      if(!isMobile() && en.intersectionRatio >= 0.3){
+        const idx = chapters.findIndex(c=>c.id===en.target.id);
+        if(idx>-1) setActive(idx);
+      }
+    }
+  });
+}, { threshold: [0, 0.3] });
+panels.forEach(p=>io.observe(p));
+
+/* initial reveal for hero + recalc on layout change */
+function refreshLayout(){
+  if(isMobile()){
+    document.querySelectorAll(".reveal").forEach(r=>r.classList.add("in"));
+    setActive(Math.round(deck.scrollLeft / deck.clientWidth) || 0);
+  } else {
+    panels[0].querySelectorAll(".reveal").forEach(r=>r.classList.add("in"));
+  }
+}
+mqMobile.addEventListener("change", ()=>{ deck.scrollTo({left:0}); window.scrollTo({top:0}); setTimeout(refreshLayout,50); });
+refreshLayout();
+
+</script>
+<!-- Instagram embeds (for reel embeds in the Instagram section) -->
+<script async src="https://www.instagram.com/embed.js"></script>
+</body>
+</html>

@@ -1,12 +1,14 @@
 # Dental Square — Google Ads landing pages
 
-One Vercel project, three landing pages:
+One Vercel project, five landing pages:
 
 | Path | Page | Form? |
 |---|---|---|
 | `/all-on-4/` | All-on-4 & dental implants (dark liquid-glass) | Yes — posts to `/api/lead` |
 | `/new-patients/` | New patient special $295 (warm white) | No — Centaur portal + phone |
 | `/veneers/` | Porcelain veneers (warm white) | No — Centaur portal + phone |
+| `/invisalign/` | Invisalign clear aligners (warm white) | No — Centaur portal + phone |
+| `/cosmetic-dentistry/` | Cosmetic dentistry overview (warm white) | No — Centaur portal + phone |
 
 Root `/` redirects to `/new-patients/`. Each footer has discrete switcher links.
 

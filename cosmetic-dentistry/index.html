@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Porcelain Veneers Sydney — Ultra-Natural Smile Makeovers | Dental Square West Ryde</title>
-<meta name="description" content="Sydney's home of ultra-natural porcelain veneers. Real patient results, free cosmetic consultation, trial smiles before treatment, Australian-made veneers from $1,950 per tooth. Dental Square, West Ryde.">
-<meta property="og:title" content="Porcelain Veneers Sydney | Dental Square West Ryde">
-<meta property="og:description" content="Ultra-natural porcelain veneers by Dr Karim Habib. Free cosmetic consultation, trial smiles, Australian-made from $1,950 per tooth.">
+<title>Cosmetic Dentist Sydney — Smile Makeovers, Veneers &amp; Whitening | Dental Square West Ryde</title>
+<meta name="description" content="Sydney's cosmetic dentistry experts. Porcelain veneers, composite bonding, ZOOM whitening, laser gummy smile treatment and complete smile makeovers. Free cosmetic consultation at Dental Square, West Ryde.">
+<meta property="og:title" content="Cosmetic Dentist Sydney | Dental Square West Ryde">
+<meta property="og:description" content="Veneers, bonding, ZOOM whitening and smile makeovers by Dr Karim Habib. Free cosmetic consultation.">
 <link rel="icon" href="img/ds-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -184,75 +184,40 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
 @media(max-width:760px){.dock{display:flex}}
 
 
-/* ---------- veneers page additions ---------- */
-.hero-veneers .wrap{grid-template-columns:1fr 1fr}
+/* cosmetic additions */
+.free-chip{display:inline-flex;align-items:center;gap:.5rem;background:var(--mint-soft);color:var(--mint-ink);font-weight:700;border-radius:999px;padding:.5rem 1.1rem;font-size:.9rem;margin-top:1.2rem}
 .badge-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}
 .badge{background:#fff;border:1px solid var(--line);border-radius:999px;padding:.45rem 1rem;font-size:.82rem;font-weight:600;color:var(--mint-ink)}
-.from-price{display:flex;align-items:baseline;gap:.7rem;margin-top:1.4rem}
-.from-price b{font-family:var(--display);font-weight:800;font-size:2.2rem;color:var(--coral)}
-.from-price span{color:var(--slate);font-size:.95rem}
-.free-chip{display:inline-flex;align-items:center;gap:.5rem;background:var(--mint-soft);color:var(--mint-ink);font-weight:700;border-radius:999px;padding:.5rem 1.1rem;font-size:.9rem;margin-top:.9rem}
-
-/* before/after gallery */
-.ba-sec{padding:3.8rem 0}
+.tx-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.tx{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:1.5rem;display:flex;flex-direction:column}
+.tx .ico{width:46px;height:46px;border-radius:14px;background:var(--mint-soft);display:grid;place-items:center;margin-bottom:.9rem}
+.tx .ico svg{width:23px;height:23px;stroke:var(--mint-deep);fill:none;stroke-width:2}
+.tx h3{font-size:1.08rem;font-weight:700}
+.tx p{font-size:.88rem;color:var(--slate);margin:.5rem 0 0;flex:1}
+.tx .px{margin-top:.8rem;font-weight:700;color:var(--coral);font-size:.9rem}
+@media(max-width:900px){.tx-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.tx-grid{grid-template-columns:1fr}}
+.ba-sec{padding:3.8rem 0;background:var(--cream)}
 .ba-note{font-size:.82rem;color:var(--slate);margin-top:1.1rem}
 .face-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-bottom:1rem}
-.face-grid figure,.ba-grid figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:var(--r-s);overflow:hidden;box-shadow:var(--shadow)}
+.face-grid figure,.ba-grid figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:var(--r-s);overflow:hidden;box-shadow:var(--shadow);position:relative}
 .face-grid img,.ba-grid img{width:100%;aspect-ratio:1/1;object-fit:cover}
 figcaption{font-size:.78rem;color:var(--slate);padding:.55rem .8rem;line-height:1.4}
 .ba-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
 .ba-tag{position:absolute;top:.6rem;left:.6rem;background:rgba(255,255,255,.92);border-radius:999px;padding:.2rem .7rem;font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mint-ink)}
-.ba-grid figure,.face-grid figure{position:relative}
 @media(max-width:960px){.face-grid,.ba-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.face-grid,.ba-grid{grid-template-columns:1fr 1fr}.ba-grid figcaption,.face-grid figcaption{font-size:.7rem}}
-
-/* fixes list */
-.fix-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-.fix{background:var(--card);border:1px solid var(--line);border-radius:var(--r-s);padding:1.1rem 1.2rem;display:flex;gap:.7rem;align-items:flex-start;font-size:.95rem}
-.fix b{display:block;font-size:.98rem}
-.fix span{color:var(--slate);font-size:.86rem;line-height:1.45}
-@media(max-width:900px){.fix-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.fix-grid{grid-template-columns:1fr}}
-
-/* process */
-.process{padding:3.8rem 0;background:var(--cream)}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;counter-reset:step}
-.step{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:1.6rem;position:relative}
-.step::before{counter-increment:step;content:counter(step);position:absolute;top:-16px;left:1.4rem;width:34px;height:34px;border-radius:50%;background:var(--coral);color:#fff;font-family:var(--display);font-weight:800;display:grid;place-items:center;font-size:1rem;box-shadow:0 6px 16px rgba(226,89,60,.35)}
-.step h3{font-size:1.08rem;font-weight:700;margin-top:.4rem}
-.step p{font-size:.89rem;color:var(--slate);margin:.5rem 0 0}
-@media(max-width:860px){.steps{grid-template-columns:1fr;gap:1.6rem}}
-
-/* difference */
-.diff{padding:3.8rem 0}
-.diff-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:2.4rem;align-items:center}
-.diff ul{list-style:none;margin:1.2rem 0 0;padding:0;display:grid;gap:.7rem}
-.diff li{display:flex;gap:.6rem;align-items:flex-start;font-size:.95rem}
-.diff li span.txt b{font-weight:700}
-.diff li span.txt{color:var(--slate)}
-.diff-photo img{width:100%;border-radius:200px 200px var(--r) var(--r);box-shadow:var(--shadow)}
-@media(max-width:860px){.diff-grid{grid-template-columns:1fr}}
-
-/* dr karim strip */
 .karim{background:var(--mint-ink);color:#fff;padding:3rem 0}
 .karim .wrap{display:grid;grid-template-columns:180px 1fr;gap:2rem;align-items:center}
 .karim img{width:180px;height:180px;object-fit:cover;object-position:center 20%;border-radius:50%;border:4px solid rgba(255,255,255,.25)}
 .karim h2{font-size:1.6rem;font-weight:800}
 .karim p{color:#CDE9E3;font-size:.95rem;margin:.6rem 0 0;max-width:640px}
 @media(max-width:700px){.karim .wrap{grid-template-columns:1fr;text-align:center;justify-items:center}}
-
-/* pricing */
-.pricing{padding:3.8rem 0;background:var(--cream)}
-.price-panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:2rem;display:grid;grid-template-columns:auto 1fr;gap:2rem;align-items:center;max-width:860px}
-.price-big{font-family:var(--display);font-weight:800;font-size:2.6rem;color:var(--coral);white-space:nowrap}
-.price-big small{display:block;font-size:.85rem;color:var(--slate);font-family:var(--body);font-weight:600}
-.price-panel p{margin:.3rem 0;color:var(--slate);font-size:.93rem}
-@media(max-width:700px){.price-panel{grid-template-columns:1fr;text-align:center}}
+.offer-mini{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+@media(max-width:860px){.offer-mini{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
-<!-- top info bar -->
 <div class="infobar">
   <div class="wrap">
     <div class="hours">🕐 <span>Mon–Fri 8:30am–5:30pm · Thu till 7pm · Sat 8am–1pm</span></div>
@@ -272,20 +237,19 @@ figcaption{font-size:.78rem;color:var(--slate);padding:.55rem .8rem;line-height:
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="hero hero-veneers" id="top">
+<section class="hero" id="top">
   <div class="wrap">
     <div>
       <div class="review-chip reveal"><span class="stars">★★★★★</span> 5.0 · 309 Google reviews</div>
-      <p class="eyebrow reveal">Porcelain veneers · Sydney</p>
-      <h1 class="reveal">Ultra-natural porcelain veneers, <em>designed just for you</em></h1>
-      <p class="reveal" style="color:var(--slate);max-width:520px;margin-top:1rem">Custom, wafer-thin porcelain veneers hand-crafted with Australia's most talented ceramists — from subtle natural enhancements to a full Hollywood smile. Patients travel from all over Australia for Dr Karim Habib's signature look.</p>
+      <p class="eyebrow reveal">Cosmetic dentistry · Sydney</p>
+      <h1 class="reveal">Personalised cosmetic dentistry, <em>tailored to you</em></h1>
+      <p class="reveal" style="color:var(--slate);max-width:520px;margin-top:1rem">From subtle enhancements to complete smile makeovers — Dental Square's cosmetic team designs natural, beautiful smiles with the latest technology, attracting patients from all over Australia to West Ryde.</p>
       <div class="badge-row reveal">
-        <span class="badge">Natural-looking</span>
-        <span class="badge">Stain-resistant</span>
-        <span class="badge">Permanently fixed</span>
-        <span class="badge">Typically last 10–15 years*</span>
+        <span class="badge">Porcelain &amp; composite veneers</span>
+        <span class="badge">ZOOM!® whitening</span>
+        <span class="badge">Smile makeovers</span>
+        <span class="badge">Laser dentistry</span>
       </div>
-      <div class="from-price reveal"><b>From $1,950</b><span>per tooth* · Australian-made · payment plans available on request</span></div>
       <span class="free-chip reveal">🎁 FREE cosmetic consultation — valued at over $75</span>
       <div class="hero-cta reveal">
         <a class="btn btn-coral" href="https://www.centaurportal.com/d4w/org-1378/extended_search?sourceID=null" target="_blank" rel="noopener">Book your free consult</a>
@@ -293,106 +257,77 @@ figcaption{font-size:.78rem;color:var(--slate);padding:.55rem .8rem;line-height:
       </div>
     </div>
     <div class="hero-photo reveal">
-      <img src="img/face-hero.webp" alt="Real Dental Square patient before and after porcelain veneers">
+      <img src="img/face-hero.webp" alt="Real Dental Square patient before and after a cosmetic smile makeover">
       <div class="hero-badge"><b>Real patient</b> treated at Dental Square</div>
     </div>
   </div>
 </section>
 
-<!-- ================= BEFORE & AFTER GALLERY ================= -->
+<!-- ================= TREATMENTS ================= -->
+<section class="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Our cosmetic treatments</p>
+      <h2>Enhance the colour, shape and aesthetics of your teeth</h2>
+      <p>Whatever's holding your smile back, there's a treatment for it — and your free consultation will map out the right combination for you.</p>
+    </div>
+    <div class="tx-grid">
+      <div class="tx reveal">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12C19 16.6 12 21 12 21z"/></svg></span>
+        <h3>Porcelain veneers</h3>
+        <p>Custom, wafer-thin porcelain restorations — our signature ultra-natural look, hand-crafted with Australia's best ceramists. Fix stains, gaps, chips and worn teeth.</p>
+        <span class="px">From $1,950 per tooth*</span>
+      </div>
+      <div class="tx reveal">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M4 20l7-7M14 4l6 6-9 9H5v-6z"/></svg></span>
+        <h3>Composite veneers &amp; bonding</h3>
+        <p>Hand-sculpted tooth-coloured resin to close gaps, repair chips and improve shape and colour — often completed in a single visit, and excellent value.</p>
+      </div>
+      <div class="tx reveal">
+        <span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg></span>
+        <h3>ZOOM!® teeth whitening</h3>
+        <p>Philips ZOOM!® WhiteSpeed — up to 12 shades whiter in about an hour in-chair, or with a custom take-home kit.</p>
+        <span class="px">In-chair $650 · take-home kit $400</span>
+      </div>
+      <div class="tx reveal">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M2 12h6l2-8 4 16 2-8h6"/></svg></span>
+        <h3>Gummy smile treatment</h3>
+        <p>Laser gum contouring completed with tremendous ease — excess gum is gently reshaped without bleeding or sutures, revealing more of your natural teeth.</p>
+      </div>
+      <div class="tx reveal">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l7 4v5a8 8 0 0 1-7 8 8 8 0 0 1-7-8V7z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <h3>Crowns &amp; bridges</h3>
+        <p>High-quality porcelain restorations that rebuild damaged teeth and allow natural, favourable healing of the gums.</p>
+      </div>
+      <div class="tx reveal">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg></span>
+        <h3>Complete smile makeovers</h3>
+        <p>A fully designed smile combining veneers, whitening, alignment (including Invisalign®) or implants — planned around your face, age and personality.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BEFORE & AFTER ================= -->
 <section class="ba-sec">
   <div class="wrap">
     <div class="sec-head reveal">
       <p class="eyebrow">Real cases, real patients</p>
-      <h2>Before &amp; after: our porcelain veneer transformations</h2>
-      <p>Every smile below belongs to a real Dental Square patient, designed and treated by our cosmetic team in West Ryde.</p>
+      <h2>Before &amp; after: smiles we've designed</h2>
     </div>
     <div class="face-grid">
-      <figure class="reveal"><span class="ba-tag">Before / After</span><img src="img/face-1.webp" alt="Before and after porcelain veneers, male patient full face"><figcaption>A complete smile transformation with porcelain veneers</figcaption></figure>
-      <figure class="reveal"><span class="ba-tag">Before / After</span><img src="img/face-2.webp" alt="Before and after porcelain veneers, female patient full face"><figcaption>A beautiful new smile that enhances the patient's features</figcaption></figure>
-      <figure class="reveal"><span class="ba-tag">Before / After</span><img src="img/face-3.webp" alt="Before and after natural porcelain veneer enhancement"><figcaption>Natural enhancement with porcelain veneers</figcaption></figure>
-      <figure class="reveal"><span class="ba-tag">Before / After</span><img src="img/face-4.webp" alt="Before and after porcelain veneers smile makeover"><figcaption>Porcelain veneers smile transformation</figcaption></figure>
+      <figure class="reveal"><span class="ba-tag">Before / After</span><img src="img/face-1.webp" alt="Before and after cosmetic smile makeover, male patient"><figcaption>Complete smile transformation</figcaption></figure>
+      <figure class="reveal"><span class="ba-tag">Before / After</span><img src="img/face-2.webp" alt="Before and after cosmetic dentistry, female patient"><figcaption>A new smile that enhances the patient's features</figcaption></figure>
+      <figure class="reveal"><span class="ba-tag">Before / After</span><img src="img/face-3.webp" alt="Before and after natural cosmetic enhancement"><figcaption>Natural cosmetic enhancement</figcaption></figure>
+      <figure class="reveal"><span class="ba-tag">Before / After</span><img src="img/face-4.webp" alt="Before and after smile makeover with veneers"><figcaption>Smile makeover with porcelain veneers</figcaption></figure>
     </div>
     <div class="ba-grid">
-      <figure class="reveal"><span class="ba-tag">Before / After</span><img src="img/ba-ultranatural.webp" alt="Ultra natural porcelain veneer enhancement close up"><figcaption>Ultra-natural enhancement</figcaption></figure>
-      <figure class="reveal"><span class="ba-tag">Before / After</span><img src="img/ba-glam.webp" alt="Glamorous porcelain veneers close up before and after"><figcaption>A glamorous new smile</figcaption></figure>
-      <figure class="reveal"><span class="ba-tag">Before / After</span><img src="img/ba-wear.webp" alt="Severe wear and erosion treated with porcelain veneers"><figcaption>Treatment of severe wear and erosion</figcaption></figure>
-      <figure class="reveal"><span class="ba-tag">Before / After</span><img src="img/ba-upper-lower.webp" alt="Upper and lower porcelain veneers before and after"><figcaption>Upper and lower veneers to rejuvenate the smile</figcaption></figure>
-      <figure class="reveal"><span class="ba-tag">Before / After</span><img src="img/ba-makeover.webp" alt="Porcelain veneers makeover before and after"><figcaption>Beautiful porcelain veneers makeover</figcaption></figure>
-      <figure class="reveal"><span class="ba-tag">Before / After</span><img src="img/ba-custom.webp" alt="Custom porcelain veneers before and after"><figcaption>Enhancing the smile with custom veneers</figcaption></figure>
-      <figure class="reveal"><span class="ba-tag">Before / After</span><img src="img/ba-revision-1.webp" alt="Old veneers replaced with new porcelain veneers"><figcaption>Revision case replacing old veneers</figcaption></figure>
-      <figure class="reveal"><span class="ba-tag">Before / After</span><img src="img/ba-revision-2.webp" alt="Porcelain veneers revision case before and after"><figcaption>Porcelain veneers revision case</figcaption></figure>
+      <figure class="reveal"><span class="ba-tag">Before / After</span><img src="img/ba-ultranatural.webp" alt="Ultra natural veneer enhancement close up"><figcaption>Ultra-natural enhancement</figcaption></figure>
+      <figure class="reveal"><span class="ba-tag">Before / After</span><img src="img/ba-glam.webp" alt="Glamorous smile makeover close up"><figcaption>A glamorous new smile</figcaption></figure>
+      <figure class="reveal"><span class="ba-tag">Before / After</span><img src="img/ba-wear.webp" alt="Severe wear and erosion restored"><figcaption>Severe wear and erosion restored</figcaption></figure>
+      <figure class="reveal"><span class="ba-tag">Before / After</span><img src="img/ba-makeover.webp" alt="Cosmetic dentistry makeover close up"><figcaption>Beautiful cosmetic makeover</figcaption></figure>
     </div>
-    <p class="ba-note reveal">Photos show real Dental Square patients and are shared with their consent. Results vary from person to person — your outcome depends on your individual circumstances and will be discussed at your consultation.</p>
-  </div>
-</section>
-
-<!-- ================= WHAT VENEERS CAN FIX ================= -->
-<section class="services" style="padding-top:0">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <p class="eyebrow">What are porcelain veneers?</p>
-      <h2>Wafer-thin porcelain, life-changing results</h2>
-      <p>Porcelain veneers are custom-made, wafer-thin tooth-coloured restorations bonded over the face of the tooth — among the most natural and aesthetic restorations in dentistry. They can be used to enhance a single tooth or transform your entire smile.</p>
-    </div>
-    <div class="fix-grid">
-      <div class="fix reveal"><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span class="txt"><b>Stained or darkened teeth</b><span>Brighten discolouration that whitening can't fix.</span></span></div>
-      <div class="fix reveal"><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span class="txt"><b>Gaps between teeth</b><span>Close spaces for a fuller, even smile.</span></span></div>
-      <div class="fix reveal"><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span class="txt"><b>Chipped or misshapen teeth</b><span>Repair and reshape damaged edges.</span></span></div>
-      <div class="fix reveal"><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span class="txt"><b>Short or worn-down teeth</b><span>Restore length lost to wear and erosion.</span></span></div>
-      <div class="fix reveal"><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span class="txt"><b>Minor crowding or rotations</b><span>An alternative to braces for select cases.</span></span></div>
-      <div class="fix reveal"><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span class="txt"><b>Complete smile transformations</b><span>From subtle and natural to full Hollywood glam.</span></span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= PROCESS ================= -->
-<section class="process">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <p class="eyebrow">Your journey</p>
-      <h2>See your new smile before we touch your teeth</h2>
-      <p>After your smile design stage, porcelain veneers take just two appointments.</p>
-    </div>
-    <div class="steps">
-      <div class="step reveal">
-        <h3>Free consult &amp; smile design</h3>
-        <p>We listen to how YOU want your smile to look, then design it — with 3D hand-crafted trial study models and an intra-oral "trial smile" in your mouth, plus extensive bite analysis, so you can preview the outcome before any treatment begins.</p>
-      </div>
-      <div class="step reveal">
-        <h3>Preparation &amp; trial veneers</h3>
-        <p>Your teeth are lightly prepared and an impression taken. Provisional veneers mimicking the final result are placed for 1–2 weeks — so you can road-test your new smile.</p>
-      </div>
-      <div class="step reveal">
-        <h3>The reveal</h3>
-        <p>Your final porcelain veneers — custom made to your smile design, age, gender and preferred colour — are bonded using advanced bonding technology. The reveal is always the exciting part!</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= THE DIFFERENCE ================= -->
-<section class="diff">
-  <div class="wrap">
-    <div class="diff-grid">
-      <div>
-        <div class="sec-head reveal" style="margin-bottom:1rem">
-          <p class="eyebrow">The Dental Square difference</p>
-          <h2>Why patients travel from across Australia</h2>
-        </div>
-        <ul>
-          <li class="reveal"><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span class="txt"><b>Signature ultra-natural look</b> — as white as you like, or with all the subtle characteristics and nuances of real teeth. Nothing "fake looking".</span></li>
-          <li class="reveal"><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span class="txt"><b>Australian-made veneers</b> — crafted with the best local labs and most talented ceramists in Australia, meeting Australian quality standards.</span></li>
-          <li class="reveal"><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span class="txt"><b>Highest quality materials</b> — with advanced bonding technology for longevity.</span></li>
-          <li class="reveal"><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span class="txt"><b>Experienced cosmetic team</b> — many successful cases completed, including complex smile makeovers and revision cases.</span></li>
-          <li class="reveal"><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span class="txt"><b>Pre-treatment options</b> — such as short-course teeth alignment or whitening when it benefits your case.</span></li>
-          <li class="reveal"><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span class="txt"><b>Affordable, never compromised</b> — with payment plans available on request.</span></li>
-        </ul>
-      </div>
-      <div class="diff-photo reveal">
-        <img src="img/detail-glam.webp" alt="Close-up of ultra-natural porcelain veneers by Dental Square">
-      </div>
-    </div>
+    <p class="ba-note reveal">Photos show real Dental Square patients (porcelain veneer cases) and are shared with their consent. Results vary from person to person — your outcome depends on your individual circumstances, the treatments chosen and will be discussed at your consultation.</p>
   </div>
 </section>
 
@@ -403,24 +338,23 @@ figcaption{font-size:.78rem;color:var(--slate);padding:.55rem .8rem;line-height:
     <div class="reveal">
       <p class="eyebrow" style="color:var(--mint)">Your cosmetic dentist</p>
       <h2>Dr Karim Habib</h2>
-      <p>BSc Hons (Toronto), BDent Hons (Syd), PGDip Dental Implantology (CSU), FICCDE. Dr Karim is widely recognised for his expertise in porcelain and composite veneers, attracting patients from across Australia who seek his signature natural-looking results. He is an active member of the American Academy of Cosmetic Dentistry, and personally tailors every smile design to the individual behind it.</p>
+      <p>BSc Hons (Toronto), BDent Hons (Syd), PGDip Dental Implantology (CSU), FICCDE. Widely recognised for his expertise in porcelain and composite veneers and an active member of the American Academy of Cosmetic Dentistry, Dr Karim attracts patients from across Australia for his signature natural-looking results — supported by an experienced cosmetic team including Dr Sirat Sandhu.</p>
     </div>
   </div>
 </section>
 
-<!-- ================= PRICING ================= -->
-<section class="pricing">
+<!-- ================= TECH / COMFORT ================= -->
+<section class="services">
   <div class="wrap">
     <div class="sec-head reveal">
-      <p class="eyebrow">Transparent pricing</p>
-      <h2>How much do porcelain veneers cost?</h2>
+      <p class="eyebrow">Designed around you</p>
+      <h2>See your new smile before we begin</h2>
+      <p>We use state-of-the-art technology to design your smile — and to keep every visit comfortable.</p>
     </div>
-    <div class="price-panel reveal">
-      <div class="price-big">$1,950–$2,500<small>per tooth*</small></div>
-      <div>
-        <p>Not all veneers are created equal — the skill of the dentist, the talent of the ceramist and the quality of the material all shape the result. Ours are made in Australia and individually characterised to look exactly as natural (or as Hollywood) as you want.</p>
-        <p><b>Payment plans are available on request</b>, and your cosmetic consultation is free — so you'll know your exact investment before committing to anything.</p>
-      </div>
+    <div class="tx-grid">
+      <div class="tx reveal"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.5 5.5 21l2-7.5L2 9h7z"/></svg></span><h3>Trial smiles</h3><p>3D hand-crafted study models plus an intra-oral "trial smile" in your mouth — see and adjust your final look before we touch your teeth.</p></div>
+      <div class="tx reveal"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l7 4v5a8 8 0 0 1-7 8 8 8 0 0 1-7-8V7z"/></svg></span><h3>Extensive bite analysis</h3><p>A beautiful smile is a healthy smile — we make sure your new teeth are comfortable for your bite and jaw before any treatment begins.</p></div>
+      <div class="tx reveal"><span class="ico"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span><h3>Comfort-first visits</h3><p>Laser technology for gentler treatment, in-chair TV entertainment in every room, and a warm, unhurried team.</p></div>
     </div>
   </div>
 </section>
@@ -429,8 +363,8 @@ figcaption{font-size:.78rem;color:var(--slate);padding:.55rem .8rem;line-height:
 <section class="final">
   <div class="wrap">
     <div class="review-chip reveal"><span class="stars">★★★★★</span> 5.0 · 309 Google reviews</div>
-    <h2 class="reveal">Ready to see your new smile?</h2>
-    <p class="reveal">Book your free cosmetic consultation (valued at over $75) — see your trial smile before any treatment begins.</p>
+    <h2 class="reveal">Ready to love your smile?</h2>
+    <p class="reveal">Book your free cosmetic consultation (valued at over $75) — we'll listen to what you want, then design the smile to match.</p>
     <div class="hero-cta reveal">
       <a class="btn btn-coral" href="https://www.centaurportal.com/d4w/org-1378/extended_search?sourceID=null" target="_blank" rel="noopener">Book your free consult</a>
       <a class="btn btn-ghost" href="tel:0280682109">Call (02) 8068 2109</a>
@@ -446,16 +380,15 @@ figcaption{font-size:.78rem;color:var(--slate);padding:.55rem .8rem;line-height:
       <span>5 Chatham Rd, West Ryde NSW 2114 · <a href="tel:0280682109">(02) 8068 2109</a></span>
     </div>
     <div class="legal">
-      <p><b>Disclaimer:</b> All before-and-after photographs on this page are of real Dental Square patients, published with their consent. Results shown are examples only — outcomes vary from person to person depending on individual circumstances, oral health and treatment suitability. A comprehensive consultation and examination is required before any treatment can be recommended.</p>
-      <p>*Pricing is indicative ($1,950–$2,500 per tooth) and confirmed after your consultation; the final cost depends on your individual case. Typical porcelain veneer lifespan is 10–15 years with proper care and maintenance; longevity is not guaranteed. Payment plans are subject to eligibility, provider terms and approval. Free cosmetic consultation offer is valued at over $75.</p>
-      <p>Porcelain veneer treatment is an irreversible dental procedure that involves preparation of the natural teeth. Any surgical or invasive procedure carries risks — before proceeding, you should seek a second opinion from an appropriately qualified health practitioner.</p>
+      <p><b>Disclaimer:</b> All before-and-after photographs on this page are of real Dental Square patients, published with their consent. Results shown are examples only — outcomes vary from person to person depending on individual circumstances, oral health and the treatments chosen. A comprehensive consultation and examination is required before any treatment can be recommended.</p>
+      <p>*Pricing shown is indicative and confirmed after your consultation. Whitening results vary between individuals. Free cosmetic consultation offer applies to cosmetic dentistry, orthodontics (including Invisalign®) and dental implants, and is valued at over $75. Payment plans are subject to eligibility, provider terms and approval.</p>
+      <p>Some cosmetic procedures, including veneers and crowns, are irreversible and involve preparation of the natural teeth. Any surgical or invasive procedure carries risks — before proceeding, you should seek a second opinion from an appropriately qualified health practitioner. Invisalign® and ZOOM!® are registered trademarks of their respective owners.</p>
       <p>© Dental Square. All rights reserved · Website design by <a href="https://generateyouraudience.com/" target="_blank" rel="noopener">Generate Your Audience</a></p>
     </div>
   </div>
   <p class="lp-switch" style="opacity:.55;font-size:.72rem;margin-top:.8rem">Pages: <a href="/all-on-4/" style="text-decoration:none">All-on-4</a> &nbsp;·&nbsp; <a href="/new-patients/" style="text-decoration:none">New patients</a> &nbsp;·&nbsp; <a href="/veneers/" style="text-decoration:none">Veneers</a> &nbsp;·&nbsp; <a href="/invisalign/" style="text-decoration:none">Invisalign</a> &nbsp;·&nbsp; <a href="/cosmetic-dentistry/" style="text-decoration:none">Cosmetic</a></p>
 </footer>
 
-<!-- mobile dock -->
 <div class="dock">
   <a class="btn btn-ghost" href="tel:0280682109">Call now</a>
   <a class="btn btn-coral" href="https://www.centaurportal.com/d4w/org-1378/extended_search?sourceID=null" target="_blank" rel="noopener">Free consult</a>

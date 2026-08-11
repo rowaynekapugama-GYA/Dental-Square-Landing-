@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Cosmetic Dentist Sydney — Smile Makeovers, Veneers &amp; Whitening | Dental Square West Ryde</title>
+<title>Cosmetic Dentist Sydney. Smile Makeovers, Veneers &amp; Whitening | Dental Square West Ryde</title>
 <meta name="description" content="Sydney's cosmetic dentistry experts. Porcelain veneers, composite bonding, ZOOM whitening, laser gummy smile treatment and complete smile makeovers. Free cosmetic consultation at Dental Square, West Ryde.">
 <meta property="og:title" content="Cosmetic Dentist Sydney | Dental Square West Ryde">
 <meta property="og:description" content="Veneers, bonding, ZOOM whitening and smile makeovers by Dr Karim Habib. Free cosmetic consultation.">
 <link rel="icon" href="img/ds-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 
 :root{
@@ -214,6 +214,97 @@ figcaption{font-size:.78rem;color:var(--slate);padding:.55rem .8rem;line-height:
 @media(max-width:700px){.karim .wrap{grid-template-columns:1fr;text-align:center;justify-items:center}}
 .offer-mini{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
 @media(max-width:860px){.offer-mini{grid-template-columns:1fr}}
+
+/* ============ iOS-style dark glass re-skin ============ */
+:root{
+  --paper:#0F171D; --cream:#131E26; --card:rgba(255,255,255,.07);
+  --line:rgba(255,255,255,.13); --ink:#F2F7F5; --slate:#A9BAB5;
+  --mint-deep:#9FD9CF; --mint-ink:#D7EEE9; --mint-soft:rgba(142,205,194,.15);
+  --shadow:0 14px 38px rgba(0,0,0,.38);
+}
+html{background:#0F171D}
+body{color:var(--ink);background:
+  radial-gradient(950px 540px at 88% -6%, rgba(142,205,194,.17), transparent 60%),
+  radial-gradient(780px 520px at -12% 38%, rgba(226,89,60,.13), transparent 60%),
+  radial-gradient(700px 480px at 55% 108%, rgba(142,205,194,.10), transparent 60%),
+  linear-gradient(180deg,#0F171D 0%,#121C24 55%,#0E161C 100%);
+  background-attachment:fixed}
+.hero,.sec.alt,.team,.process,.pricing,.location,.ba-sec,.faq,.kids,.final,.services,.offers,.tech,.diff{background:transparent}
+header.site{background:rgba(15,23,29,.72);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.infobar{background:rgba(255,255,255,.05);color:#CFE0DB;border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+.price-card,.offer,.svc,.member,.titem,.fix,.tx,.step,.stat,.pay,.price-panel,.pill,
+.face-grid figure,.ba-grid figure,details,.review-chip,.badge,.chip,.free-chip,.hero-badge{
+  background:var(--card) !important;border:1px solid var(--line) !important;
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--ink);box-shadow:var(--shadow)}
+.review-chip,.badge,.chip,.free-chip{box-shadow:none}
+.badge,.chip{color:var(--mint-ink)}
+.svc,.fix{color:var(--ink)}
+.tick{background:var(--mint-soft);border:1px solid var(--mint)}
+.tick svg{stroke:var(--mint)}
+.btn-ghost{background:var(--card);color:#fff;border:1.5px solid var(--mint);backdrop-filter:blur(10px)}
+.btn-ghost:hover{background:rgba(142,205,194,.18)}
+.btn-mint{background:var(--mint);color:#0F171D}
+.btn-mint:hover{background:#7ABFB4;color:#0F171D}
+.karim{background:rgba(142,205,194,.10);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.karim p{color:#CFE5DF}
+.funds{background:rgba(255,255,255,.045);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+footer{background:#0A1116;border-top:1px solid var(--line)}
+footer .legal p{color:#8FA5A0}
+.dock{background:rgba(15,23,29,.88);border-top:1px solid var(--line);backdrop-filter:blur(16px)}
+.hours-table td{border-bottom:1px dashed var(--line)}
+.map-embed{border:1px solid var(--line)}
+.sec-head p,.hero-note,.ba-note,figcaption,.form-note{color:var(--slate)}
+.member .role,.tx .px{color:var(--mint-deep)}
+.tx .px{color:#F0A886}
+.price-now,.offer .amt,.price-big{color:#F0866A}
+.step::before{box-shadow:0 6px 18px rgba(226,89,60,.45)}
+.ba-tag,.hero-badge b{color:var(--mint-ink)}
+.ba-tag{background:rgba(15,23,29,.72) !important;backdrop-filter:blur(8px)}
+img{filter:none}
+
+/* ============ All-on-4 design system: exact match ============ */
+:root{
+  --paper:#111513; --cream:#141a17; --card:rgba(255,255,255,.07);
+  --line:rgba(255,255,255,.18); --ink:#eef4f1; --slate:#aec0b9;
+  --mint:#8fd3bd; --mint-deep:#a9d9cb; --mint-soft:rgba(143,211,189,.14); --mint-ink:#d7eee9;
+  --shadow:0 22px 60px -24px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.22);
+  --display:'Fraunces',serif; --body:'Plus Jakarta Sans',system-ui,sans-serif;
+}
+html{background:#111513}
+body{color:var(--ink);font-family:var(--body);background:
+  radial-gradient(120% 100% at 80% -10%, #14302a 0%, transparent 55%),
+  radial-gradient(120% 120% at -10% 110%, #122620 0%, transparent 50%),
+  radial-gradient(46vmax 46vmax at 92% 4%, rgba(169,217,203,.20), transparent 65%),
+  radial-gradient(40vmax 40vmax at 2% 96%, rgba(185,230,216,.14), transparent 62%),
+  linear-gradient(160deg, #0c0f0d 0%, #111513 45%, #1a201d 100%);
+  background-attachment:fixed}
+h1,h2,h3{font-family:var(--display);font-weight:500;letter-spacing:-.01em;line-height:1.06}
+.price-card,.offer,.svc,.member,.titem,.fix,.tx,.step,.stat,.pay,.price-panel,.pill,
+.face-grid figure,.ba-grid figure,details,.hero-badge{
+  background:rgba(255,255,255,.07) !important;border:1px solid rgba(255,255,255,.18) !important;
+  backdrop-filter:blur(22px) saturate(135%);-webkit-backdrop-filter:blur(22px) saturate(135%);
+  box-shadow:var(--shadow)}
+.review-chip,.badge,.chip,.free-chip{background:rgba(255,255,255,.07) !important;border:1px solid rgba(255,255,255,.18) !important;backdrop-filter:blur(22px) saturate(135%);box-shadow:none;color:var(--mint-ink)}
+.tag,.ba-tag{background:var(--mint) !important;color:#0b1310 !important;font-weight:800;letter-spacing:.13em;border:0 !important;backdrop-filter:none}
+.btn-coral{background:linear-gradient(180deg,#9ad9c4,#6cbca4);color:#0b1310;font-weight:700;border:1px solid rgba(255,255,255,.18);box-shadow:0 12px 28px -10px rgba(60,120,105,.9), inset 0 1px 0 rgba(255,255,255,.4)}
+.btn-coral:hover{background:linear-gradient(180deg,#a5e2cf,#79c7af);color:#0b1310;transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(105,185,161,.7)}
+.btn-ghost{background:rgba(255,255,255,.07);color:var(--ink);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(22px) saturate(135%)}
+.btn-ghost:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.30);transform:translateY(-2px)}
+.btn-mint{background:linear-gradient(180deg,#9ad9c4,#6cbca4);color:#0b1310}
+.price-now,.offer .amt,.price-big,.tx .px{color:#b9e6d8}
+.step::before{background:radial-gradient(circle at 30% 25%,#a9d9cb,#69b9a1);color:#0b1310;box-shadow:0 10px 24px -8px rgba(105,185,161,.7)}
+.tick{background:rgba(143,211,189,.14);border:1px solid var(--mint)}
+.tick svg{stroke:var(--mint)}
+header.site{background:rgba(17,21,19,.72);backdrop-filter:blur(22px) saturate(135%);border-bottom:1px solid rgba(255,255,255,.14)}
+.infobar{background:rgba(255,255,255,.045);border-bottom:1px solid rgba(255,255,255,.12);color:#cfe0da}
+.karim{background:rgba(143,211,189,.10);border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12)}
+.funds{background:rgba(255,255,255,.045);border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12)}
+footer{background:#0c100e;border-top:1px solid rgba(255,255,255,.12)}
+.dock{background:rgba(17,21,19,.88);border-top:1px solid rgba(255,255,255,.14);backdrop-filter:blur(22px) saturate(135%)}
+.hero-slider::after,.hero-bgimg::after{background:linear-gradient(90deg,rgba(12,15,13,.88) 0%,rgba(12,15,13,.60) 52%,rgba(12,15,13,.26) 100%)}
+@media(max-width:760px){.hero-bgimg::after{background:linear-gradient(180deg,rgba(12,15,13,.86) 0%,rgba(12,15,13,.55) 100%)}}
+.eyebrow{color:var(--mint)}
+.eyebrow::before{background:var(--mint)}
 </style>
 </head>
 <body>
@@ -228,7 +319,7 @@ figcaption{font-size:.78rem;color:var(--slate);padding:.55rem .8rem;line-height:
 
 <header class="site">
   <div class="wrap">
-    <a href="#top"><img src="img/ds-logo.png" alt="Dental Square" style="height:44px;width:auto"></a>
+    <a href="#top"><img src="img/ds-logo-light.png" alt="Dental Square" style="height:44px;width:auto"></a>
     <div class="head-cta">
       <a class="head-phone" href="tel:0280682109"><b>(02) 8068 2109</b><span>Free cosmetic consultation</span></a>
       <a class="btn btn-coral" href="https://www.centaurportal.com/d4w/org-1378/extended_search?sourceID=null" target="_blank" rel="noopener">Book online</a>
@@ -243,14 +334,14 @@ figcaption{font-size:.78rem;color:var(--slate);padding:.55rem .8rem;line-height:
       <div class="review-chip reveal"><span class="stars">★★★★★</span> 5.0 · 309 Google reviews</div>
       <p class="eyebrow reveal">Cosmetic dentistry · Sydney</p>
       <h1 class="reveal">Personalised cosmetic dentistry, <em>tailored to you</em></h1>
-      <p class="reveal" style="color:var(--slate);max-width:520px;margin-top:1rem">From subtle enhancements to complete smile makeovers — Dental Square's cosmetic team designs natural, beautiful smiles with the latest technology, attracting patients from all over Australia to West Ryde.</p>
+      <p class="reveal" style="color:var(--slate);max-width:520px;margin-top:1rem">From subtle enhancements to complete smile makeovers. Dental Square's cosmetic team designs natural, beautiful smiles with the latest technology, attracting patients from all over Australia to West Ryde.</p>
       <div class="badge-row reveal">
         <span class="badge">Porcelain &amp; composite veneers</span>
         <span class="badge">ZOOM!® whitening</span>
         <span class="badge">Smile makeovers</span>
         <span class="badge">Laser dentistry</span>
       </div>
-      <span class="free-chip reveal">🎁 FREE cosmetic consultation — valued at over $75</span>
+      <span class="free-chip reveal">🎁 FREE cosmetic consultation, valued at over $75</span>
       <div class="hero-cta reveal">
         <a class="btn btn-coral" href="https://www.centaurportal.com/d4w/org-1378/extended_search?sourceID=null" target="_blank" rel="noopener">Book your free consult</a>
         <a class="btn btn-ghost" href="tel:0280682109">Call (02) 8068 2109</a>
@@ -269,30 +360,30 @@ figcaption{font-size:.78rem;color:var(--slate);padding:.55rem .8rem;line-height:
     <div class="sec-head reveal">
       <p class="eyebrow">Our cosmetic treatments</p>
       <h2>Enhance the colour, shape and aesthetics of your teeth</h2>
-      <p>Whatever's holding your smile back, there's a treatment for it — and your free consultation will map out the right combination for you.</p>
+      <p>Whatever's holding your smile back, there's a treatment for it, and your free consultation will map out the right combination for you.</p>
     </div>
     <div class="tx-grid">
       <div class="tx reveal">
         <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12C19 16.6 12 21 12 21z"/></svg></span>
         <h3>Porcelain veneers</h3>
-        <p>Custom, wafer-thin porcelain restorations — our signature ultra-natural look, hand-crafted with Australia's best ceramists. Fix stains, gaps, chips and worn teeth.</p>
+        <p>Custom, wafer-thin porcelain restorations, our signature ultra-natural look, hand-crafted with Australia's best ceramists. Fix stains, gaps, chips and worn teeth.</p>
         <span class="px">From $1,950 per tooth*</span>
       </div>
       <div class="tx reveal">
         <span class="ico"><svg viewBox="0 0 24 24"><path d="M4 20l7-7M14 4l6 6-9 9H5v-6z"/></svg></span>
         <h3>Composite veneers &amp; bonding</h3>
-        <p>Hand-sculpted tooth-coloured resin to close gaps, repair chips and improve shape and colour — often completed in a single visit, and excellent value.</p>
+        <p>Hand-sculpted tooth-coloured resin to close gaps, repair chips and improve shape and colour, often completed in a single visit, and excellent value.</p>
       </div>
       <div class="tx reveal">
         <span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg></span>
         <h3>ZOOM!® teeth whitening</h3>
-        <p>Philips ZOOM!® WhiteSpeed — up to 12 shades whiter in about an hour in-chair, or with a custom take-home kit.</p>
+        <p>Philips ZOOM!® WhiteSpeed, up to 12 shades whiter in about an hour in-chair, or with a custom take-home kit.</p>
         <span class="px">In-chair $650 · take-home kit $400</span>
       </div>
       <div class="tx reveal">
         <span class="ico"><svg viewBox="0 0 24 24"><path d="M2 12h6l2-8 4 16 2-8h6"/></svg></span>
         <h3>Gummy smile treatment</h3>
-        <p>Laser gum contouring completed with tremendous ease — excess gum is gently reshaped without bleeding or sutures, revealing more of your natural teeth.</p>
+        <p>Laser gum contouring completed with tremendous ease, excess gum is gently reshaped without bleeding or sutures, revealing more of your natural teeth.</p>
       </div>
       <div class="tx reveal">
         <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l7 4v5a8 8 0 0 1-7 8 8 8 0 0 1-7-8V7z"/><path d="M9 12l2 2 4-4"/></svg></span>
@@ -302,7 +393,7 @@ figcaption{font-size:.78rem;color:var(--slate);padding:.55rem .8rem;line-height:
       <div class="tx reveal">
         <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg></span>
         <h3>Complete smile makeovers</h3>
-        <p>A fully designed smile combining veneers, whitening, alignment (including Invisalign®) or implants — planned around your face, age and personality.</p>
+        <p>A fully designed smile combining veneers, whitening, alignment (including Invisalign®) or implants, planned around your face, age and personality.</p>
       </div>
     </div>
   </div>
@@ -327,7 +418,7 @@ figcaption{font-size:.78rem;color:var(--slate);padding:.55rem .8rem;line-height:
       <figure class="reveal"><span class="ba-tag">Before / After</span><img src="img/ba-wear.webp" alt="Severe wear and erosion restored"><figcaption>Severe wear and erosion restored</figcaption></figure>
       <figure class="reveal"><span class="ba-tag">Before / After</span><img src="img/ba-makeover.webp" alt="Cosmetic dentistry makeover close up"><figcaption>Beautiful cosmetic makeover</figcaption></figure>
     </div>
-    <p class="ba-note reveal">Photos show real Dental Square patients (porcelain veneer cases) and are shared with their consent. Results vary from person to person — your outcome depends on your individual circumstances, the treatments chosen and will be discussed at your consultation.</p>
+    <p class="ba-note reveal">Photos show real Dental Square patients (porcelain veneer cases) and are shared with their consent. Results vary from person to person, your outcome depends on your individual circumstances, the treatments chosen and will be discussed at your consultation.</p>
   </div>
 </section>
 
@@ -338,7 +429,7 @@ figcaption{font-size:.78rem;color:var(--slate);padding:.55rem .8rem;line-height:
     <div class="reveal">
       <p class="eyebrow" style="color:var(--mint)">Your cosmetic dentist</p>
       <h2>Dr Karim Habib</h2>
-      <p>BSc Hons (Toronto), BDent Hons (Syd), PGDip Dental Implantology (CSU), FICCDE. Widely recognised for his expertise in porcelain and composite veneers and an active member of the American Academy of Cosmetic Dentistry, Dr Karim attracts patients from across Australia for his signature natural-looking results — supported by an experienced cosmetic team including Dr Sirat Sandhu.</p>
+      <p>BSc Hons (Toronto), BDent Hons (Syd), PGDip Dental Implantology (CSU), FICCDE. Widely recognised for his expertise in porcelain and composite veneers and an active member of the American Academy of Cosmetic Dentistry, Dr Karim attracts patients from across Australia for his signature natural-looking results, supported by an experienced cosmetic team including Dr Sirat Sandhu.</p>
     </div>
   </div>
 </section>
@@ -349,11 +440,11 @@ figcaption{font-size:.78rem;color:var(--slate);padding:.55rem .8rem;line-height:
     <div class="sec-head reveal">
       <p class="eyebrow">Designed around you</p>
       <h2>See your new smile before we begin</h2>
-      <p>We use state-of-the-art technology to design your smile — and to keep every visit comfortable.</p>
+      <p>We use state-of-the-art technology to design your smile, and to keep every visit comfortable.</p>
     </div>
     <div class="tx-grid">
-      <div class="tx reveal"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.5 5.5 21l2-7.5L2 9h7z"/></svg></span><h3>Trial smiles</h3><p>3D hand-crafted study models plus an intra-oral "trial smile" in your mouth — see and adjust your final look before we touch your teeth.</p></div>
-      <div class="tx reveal"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l7 4v5a8 8 0 0 1-7 8 8 8 0 0 1-7-8V7z"/></svg></span><h3>Extensive bite analysis</h3><p>A beautiful smile is a healthy smile — we make sure your new teeth are comfortable for your bite and jaw before any treatment begins.</p></div>
+      <div class="tx reveal"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.5 5.5 21l2-7.5L2 9h7z"/></svg></span><h3>Trial smiles</h3><p>3D hand-crafted study models plus an intra-oral "trial smile" in your mouth, see and adjust your final look before we touch your teeth.</p></div>
+      <div class="tx reveal"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l7 4v5a8 8 0 0 1-7 8 8 8 0 0 1-7-8V7z"/></svg></span><h3>Extensive bite analysis</h3><p>A beautiful smile is a healthy smile, we make sure your new teeth are comfortable for your bite and jaw before any treatment begins.</p></div>
       <div class="tx reveal"><span class="ico"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span><h3>Comfort-first visits</h3><p>Laser technology for gentler treatment, in-chair TV entertainment in every room, and a warm, unhurried team.</p></div>
     </div>
   </div>
@@ -364,7 +455,7 @@ figcaption{font-size:.78rem;color:var(--slate);padding:.55rem .8rem;line-height:
   <div class="wrap">
     <div class="review-chip reveal"><span class="stars">★★★★★</span> 5.0 · 309 Google reviews</div>
     <h2 class="reveal">Ready to love your smile?</h2>
-    <p class="reveal">Book your free cosmetic consultation (valued at over $75) — we'll listen to what you want, then design the smile to match.</p>
+    <p class="reveal">Book your free cosmetic consultation (valued at over $75), we'll listen to what you want, then design the smile to match.</p>
     <div class="hero-cta reveal">
       <a class="btn btn-coral" href="https://www.centaurportal.com/d4w/org-1378/extended_search?sourceID=null" target="_blank" rel="noopener">Book your free consult</a>
       <a class="btn btn-ghost" href="tel:0280682109">Call (02) 8068 2109</a>
@@ -380,9 +471,9 @@ figcaption{font-size:.78rem;color:var(--slate);padding:.55rem .8rem;line-height:
       <span>5 Chatham Rd, West Ryde NSW 2114 · <a href="tel:0280682109">(02) 8068 2109</a></span>
     </div>
     <div class="legal">
-      <p><b>Disclaimer:</b> All before-and-after photographs on this page are of real Dental Square patients, published with their consent. Results shown are examples only — outcomes vary from person to person depending on individual circumstances, oral health and the treatments chosen. A comprehensive consultation and examination is required before any treatment can be recommended.</p>
+      <p><b>Disclaimer:</b> All before-and-after photographs on this page are of real Dental Square patients, published with their consent. Results shown are examples only, outcomes vary from person to person depending on individual circumstances, oral health and the treatments chosen. A comprehensive consultation and examination is required before any treatment can be recommended.</p>
       <p>*Pricing shown is indicative and confirmed after your consultation. Whitening results vary between individuals. Free cosmetic consultation offer applies to cosmetic dentistry, orthodontics (including Invisalign®) and dental implants, and is valued at over $75. Payment plans are subject to eligibility, provider terms and approval.</p>
-      <p>Some cosmetic procedures, including veneers and crowns, are irreversible and involve preparation of the natural teeth. Any surgical or invasive procedure carries risks — before proceeding, you should seek a second opinion from an appropriately qualified health practitioner. Invisalign® and ZOOM!® are registered trademarks of their respective owners.</p>
+      <p>Some cosmetic procedures, including veneers and crowns, are irreversible and involve preparation of the natural teeth. Any surgical or invasive procedure carries risks, before proceeding, you should seek a second opinion from an appropriately qualified health practitioner. Invisalign® and ZOOM!® are registered trademarks of their respective owners.</p>
       <p>© Dental Square. All rights reserved · Website design by <a href="https://generateyouraudience.com/" target="_blank" rel="noopener">Generate Your Audience</a></p>
     </div>
   </div>

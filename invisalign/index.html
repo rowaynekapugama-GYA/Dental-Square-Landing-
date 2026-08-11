@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Invisalign Sydney — Accredited Provider, Free Consultation | Dental Square West Ryde</title>
-<meta name="description" content="Straighten your teeth without anyone noticing. Dental Square is an accredited Invisalign provider in West Ryde — clear aligners for crowding, gaps and protrusion, typically 9–15 months. Free initial consultation.">
+<title>Invisalign Sydney. Accredited Provider, Free Consultation | Dental Square West Ryde</title>
+<meta name="description" content="Straighten your teeth without anyone noticing. Dental Square is an accredited Invisalign provider in West Ryde, clear aligners for crowding, gaps and protrusion, typically 9–15 months. Free initial consultation.">
 <meta property="og:title" content="Invisalign Sydney | Dental Square West Ryde">
 <meta property="og:description" content="Accredited Invisalign provider. Clear aligners, no metal wires or brackets. Free initial consultation.">
 <link rel="icon" href="img/ds-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 
 :root{
@@ -220,6 +220,105 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
 .karim h2{font-size:1.6rem;font-weight:800}
 .karim p{color:#CDE9E3;font-size:.95rem;margin:.6rem 0 0;max-width:640px}
 @media(max-width:700px){.karim .wrap{grid-template-columns:1fr;text-align:center;justify-items:center}}
+
+/* ============ iOS-style dark glass re-skin ============ */
+:root{
+  --paper:#0F171D; --cream:#131E26; --card:rgba(255,255,255,.07);
+  --line:rgba(255,255,255,.13); --ink:#F2F7F5; --slate:#A9BAB5;
+  --mint-deep:#9FD9CF; --mint-ink:#D7EEE9; --mint-soft:rgba(142,205,194,.15);
+  --shadow:0 14px 38px rgba(0,0,0,.38);
+}
+html{background:#0F171D}
+body{color:var(--ink);background:
+  radial-gradient(950px 540px at 88% -6%, rgba(142,205,194,.17), transparent 60%),
+  radial-gradient(780px 520px at -12% 38%, rgba(226,89,60,.13), transparent 60%),
+  radial-gradient(700px 480px at 55% 108%, rgba(142,205,194,.10), transparent 60%),
+  linear-gradient(180deg,#0F171D 0%,#121C24 55%,#0E161C 100%);
+  background-attachment:fixed}
+.hero,.sec.alt,.team,.process,.pricing,.location,.ba-sec,.faq,.kids,.final,.services,.offers,.tech,.diff{background:transparent}
+header.site{background:rgba(15,23,29,.72);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.infobar{background:rgba(255,255,255,.05);color:#CFE0DB;border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+.price-card,.offer,.svc,.member,.titem,.fix,.tx,.step,.stat,.pay,.price-panel,.pill,
+.face-grid figure,.ba-grid figure,details,.review-chip,.badge,.chip,.free-chip,.hero-badge{
+  background:var(--card) !important;border:1px solid var(--line) !important;
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--ink);box-shadow:var(--shadow)}
+.review-chip,.badge,.chip,.free-chip{box-shadow:none}
+.badge,.chip{color:var(--mint-ink)}
+.svc,.fix{color:var(--ink)}
+.tick{background:var(--mint-soft);border:1px solid var(--mint)}
+.tick svg{stroke:var(--mint)}
+.btn-ghost{background:var(--card);color:#fff;border:1.5px solid var(--mint);backdrop-filter:blur(10px)}
+.btn-ghost:hover{background:rgba(142,205,194,.18)}
+.btn-mint{background:var(--mint);color:#0F171D}
+.btn-mint:hover{background:#7ABFB4;color:#0F171D}
+.karim{background:rgba(142,205,194,.10);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.karim p{color:#CFE5DF}
+.funds{background:rgba(255,255,255,.045);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+footer{background:#0A1116;border-top:1px solid var(--line)}
+footer .legal p{color:#8FA5A0}
+.dock{background:rgba(15,23,29,.88);border-top:1px solid var(--line);backdrop-filter:blur(16px)}
+.hours-table td{border-bottom:1px dashed var(--line)}
+.map-embed{border:1px solid var(--line)}
+.sec-head p,.hero-note,.ba-note,figcaption,.form-note{color:var(--slate)}
+.member .role,.tx .px{color:var(--mint-deep)}
+.tx .px{color:#F0A886}
+.price-now,.offer .amt,.price-big{color:#F0866A}
+.step::before{box-shadow:0 6px 18px rgba(226,89,60,.45)}
+.ba-tag,.hero-badge b{color:var(--mint-ink)}
+.ba-tag{background:rgba(15,23,29,.72) !important;backdrop-filter:blur(8px)}
+img{filter:none}
+
+/* full-width hero background image */
+.hero-bgimg{position:relative;min-height:92svh;display:flex;align-items:center;overflow:hidden;background:#0F171D}
+.hero-bgimg > img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero-bgimg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,17,22,.88) 0%,rgba(10,17,22,.62) 52%,rgba(10,17,22,.28) 100%);z-index:1}
+.hero-bgimg .wrap{position:relative;z-index:2;padding-top:4.5rem;padding-bottom:4.5rem}
+.hero-bgimg .hero-inner{max-width:640px}
+@media(max-width:760px){.hero-bgimg{min-height:88svh}.hero-bgimg::after{background:linear-gradient(180deg,rgba(10,17,22,.85) 0%,rgba(10,17,22,.55) 100%)}}
+
+/* ============ All-on-4 design system: exact match ============ */
+:root{
+  --paper:#111513; --cream:#141a17; --card:rgba(255,255,255,.07);
+  --line:rgba(255,255,255,.18); --ink:#eef4f1; --slate:#aec0b9;
+  --mint:#8fd3bd; --mint-deep:#a9d9cb; --mint-soft:rgba(143,211,189,.14); --mint-ink:#d7eee9;
+  --shadow:0 22px 60px -24px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.22);
+  --display:'Fraunces',serif; --body:'Plus Jakarta Sans',system-ui,sans-serif;
+}
+html{background:#111513}
+body{color:var(--ink);font-family:var(--body);background:
+  radial-gradient(120% 100% at 80% -10%, #14302a 0%, transparent 55%),
+  radial-gradient(120% 120% at -10% 110%, #122620 0%, transparent 50%),
+  radial-gradient(46vmax 46vmax at 92% 4%, rgba(169,217,203,.20), transparent 65%),
+  radial-gradient(40vmax 40vmax at 2% 96%, rgba(185,230,216,.14), transparent 62%),
+  linear-gradient(160deg, #0c0f0d 0%, #111513 45%, #1a201d 100%);
+  background-attachment:fixed}
+h1,h2,h3{font-family:var(--display);font-weight:500;letter-spacing:-.01em;line-height:1.06}
+.price-card,.offer,.svc,.member,.titem,.fix,.tx,.step,.stat,.pay,.price-panel,.pill,
+.face-grid figure,.ba-grid figure,details,.hero-badge{
+  background:rgba(255,255,255,.07) !important;border:1px solid rgba(255,255,255,.18) !important;
+  backdrop-filter:blur(22px) saturate(135%);-webkit-backdrop-filter:blur(22px) saturate(135%);
+  box-shadow:var(--shadow)}
+.review-chip,.badge,.chip,.free-chip{background:rgba(255,255,255,.07) !important;border:1px solid rgba(255,255,255,.18) !important;backdrop-filter:blur(22px) saturate(135%);box-shadow:none;color:var(--mint-ink)}
+.tag,.ba-tag{background:var(--mint) !important;color:#0b1310 !important;font-weight:800;letter-spacing:.13em;border:0 !important;backdrop-filter:none}
+.btn-coral{background:linear-gradient(180deg,#9ad9c4,#6cbca4);color:#0b1310;font-weight:700;border:1px solid rgba(255,255,255,.18);box-shadow:0 12px 28px -10px rgba(60,120,105,.9), inset 0 1px 0 rgba(255,255,255,.4)}
+.btn-coral:hover{background:linear-gradient(180deg,#a5e2cf,#79c7af);color:#0b1310;transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(105,185,161,.7)}
+.btn-ghost{background:rgba(255,255,255,.07);color:var(--ink);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(22px) saturate(135%)}
+.btn-ghost:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.30);transform:translateY(-2px)}
+.btn-mint{background:linear-gradient(180deg,#9ad9c4,#6cbca4);color:#0b1310}
+.price-now,.offer .amt,.price-big,.tx .px{color:#b9e6d8}
+.step::before{background:radial-gradient(circle at 30% 25%,#a9d9cb,#69b9a1);color:#0b1310;box-shadow:0 10px 24px -8px rgba(105,185,161,.7)}
+.tick{background:rgba(143,211,189,.14);border:1px solid var(--mint)}
+.tick svg{stroke:var(--mint)}
+header.site{background:rgba(17,21,19,.72);backdrop-filter:blur(22px) saturate(135%);border-bottom:1px solid rgba(255,255,255,.14)}
+.infobar{background:rgba(255,255,255,.045);border-bottom:1px solid rgba(255,255,255,.12);color:#cfe0da}
+.karim{background:rgba(143,211,189,.10);border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12)}
+.funds{background:rgba(255,255,255,.045);border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12)}
+footer{background:#0c100e;border-top:1px solid rgba(255,255,255,.12)}
+.dock{background:rgba(17,21,19,.88);border-top:1px solid rgba(255,255,255,.14);backdrop-filter:blur(22px) saturate(135%)}
+.hero-slider::after,.hero-bgimg::after{background:linear-gradient(90deg,rgba(12,15,13,.88) 0%,rgba(12,15,13,.60) 52%,rgba(12,15,13,.26) 100%)}
+@media(max-width:760px){.hero-bgimg::after{background:linear-gradient(180deg,rgba(12,15,13,.86) 0%,rgba(12,15,13,.55) 100%)}}
+.eyebrow{color:var(--mint)}
+.eyebrow::before{background:var(--mint)}
 </style>
 </head>
 <body>
@@ -234,7 +333,7 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
 
 <header class="site">
   <div class="wrap">
-    <a href="#top"><img src="img/ds-logo.png" alt="Dental Square" style="height:44px;width:auto"></a>
+    <a href="#top"><img src="img/ds-logo-light.png" alt="Dental Square" style="height:44px;width:auto"></a>
     <div class="head-cta">
       <a class="head-phone" href="tel:0280682109"><b>(02) 8068 2109</b><span>Free initial consultation</span></a>
       <a class="btn btn-coral" href="https://www.centaurportal.com/d4w/org-1378/extended_search?sourceID=null" target="_blank" rel="noopener">Book online</a>
@@ -243,27 +342,25 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="hero" id="top">
+<section class="hero hero-bgimg" id="top">
+  <img class="bg" src="https://www.dentalsquare.com.au/wordpress-responsive/wp-content/uploads/2026/08/shutterstock_2348528651.jpg" alt="">
   <div class="wrap">
-    <div>
+    <div class="hero-inner">
       <div class="review-chip reveal"><span class="stars">★★★★★</span> 5.0 · 309 Google reviews</div>
       <p class="eyebrow reveal">Invisalign® · Sydney</p>
-      <h1 class="reveal">Straighten your teeth — <em>without anyone noticing</em></h1>
-      <p class="reveal" style="color:var(--slate);max-width:520px;margin-top:1rem">Dental Square is an accredited Invisalign® provider in West Ryde. A sequence of clear, custom-made aligners gently moves your teeth into position — no metal wires, no brackets, and most people won't even know you're wearing them.</p>
+      <h1 class="reveal">Straighten your teeth, <em>without anyone noticing</em></h1>
+      <p class="reveal" style="color:var(--slate);max-width:520px;margin-top:1rem">Dental Square is an accredited Invisalign® provider in West Ryde. A sequence of clear, custom-made aligners gently moves your teeth into position, no metal wires, no brackets, and most people won't even know you're wearing them.</p>
       <div class="stat-row reveal">
         <div class="stat"><b>9–15</b><span>months, typically*</span></div>
         <div class="stat"><b>18–30</b><span>aligners on average*</span></div>
         <div class="stat"><b>~2 wks</b><span>per aligner set</span></div>
       </div>
-      <span class="free-chip reveal">🎁 FREE initial consultation — valued at over $75</span>
+      <span class="free-chip reveal">🎁 FREE initial consultation, valued at over $75</span>
       <div class="hero-cta reveal">
         <a class="btn btn-coral" href="https://www.centaurportal.com/d4w/org-1378/extended_search?sourceID=null" target="_blank" rel="noopener">Book your free consult</a>
         <a class="btn btn-ghost" href="tel:0280682109">Call (02) 8068 2109</a>
       </div>
-    </div>
-    <div class="hero-photo reveal">
-      <img src="img/dr-sirat.webp" alt="Dr Sirat Sandhu, clear aligner dentist at Dental Square" style="object-position:center 15%">
-      <div class="hero-badge"><b>Accredited</b> Invisalign® provider</div>
+      <div class="badge-row reveal" style="margin-top:1rem"><span class="badge">Accredited Invisalign® provider</span></div>
     </div>
   </div>
 </section>
@@ -293,7 +390,7 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
     <div class="sec-head reveal">
       <p class="eyebrow">How Invisalign® works</p>
       <h2>Your journey to a straighter smile</h2>
-      <p>Using the latest CAD-CAM technology, a sequence of clear aligners is created — each slightly different from the last, moving your teeth a small increment at a time.</p>
+      <p>Using the latest CAD-CAM technology, a sequence of clear aligners is created, each slightly different from the last, moving your teeth a small increment at a time.</p>
     </div>
     <div class="steps">
       <div class="step reveal">
@@ -310,7 +407,7 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
       </div>
       <div class="step reveal">
         <h3>The new smile</h3>
-        <p>By the end of treatment your teeth have moved into their new position — no metal wires or brackets involved.</p>
+        <p>By the end of treatment your teeth have moved into their new position, no metal wires or brackets involved.</p>
       </div>
     </div>
   </div>
@@ -326,11 +423,11 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
           <h2>Clear aligner care from an experienced team</h2>
         </div>
         <ul>
-          <li class="reveal"><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span class="txt"><b>Accredited Invisalign® provider</b> — certified to plan and deliver Invisalign treatment, Sydney wide.</span></li>
-          <li class="reveal"><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span class="txt"><b>Orthodontic depth</b> — Dr Karim holds a Fellowship in Orthodontics in General Practice (FICCDE), and Dr Sirat has a special interest in clear aligner therapy.</span></li>
-          <li class="reveal"><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span class="txt"><b>Discreet and removable</b> — take your aligners out to eat, brush and floss as normal.</span></li>
-          <li class="reveal"><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span class="txt"><b>Planning beyond straightening</b> — we design for your whole smile and bite, and can combine alignment with whitening or veneers where it benefits your case.</span></li>
-          <li class="reveal"><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span class="txt"><b>Payment plans available</b> — subject to eligibility and approval, with HICAPS for health fund claims.</span></li>
+          <li class="reveal"><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span class="txt"><b>Accredited Invisalign® provider</b>, certified to plan and deliver Invisalign treatment, Sydney wide.</span></li>
+          <li class="reveal"><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span class="txt"><b>Orthodontic depth</b>. Dr Karim holds a Fellowship in Orthodontics in General Practice (FICCDE), and Dr Sirat has a special interest in clear aligner therapy.</span></li>
+          <li class="reveal"><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span class="txt"><b>Discreet and removable</b>, take your aligners out to eat, brush and floss as normal.</span></li>
+          <li class="reveal"><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span class="txt"><b>Planning beyond straightening</b>, we design for your whole smile and bite, and can combine alignment with whitening or veneers where it benefits your case.</span></li>
+          <li class="reveal"><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span class="txt"><b>Payment plans available</b>, subject to eligibility and approval, with HICAPS for health fund claims.</span></li>
         </ul>
         <div class="hero-cta reveal" style="margin-top:1.6rem">
           <a class="btn btn-coral" href="https://www.centaurportal.com/d4w/org-1378/extended_search?sourceID=null" target="_blank" rel="noopener">Book your free consult</a>
@@ -351,7 +448,7 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
     <div class="reveal">
       <p class="eyebrow" style="color:var(--mint)">Your Invisalign® dentist</p>
       <h2>Dr Karim Habib</h2>
-      <p>BSc Hons (Toronto), BDent Hons (Syd), PGDip Dental Implantology (CSU), FICCDE. Dr Karim completed a comprehensive two-year program in orthodontics and was awarded a Fellowship by the International College of Continuing Dental Education in Orthodontics in General Practice. He is an accredited Invisalign® provider and plans every case around your whole smile — not just straighter teeth.</p>
+      <p>BSc Hons (Toronto), BDent Hons (Syd), PGDip Dental Implantology (CSU), FICCDE. Dr Karim completed a comprehensive two-year program in orthodontics and was awarded a Fellowship by the International College of Continuing Dental Education in Orthodontics in General Practice. He is an accredited Invisalign® provider and plans every case around your whole smile, not just straighter teeth.</p>
     </div>
   </div>
 </section>
@@ -361,7 +458,7 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
   <div class="wrap">
     <div class="review-chip reveal"><span class="stars">★★★★★</span> 5.0 · 309 Google reviews</div>
     <h2 class="reveal">Find out if Invisalign® is right for you</h2>
-    <p class="reveal">Book your free initial consultation (valued at over $75) — we'll assess your teeth, talk through your options and answer every question.</p>
+    <p class="reveal">Book your free initial consultation (valued at over $75), we'll assess your teeth, talk through your options and answer every question.</p>
     <div class="hero-cta reveal">
       <a class="btn btn-coral" href="https://www.centaurportal.com/d4w/org-1378/extended_search?sourceID=null" target="_blank" rel="noopener">Book your free consult</a>
       <a class="btn btn-ghost" href="tel:0280682109">Call (02) 8068 2109</a>
@@ -377,7 +474,7 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
       <span>5 Chatham Rd, West Ryde NSW 2114 · <a href="tel:0280682109">(02) 8068 2109</a></span>
     </div>
     <div class="legal">
-      <p><b>Disclaimer:</b> Invisalign® treatment is not suitable for every case — suitability, treatment time and the number of aligners vary from person to person and can only be determined after a comprehensive consultation and examination. *Typical treatment runs approximately 9–15 months with around 18–30 aligners; your case may differ. Results depend on wearing aligners as directed. Retainers are generally required after treatment to maintain results.</p>
+      <p><b>Disclaimer:</b> Invisalign® treatment is not suitable for every case, suitability, treatment time and the number of aligners vary from person to person and can only be determined after a comprehensive consultation and examination. *Typical treatment runs approximately 9–15 months with around 18–30 aligners; your case may differ. Results depend on wearing aligners as directed. Retainers are generally required after treatment to maintain results.</p>
       <p>Free initial consultation offer is valued at over $75. Payment plans are subject to eligibility, provider terms and approval. Invisalign® is a registered trademark of Align Technology, Inc.</p>
       <p>© Dental Square. All rights reserved · Website design by <a href="https://generateyouraudience.com/" target="_blank" rel="noopener">Generate Your Audience</a></p>
     </div>

@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>New Patient Special $295 — Exam, X-rays, Clean &amp; Fluoride | Dental Square West Ryde</title>
-<meta name="description" content="New patients: comprehensive exam, digital X-rays, OPG, scale, clean, polish & fluoride — valued at $485, pay $295. No gap with eligible health funds. HICAPS on the spot. Dental Square, West Ryde.">
+<title>New Patient Special $295. Exam, X-rays, Clean &amp; Fluoride | Dental Square West Ryde</title>
+<meta name="description" content="New patients: comprehensive exam, digital X-rays, OPG, scale, clean, polish & fluoride, valued at $485, pay $295. No gap with eligible health funds. HICAPS on the spot. Dental Square, West Ryde.">
 <meta property="og:title" content="New Patient Special $295 | Dental Square West Ryde">
-<meta property="og:description" content="Comprehensive exam, digital X-rays, OPG, scale, clean, polish & fluoride — valued at $485. No gap with eligible health funds.">
+<meta property="og:description" content="Comprehensive exam, digital X-rays, OPG, scale, clean, polish & fluoride, valued at $485. No gap with eligible health funds.">
 <link rel="icon" href="img/ds-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --paper:#FDFBF7; --cream:#F5EFE7; --card:#FFFFFF;
@@ -181,6 +181,112 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
 .dock{position:fixed;left:0;right:0;bottom:0;z-index:80;display:none;gap:.6rem;padding:.7rem .9rem calc(.7rem + env(safe-area-inset-bottom));background:rgba(253,251,247,.95);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
 .dock .btn{flex:1;padding:.85rem .5rem;font-size:.95rem}
 @media(max-width:760px){.dock{display:flex}}
+
+/* full-width hero banner slider */
+.hero-slider{position:relative;min-height:92svh;display:flex;align-items:center;overflow:hidden;background:#0F171D}
+.hero-slider .slides{position:absolute;inset:0;pointer-events:none}
+.hero-slider .slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.4s ease;transform:scale(1.04)}
+.hero-slider .slides img.on{opacity:1;transform:scale(1);transition:opacity 1.4s ease, transform 7s linear}
+.hero-slider::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,17,22,.86) 0%,rgba(10,17,22,.62) 52%,rgba(10,17,22,.30) 100%);z-index:1}
+.hero-slider .wrap{position:relative;z-index:2;padding-top:4.5rem;padding-bottom:4.5rem}
+.hero-slider .hero-inner{max-width:620px}
+.hero-slider h1{color:#F4FAF8}
+.hero-slider h1 em{color:var(--mint)}
+.slider-dots{position:absolute;z-index:3;left:50%;bottom:1.1rem;transform:translateX(-50%);display:flex;gap:.5rem}
+.slider-dots button{width:9px;height:9px;border-radius:999px;border:0;background:rgba(255,255,255,.35);cursor:pointer;padding:0;transition:all .25s}
+.slider-dots button.on{background:var(--mint);width:24px}
+@media(max-width:760px){.hero-slider{min-height:88svh}}
+
+/* ============ iOS-style dark glass re-skin ============ */
+:root{
+  --paper:#0F171D; --cream:#131E26; --card:rgba(255,255,255,.07);
+  --line:rgba(255,255,255,.13); --ink:#F2F7F5; --slate:#A9BAB5;
+  --mint-deep:#9FD9CF; --mint-ink:#D7EEE9; --mint-soft:rgba(142,205,194,.15);
+  --shadow:0 14px 38px rgba(0,0,0,.38);
+}
+html{background:#0F171D}
+body{color:var(--ink);background:
+  radial-gradient(950px 540px at 88% -6%, rgba(142,205,194,.17), transparent 60%),
+  radial-gradient(780px 520px at -12% 38%, rgba(226,89,60,.13), transparent 60%),
+  radial-gradient(700px 480px at 55% 108%, rgba(142,205,194,.10), transparent 60%),
+  linear-gradient(180deg,#0F171D 0%,#121C24 55%,#0E161C 100%);
+  background-attachment:fixed}
+.hero,.sec.alt,.team,.process,.pricing,.location,.ba-sec,.faq,.kids,.final,.services,.offers,.tech,.diff{background:transparent}
+header.site{background:rgba(15,23,29,.72);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.infobar{background:rgba(255,255,255,.05);color:#CFE0DB;border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+.price-card,.offer,.svc,.member,.titem,.fix,.tx,.step,.stat,.pay,.price-panel,.pill,
+.face-grid figure,.ba-grid figure,details,.review-chip,.badge,.chip,.free-chip,.hero-badge{
+  background:var(--card) !important;border:1px solid var(--line) !important;
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--ink);box-shadow:var(--shadow)}
+.review-chip,.badge,.chip,.free-chip{box-shadow:none}
+.badge,.chip{color:var(--mint-ink)}
+.svc,.fix{color:var(--ink)}
+.tick{background:var(--mint-soft);border:1px solid var(--mint)}
+.tick svg{stroke:var(--mint)}
+.btn-ghost{background:var(--card);color:#fff;border:1.5px solid var(--mint);backdrop-filter:blur(10px)}
+.btn-ghost:hover{background:rgba(142,205,194,.18)}
+.btn-mint{background:var(--mint);color:#0F171D}
+.btn-mint:hover{background:#7ABFB4;color:#0F171D}
+.karim{background:rgba(142,205,194,.10);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.karim p{color:#CFE5DF}
+.funds{background:rgba(255,255,255,.045);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+footer{background:#0A1116;border-top:1px solid var(--line)}
+footer .legal p{color:#8FA5A0}
+.dock{background:rgba(15,23,29,.88);border-top:1px solid var(--line);backdrop-filter:blur(16px)}
+.hours-table td{border-bottom:1px dashed var(--line)}
+.map-embed{border:1px solid var(--line)}
+.sec-head p,.hero-note,.ba-note,figcaption,.form-note{color:var(--slate)}
+.member .role,.tx .px{color:var(--mint-deep)}
+.tx .px{color:#F0A886}
+.price-now,.offer .amt,.price-big{color:#F0866A}
+.step::before{box-shadow:0 6px 18px rgba(226,89,60,.45)}
+.ba-tag,.hero-badge b{color:var(--mint-ink)}
+.ba-tag{background:rgba(15,23,29,.72) !important;backdrop-filter:blur(8px)}
+img{filter:none}
+
+/* ============ All-on-4 design system: exact match ============ */
+:root{
+  --paper:#111513; --cream:#141a17; --card:rgba(255,255,255,.07);
+  --line:rgba(255,255,255,.18); --ink:#eef4f1; --slate:#aec0b9;
+  --mint:#8fd3bd; --mint-deep:#a9d9cb; --mint-soft:rgba(143,211,189,.14); --mint-ink:#d7eee9;
+  --shadow:0 22px 60px -24px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.22);
+  --display:'Fraunces',serif; --body:'Plus Jakarta Sans',system-ui,sans-serif;
+}
+html{background:#111513}
+body{color:var(--ink);font-family:var(--body);background:
+  radial-gradient(120% 100% at 80% -10%, #14302a 0%, transparent 55%),
+  radial-gradient(120% 120% at -10% 110%, #122620 0%, transparent 50%),
+  radial-gradient(46vmax 46vmax at 92% 4%, rgba(169,217,203,.20), transparent 65%),
+  radial-gradient(40vmax 40vmax at 2% 96%, rgba(185,230,216,.14), transparent 62%),
+  linear-gradient(160deg, #0c0f0d 0%, #111513 45%, #1a201d 100%);
+  background-attachment:fixed}
+h1,h2,h3{font-family:var(--display);font-weight:500;letter-spacing:-.01em;line-height:1.06}
+.price-card,.offer,.svc,.member,.titem,.fix,.tx,.step,.stat,.pay,.price-panel,.pill,
+.face-grid figure,.ba-grid figure,details,.hero-badge{
+  background:rgba(255,255,255,.07) !important;border:1px solid rgba(255,255,255,.18) !important;
+  backdrop-filter:blur(22px) saturate(135%);-webkit-backdrop-filter:blur(22px) saturate(135%);
+  box-shadow:var(--shadow)}
+.review-chip,.badge,.chip,.free-chip{background:rgba(255,255,255,.07) !important;border:1px solid rgba(255,255,255,.18) !important;backdrop-filter:blur(22px) saturate(135%);box-shadow:none;color:var(--mint-ink)}
+.tag,.ba-tag{background:var(--mint) !important;color:#0b1310 !important;font-weight:800;letter-spacing:.13em;border:0 !important;backdrop-filter:none}
+.btn-coral{background:linear-gradient(180deg,#9ad9c4,#6cbca4);color:#0b1310;font-weight:700;border:1px solid rgba(255,255,255,.18);box-shadow:0 12px 28px -10px rgba(60,120,105,.9), inset 0 1px 0 rgba(255,255,255,.4)}
+.btn-coral:hover{background:linear-gradient(180deg,#a5e2cf,#79c7af);color:#0b1310;transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(105,185,161,.7)}
+.btn-ghost{background:rgba(255,255,255,.07);color:var(--ink);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(22px) saturate(135%)}
+.btn-ghost:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.30);transform:translateY(-2px)}
+.btn-mint{background:linear-gradient(180deg,#9ad9c4,#6cbca4);color:#0b1310}
+.price-now,.offer .amt,.price-big,.tx .px{color:#b9e6d8}
+.step::before{background:radial-gradient(circle at 30% 25%,#a9d9cb,#69b9a1);color:#0b1310;box-shadow:0 10px 24px -8px rgba(105,185,161,.7)}
+.tick{background:rgba(143,211,189,.14);border:1px solid var(--mint)}
+.tick svg{stroke:var(--mint)}
+header.site{background:rgba(17,21,19,.72);backdrop-filter:blur(22px) saturate(135%);border-bottom:1px solid rgba(255,255,255,.14)}
+.infobar{background:rgba(255,255,255,.045);border-bottom:1px solid rgba(255,255,255,.12);color:#cfe0da}
+.karim{background:rgba(143,211,189,.10);border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12)}
+.funds{background:rgba(255,255,255,.045);border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12)}
+footer{background:#0c100e;border-top:1px solid rgba(255,255,255,.12)}
+.dock{background:rgba(17,21,19,.88);border-top:1px solid rgba(255,255,255,.14);backdrop-filter:blur(22px) saturate(135%)}
+.hero-slider::after,.hero-bgimg::after{background:linear-gradient(90deg,rgba(12,15,13,.88) 0%,rgba(12,15,13,.60) 52%,rgba(12,15,13,.26) 100%)}
+@media(max-width:760px){.hero-bgimg::after{background:linear-gradient(180deg,rgba(12,15,13,.86) 0%,rgba(12,15,13,.55) 100%)}}
+.eyebrow{color:var(--mint)}
+.eyebrow::before{background:var(--mint)}
 </style>
 </head>
 <body>
@@ -196,7 +302,7 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
 
 <header class="site">
   <div class="wrap">
-    <a href="#top"><img src="img/ds-logo.png" alt="Dental Square" style="height:44px;width:auto"></a>
+    <a href="#top"><img src="img/ds-logo-light.png" alt="Dental Square" style="height:44px;width:auto"></a>
     <div class="head-cta">
       <a class="head-phone" href="tel:0280682109"><b>(02) 8068 2109</b><span>Call our friendly team</span></a>
       <a class="btn btn-coral" href="https://www.centaurportal.com/d4w/org-1378/extended_search?sourceID=null" target="_blank" rel="noopener">Book online</a>
@@ -205,12 +311,17 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="hero" id="top">
+<section class="hero hero-slider" id="top">
+  <div class="slides">
+    <img class="on" src="https://www.dentalsquare.com.au/wordpress-responsive/wp-content/uploads/2026/08/DentalSquare-reception-professional-enhanced.png" alt="The Dental Square reception in West Ryde">
+    <img src="https://www.dentalsquare.com.au/wordpress-responsive/wp-content/uploads/2026/08/dental-treatment-room-professional-enhanced.png" alt="A modern treatment room at Dental Square">
+    <img src="https://www.dentalsquare.com.au/wordpress-responsive/wp-content/uploads/2026/08/DentalSquare-storefront-professional-enhanced.png" alt="The Dental Square practice on Chatham Rd, West Ryde">
+  </div>
   <div class="wrap">
-    <div>
+    <div class="hero-inner">
       <div class="review-chip reveal"><span class="stars">★★★★★</span> 5.0 · 309 Google reviews</div>
       <p class="eyebrow reveal">New patient special · West Ryde</p>
-      <h1 class="reveal">A complete first visit for your whole smile — <em>just $295*</em></h1>
+      <h1 class="reveal">A complete first visit for your whole smile, <em>just $295*</em></h1>
       <div class="price-card reveal">
         <div class="price-line">
           <span class="price-now">$295*</span>
@@ -224,7 +335,7 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
         </ul>
         <div class="nogap">
           <b>Pay NO GAP*</b>
-          <span>if your health fund covers a minimum of $295 — claimed on the spot with HICAPS. All health funds accepted.</span>
+          <span>if your health fund covers a minimum of $295, claimed on the spot with HICAPS. All health funds accepted.</span>
         </div>
       </div>
       <div class="hero-cta reveal">
@@ -233,11 +344,8 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
       </div>
       <p class="hero-note reveal">*Offer valid for new patients only. No gap applies where your health fund covers a minimum of $295 toward the included items.</p>
     </div>
-    <div class="hero-photo reveal">
-      <img src="img/reception.webp" alt="The warm, modern reception at Dental Square West Ryde">
-      <div class="hero-badge"><b>HICAPS</b> on-the-spot health fund claims</div>
-    </div>
   </div>
+  <div class="slider-dots" role="tablist" aria-label="Hero images"></div>
 </section>
 
 <!-- ================= SPECIAL OFFERS ================= -->
@@ -260,7 +368,7 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
         <span class="tag">In-chair whitening</span>
         <h3>1-hour ZOOM!® laser teeth whitening</h3>
         <div class="amt">$650</div>
-        <p>Philips ZOOM!® WhiteSpeed — the world's most requested whitening system. Whiter teeth in about an hour while you relax and watch TV.</p>
+        <p>Philips ZOOM!® WhiteSpeed, the world's most requested whitening system. Whiter teeth in about an hour while you relax and watch TV.</p>
         <a class="btn btn-mint" href="https://www.centaurportal.com/d4w/org-1378/extended_search?sourceID=null" target="_blank" rel="noopener">Book online</a>
       </div>
       <div class="offer reveal">
@@ -283,7 +391,7 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
     </div>
     <div class="fund reveal">
       <span class="ico"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span>
-      <div><b>HICAPS on the spot</b><span>Claim your rebate instantly — just bring your health fund card.</span></div>
+      <div><b>HICAPS on the spot</b><span>Claim your rebate instantly, just bring your health fund card.</span></div>
     </div>
     <div class="fund reveal">
       <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
@@ -302,7 +410,7 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
     <div class="sec-head reveal">
       <p class="eyebrow">Everything under one roof</p>
       <h2>Complete care for the whole family</h2>
-      <p>From your six-monthly clean to a full smile makeover — our team looks after it all, right here in West Ryde.</p>
+      <p>From your six-monthly clean to a full smile makeover, our team looks after it all, right here in West Ryde.</p>
     </div>
     <div class="svc-grid">
       <div class="svc reveal"><span class="dot"><svg viewBox="0 0 24 24"><path d="M12 3l7 4v5a8 8 0 0 1-7 8 8 8 0 0 1-7-8V7z"/></svg></span>General &amp; preventative care</div>
@@ -351,7 +459,7 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
         </div>
       </div>
       <div class="member reveal">
-        <img src="img/hayley.webp" alt="Hayley Nguyen, Oral Health Therapist at Dental Square">
+        <img src="https://www.dentalsquare.com.au/wordpress-responsive/wp-content/uploads/2026/08/Hayley-Nguyen.png" alt="Hayley Nguyen, Oral Health Therapist at Dental Square">
         <div class="info">
           <h3>Hayley Nguyen</h3>
           <p class="role">Oral Health Therapist</p>
@@ -374,17 +482,17 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
       <div class="titem reveal">
         <span class="ico"><svg viewBox="0 0 24 24"><path d="M2 12h6l2-8 4 16 2-8h6"/></svg></span>
         <h3>Laser technology</h3>
-        <p>Treatments once considered invasive — like gum contouring and gummy smile treatment — can now be completed with tremendous ease, without bleeding or sutures.</p>
+        <p>Treatments once considered invasive, like gum contouring and gummy smile treatment, can now be completed with tremendous ease, without bleeding or sutures.</p>
       </div>
       <div class="titem reveal">
         <span class="ico"><svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></span>
         <h3>Intra-oral camera</h3>
-        <p>A tiny camera shows your teeth on the overhead monitor — so you can see exactly what we see, and understand your treatment. Patients love it!</p>
+        <p>A tiny camera shows your teeth on the overhead monitor, so you can see exactly what we see, and understand your treatment. Patients love it!</p>
       </div>
       <div class="titem reveal">
         <span class="ico"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>
         <h3>In-chair TV entertainment</h3>
-        <p>Ceiling-mounted TVs in every treatment room — watch your favourite movie, or let the kids enjoy cartoons, while you lie back and relax.</p>
+        <p>Ceiling-mounted TVs in every treatment room, watch your favourite movie, or let the kids enjoy cartoons, while you lie back and relax.</p>
       </div>
       <div class="titem reveal">
         <span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
@@ -394,25 +502,13 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
       <div class="titem reveal">
         <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3C7 3 4 6 4 10c0 5 4 8 8 11 4-3 8-6 8-11 0-4-3-7-8-7z"/></svg></span>
         <h3>Amalgam-free &amp; mercury-free</h3>
-        <p>Only white, tooth-coloured, mercury-free fillings — with amalgam separators fitted to our plumbing to protect both patients and the environment.</p>
+        <p>Only white, tooth-coloured, mercury-free fillings, with amalgam separators fitted to our plumbing to protect both patients and the environment.</p>
       </div>
       <div class="titem reveal">
         <span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg></span>
         <h3>ZOOM!® 1-hour whitening</h3>
-        <p>Philips ZOOM!® WhiteSpeed — the world's #1 most requested whitening system, brightening teeth by up to 12 shades in about an hour.</p>
+        <p>Philips ZOOM!® WhiteSpeed, the world's #1 most requested whitening system, brightening teeth by up to 12 shades in about an hour.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= GALLERY ================= -->
-<section class="gallery">
-  <div class="wrap">
-    <div class="gal-grid reveal">
-      <img src="img/waiting-room.webp" alt="Dental Square waiting room">
-      <img src="img/surgery-1.webp" alt="Modern treatment room at Dental Square">
-      <img src="img/surgery-2.webp" alt="State of the art dental chair at Dental Square">
-      <img src="img/shopfront.webp" alt="Dental Square practice on Chatham Rd, West Ryde">
     </div>
   </div>
 </section>
@@ -428,14 +524,14 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
       <div class="reveal">
         <iframe class="map-embed" title="Map to Dental Square, 5 Chatham Rd West Ryde" src="https://www.google.com/maps?cid=13714739080660267419&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="loc-chips">
-          <span class="chip">2 hrs free parking — West Ryde Market Place</span>
-          <span class="chip">Free undercover parking — Central Square</span>
+          <span class="chip">2 hrs free parking. West Ryde Market Place</span>
+          <span class="chip">Free undercover parking. Central Square</span>
           <span class="chip">Wheelchair access</span>
           <span class="chip">Near West Ryde station</span>
         </div>
       </div>
       <div class="reveal">
-        <h3 style="font-size:1.25rem;font-weight:700">Dental Square — West Ryde</h3>
+        <h3 style="font-size:1.25rem;font-weight:700">Dental Square. West Ryde</h3>
         <p style="color:var(--slate);margin:.4rem 0 0">5 Chatham Rd, West Ryde NSW 2114<br>
         <a href="tel:0280682109" style="font-weight:700">(02) 8068 2109</a> · <a href="mailto:info@dentalsquare.com.au">info@dentalsquare.com.au</a></p>
         <table class="hours-table">
@@ -460,7 +556,7 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
   <div class="wrap">
     <div class="review-chip reveal"><span class="stars">★★★★★</span> 5.0 · 309 Google reviews</div>
     <h2 class="reveal">Ready for your first visit?</h2>
-    <p class="reveal">Claim your new patient special — a complete exam, X-rays, OPG, clean, polish and fluoride for $295*, or no gap* with an eligible health fund.</p>
+    <p class="reveal">Claim your new patient special, a complete exam, X-rays, OPG, clean, polish and fluoride for $295*, or no gap* with an eligible health fund.</p>
     <div class="hero-cta reveal">
       <a class="btn btn-coral" href="https://www.centaurportal.com/d4w/org-1378/extended_search?sourceID=null" target="_blank" rel="noopener">Book online now</a>
       <a class="btn btn-ghost" href="tel:0280682109">Call (02) 8068 2109</a>
@@ -476,7 +572,7 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
     </div>
     <div class="legal">
       <p>*New patient special: offer valid for new patients only and includes a comprehensive examination, digital X-rays, full-face OPG scan, scale, clean, polish and fluoride treatment (valued at $485). No gap applies where your health fund covers a minimum of $295 toward the included items; otherwise the fee is $295. All health funds accepted; HICAPS available for on-the-spot claims.</p>
-      <p>Free consultation offer applies to cosmetic dentistry, orthodontics (including Invisalign®) and dental implants, and is valued at over $75. Whitening results vary between individuals. Any surgical or invasive procedure carries risks — before proceeding, you should seek a second opinion from an appropriately qualified health practitioner. A consultation is required to determine suitability for any treatment.</p>
+      <p>Free consultation offer applies to cosmetic dentistry, orthodontics (including Invisalign®) and dental implants, and is valued at over $75. Whitening results vary between individuals. Any surgical or invasive procedure carries risks, before proceeding, you should seek a second opinion from an appropriately qualified health practitioner. A consultation is required to determine suitability for any treatment.</p>
       <p>Invisalign® and ZOOM!® are registered trademarks of their respective owners. All-on-4® is a registered trademark of Nobel Biocare.</p>
       <p>© Dental Square. All rights reserved · Website design by <a href="https://generateyouraudience.com/" target="_blank" rel="noopener">Generate Your Audience</a></p>
     </div>
@@ -493,6 +589,16 @@ footer .legal p{margin:.35rem 0;line-height:1.55;color:#A9D5CC}
 <script>
 const io = new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+(function(){
+  const imgs=[...document.querySelectorAll('.hero-slider .slides img')];
+  const dotsWrap=document.querySelector('.slider-dots');
+  imgs.forEach((_,i)=>{const b=document.createElement('button');b.setAttribute('aria-label','Show image '+(i+1));if(i===0)b.classList.add('on');b.addEventListener('click',()=>go(i,true));dotsWrap.appendChild(b)});
+  const dots=[...dotsWrap.children];let cur=0,timer;
+  function go(i,manual){imgs[cur].classList.remove('on');dots[cur].classList.remove('on');cur=i%imgs.length;imgs[cur].classList.add('on');dots[cur].classList.add('on');if(manual){clearInterval(timer);start()}}
+  function start(){timer=setInterval(()=>go(cur+1),5000)}
+  start();
+})();
 </script>
 </body>
 </html>

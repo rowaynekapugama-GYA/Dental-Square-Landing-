@@ -319,6 +319,56 @@ footer{background:#0c100e;border-top:1px solid rgba(255,255,255,.12)}
 @media(max-width:760px){.hero-bgimg::after{background:linear-gradient(180deg,rgba(12,15,13,.86) 0%,rgba(12,15,13,.55) 100%)}}
 .eyebrow{color:var(--mint)}
 .eyebrow::before{background:var(--mint)}
+
+/* ============ LIGHT THEME: Dental Square mint on white ============ */
+:root{--paper:#F7FBF9;--cream:#EDF5F1;--card:rgba(255,255,255,.76);--line:rgba(31,59,50,.13);--ink:#1E2A26;--slate:#5D6E67;--mint:#69B9A1;--mint-deep:#2F7D68;--mint-soft:rgba(143,211,189,.22);--mint-ink:#1E4A3E;--shadow:0 18px 44px -18px rgba(31,59,50,.20)}
+html{background:#F7FBF9}
+body{color:var(--ink);background:
+  radial-gradient(120% 100% at 82% -8%, rgba(143,211,189,.30) 0%, transparent 55%),
+  radial-gradient(110% 110% at -8% 106%, rgba(143,211,189,.22) 0%, transparent 52%),
+  linear-gradient(160deg,#FBFDFC 0%,#F4F9F6 45%,#EAF3EF 100%);
+  background-attachment:fixed}
+.price-card,.offer,.svc,.member,.titem,.fix,.tx,.step,.stat,.pay,.price-panel,.pill,
+.face-grid figure,.ba-grid figure,details,.hero-badge{
+  background:rgba(255,255,255,.78) !important;border:1px solid rgba(31,59,50,.13) !important;
+  backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);
+  box-shadow:0 18px 44px -18px rgba(31,59,50,.20), inset 0 1px 0 rgba(255,255,255,.85)}
+.review-chip,.badge,.chip,.free-chip{background:rgba(255,255,255,.78) !important;border:1px solid rgba(31,59,50,.13) !important;color:var(--mint-ink);backdrop-filter:blur(14px)}
+.btn-ghost{background:rgba(255,255,255,.78);color:var(--mint-ink);border:1.5px solid var(--mint);backdrop-filter:blur(12px)}
+.btn-ghost:hover{background:#fff}
+.price-now,.offer .amt,.price-big,.tx .px,.member .role{color:var(--mint-deep)}
+header.site{background:rgba(247,251,249,.85);backdrop-filter:blur(18px) saturate(140%);border-bottom:1px solid rgba(31,59,50,.10)}
+.infobar{background:#17352C;color:#D8EAE3;border-bottom:0}
+.infobar a{color:#fff}
+.karim{background:#17352C;border:0}
+.karim p{color:#CDE4DC}
+.karim h2,.karim .eyebrow{color:#fff}
+.karim .eyebrow{color:#8fd3bd}
+.funds{background:#17352C;border:0}
+footer{background:#122720;border-top:0;color:#9DB6AD}
+footer .legal p{color:#8AA69C}
+footer a{color:#D8EAE3}
+.dock{background:rgba(247,251,249,.92);border-top:1px solid rgba(31,59,50,.12);backdrop-filter:blur(18px)}
+.hours-table td{border-bottom:1px dashed rgba(31,59,50,.16)}
+/* hero content stays light over the dark photo scrims */
+.hero-slider h1,.hero-bgimg h1{color:#F4FAF8}
+.hero-bgimg .hero-inner > p,.hero-slider .hero-inner > p{color:#DFEAE5}
+.hero-bgimg .eyebrow,.hero-slider .eyebrow{color:#9ad9c4}
+.hero-slider .hero-note,.hero-bgimg .hero-note{color:#C4D6CF}
+.slider-dots button.on{background:#8fd3bd}
+
+/* footer page toggle */
+.lp-toggle{display:inline-flex;flex-wrap:wrap;gap:4px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:4px;margin-top:1rem}
+.lp-toggle a{padding:.45rem 1rem;border-radius:999px;font-size:.78rem;font-weight:700;text-decoration:none;color:#C9DED6;transition:all .2s;white-space:nowrap}
+.lp-toggle a:hover{background:rgba(255,255,255,.10);color:#fff}
+.lp-toggle a.on{background:linear-gradient(180deg,#9ad9c4,#6cbca4);color:#0b1310}
+/* flashing open-now badge */
+.open-badge{display:none;align-items:center;gap:.45rem;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#0b1310;background:linear-gradient(180deg,#9ad9c4,#6cbca4);border-radius:999px;padding:.45rem .9rem;animation:openPulse 1.6s ease-in-out infinite}
+.open-badge .odot{width:8px;height:8px;border-radius:50%;background:#0E5C46;animation:dotBlink 1.6s ease-in-out infinite}
+@keyframes openPulse{0%,100%{box-shadow:0 0 0 0 rgba(105,185,161,.55)}50%{box-shadow:0 0 0 9px rgba(105,185,161,0)}}
+@keyframes dotBlink{0%,100%{opacity:1}50%{opacity:.3}}
+@media(max-width:700px){.open-badge{font-size:.62rem;padding:.35rem .7rem;gap:.35rem}}
+@media (prefers-reduced-motion:reduce){.open-badge,.open-badge .odot{animation:none}}
 </style>
 </head>
 <body>
@@ -333,8 +383,9 @@ footer{background:#0c100e;border-top:1px solid rgba(255,255,255,.12)}
 
 <header class="site">
   <div class="wrap">
-    <a href="#top"><img src="img/ds-logo-light.png" alt="Dental Square" style="height:44px;width:auto"></a>
+    <a href="#top"><img src="img/ds-logo.png" alt="Dental Square" style="height:44px;width:auto"></a>
     <div class="head-cta">
+      <span class="open-badge"><span class="odot"></span>Open now</span>
       <a class="head-phone" href="tel:0280682109"><b>(02) 8068 2109</b><span>Free initial consultation</span></a>
       <a class="btn btn-coral" href="https://www.centaurportal.com/d4w/org-1378/extended_search?sourceID=null" target="_blank" rel="noopener">Book online</a>
     </div>
@@ -479,7 +530,7 @@ footer{background:#0c100e;border-top:1px solid rgba(255,255,255,.12)}
       <p>© Dental Square. All rights reserved · Website design by <a href="https://generateyouraudience.com/" target="_blank" rel="noopener">Generate Your Audience</a></p>
     </div>
   </div>
-  <p class="lp-switch" style="opacity:.55;font-size:.72rem;margin-top:.8rem">Pages: <a href="/all-on-4/" style="text-decoration:none">All-on-4</a> &nbsp;·&nbsp; <a href="/new-patients/" style="text-decoration:none">New patients</a> &nbsp;·&nbsp; <a href="/veneers/" style="text-decoration:none">Veneers</a> &nbsp;·&nbsp; <a href="/invisalign/" style="text-decoration:none">Invisalign</a> &nbsp;·&nbsp; <a href="/cosmetic-dentistry/" style="text-decoration:none">Cosmetic</a></p>
+  <div class="lp-toggle" aria-label="Switch between landing pages"><a href="/all-on-4/">All-on-4</a><a href="/new-patients/">New patients</a><a href="/veneers/">Veneers</a><a href="/invisalign/" class="on">Invisalign</a><a href="/cosmetic-dentistry/">Cosmetic</a></div>
 </footer>
 
 <div class="dock">
@@ -490,6 +541,15 @@ footer{background:#0c100e;border-top:1px solid rgba(255,255,255,.12)}
 <script>
 const io = new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+<script>
+(function(){try{
+  var now=new Date(new Date().toLocaleString('en-US',{timeZone:'Australia/Sydney'}));
+  var d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+  var hrs={1:[510,1050],2:[510,1050],3:[510,1050],4:[510,1140],5:[510,1050],6:[480,780],0:null};
+  var h=hrs[d];
+  if(h&&m>=h[0]&&m<h[1]){document.querySelectorAll('.open-badge').forEach(function(b){b.style.display='inline-flex'})}
+}catch(e){}})();
 </script>
 </body>
 </html>

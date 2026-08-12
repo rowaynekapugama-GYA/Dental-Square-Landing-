@@ -78,9 +78,9 @@ a{ color:inherit; }
 /* ---------- Ambient liquid-glass background ---------- */
 .bg{ position:fixed; inset:0; z-index:-2; overflow:hidden;
   background:
-    radial-gradient(120% 100% at 80% -10%, #14302a 0%, transparent 55%),
-    radial-gradient(120% 120% at -10% 110%, #122620 0%, transparent 50%),
-    linear-gradient(160deg, var(--ink) 0%, var(--navy-900) 45%, var(--navy-800) 100%);
+    radial-gradient(120% 100% at 80% -10%, rgba(143,211,189,.32) 0%, transparent 55%),
+    radial-gradient(120% 120% at -10% 110%, rgba(143,211,189,.24) 0%, transparent 50%),
+    linear-gradient(160deg, #FBFDFC 0%, #F4F9F6 45%, #EAF3EF 100%);
 }
 .orb{ position:absolute; border-radius:50%; filter:blur(70px); opacity:.55; will-change:transform; }
 .orb.a{ width:46vmax; height:46vmax; top:-14vmax; right:-10vmax;
@@ -530,6 +530,35 @@ body.lead-submitted #thanks{ display:flex; }
 .ig-grid a:hover img{ transform:scale(1.06); }
 @media (max-width:620px){ .ig-grid{ grid-template-columns:1fr 1fr; } }
 
+
+/* ============ LIGHT THEME flip ============ */
+:root{
+  --ink:#F7FBF9; --navy-900:#F1F7F4; --navy-800:#E6F0EB;
+  --steel:#69B9A1; --steel-deep:#4FA68C; --steel-lite:#8fd3bd; --aqua:#2F7D68;
+  --mist:#5D6E67; --mist-dim:#7F918A; --cloud:#1E2A26; --cream:#FFFFFF;
+  --glass:rgba(255,255,255,.72); --glass-2:rgba(255,255,255,.5);
+  --glass-edge:rgba(31,59,50,.14); --glass-edge-2:rgba(31,59,50,.28);
+  --shadow-soft:0 18px 50px -20px rgba(31,59,50,.22);
+  --shadow-card:0 22px 60px -24px rgba(31,59,50,.20), inset 0 1px 0 rgba(255,255,255,.8);
+}
+.topbar{background:rgba(247,251,249,.85);border-bottom:1px solid var(--glass-edge)}
+.brand b{color:var(--cloud) !important}
+.orb{opacity:.30}
+.footer{background:#122720;color:#9DB6AD}
+.footer a{color:#D8EAE3}
+
+/* footer page toggle */
+.lp-toggle{display:inline-flex;flex-wrap:wrap;gap:4px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:4px;margin-top:1rem}
+.lp-toggle a{padding:.45rem 1rem;border-radius:999px;font-size:.78rem;font-weight:700;text-decoration:none;color:#C9DED6;transition:all .2s;white-space:nowrap}
+.lp-toggle a:hover{background:rgba(255,255,255,.10);color:#fff}
+.lp-toggle a.on{background:linear-gradient(180deg,#9ad9c4,#6cbca4);color:#0b1310}
+/* flashing open-now badge */
+.open-badge{display:none;align-items:center;gap:.45rem;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#0b1310;background:linear-gradient(180deg,#9ad9c4,#6cbca4);border-radius:999px;padding:.45rem .9rem;animation:openPulse 1.6s ease-in-out infinite}
+.open-badge .odot{width:8px;height:8px;border-radius:50%;background:#0E5C46;animation:dotBlink 1.6s ease-in-out infinite}
+@keyframes openPulse{0%,100%{box-shadow:0 0 0 0 rgba(105,185,161,.55)}50%{box-shadow:0 0 0 9px rgba(105,185,161,0)}}
+@keyframes dotBlink{0%,100%{opacity:1}50%{opacity:.3}}
+@media(max-width:700px){.open-badge{font-size:.62rem;padding:.35rem .7rem;gap:.35rem}}
+@media (prefers-reduced-motion:reduce){.open-badge,.open-badge .odot{animation:none}}
 </style>
 </head>
 
@@ -542,8 +571,9 @@ body.lead-submitted #thanks{ display:flex; }
 <!-- persistent top bar -->
 <header class="topbar">
   <a class="brand" href="#hero" aria-label="Dental Square. All-on-4 and dental implants" style="display:flex;align-items:center;text-decoration:none;">
-    <img src="ds-logo-light.png" alt="Dental Square" style="height:40px;width:auto;display:block">
+    <img src="ds-logo.png" alt="Dental Square" style="height:40px;width:auto;display:block">
   </a>
+  <span class="open-badge"><span class="odot"></span>Open now</span>
   <button class="btn btn-primary js-book" type="button">Free consult</button>
 </header>
 
@@ -809,7 +839,7 @@ body.lead-submitted #thanks{ display:flex; }
       <p class="copy">© Dental Square, All rights reserved · Website Design by <a href="https://generateyouraudience.com/" target="_blank" rel="noopener">Generate Your Audience</a></p>
     </div>
   </div>
-  <p class="lp-switch" style="opacity:.55;font-size:.72rem;margin-top:.8rem">Pages: <a href="/all-on-4/" style="text-decoration:none">All-on-4</a> &nbsp;·&nbsp; <a href="/new-patients/" style="text-decoration:none">New patients</a> &nbsp;·&nbsp; <a href="/veneers/" style="text-decoration:none">Veneers</a> &nbsp;·&nbsp; <a href="/invisalign/" style="text-decoration:none">Invisalign</a> &nbsp;·&nbsp; <a href="/cosmetic-dentistry/" style="text-decoration:none">Cosmetic</a></p>
+  <div class="lp-toggle" aria-label="Switch between landing pages"><a href="/all-on-4/" class="on">All-on-4</a><a href="/new-patients/">New patients</a><a href="/veneers/">Veneers</a><a href="/invisalign/">Invisalign</a><a href="/cosmetic-dentistry/">Cosmetic</a></div>
 </footer>
 
 <!-- ================= Desktop side progress nav ================= -->
@@ -1142,5 +1172,14 @@ refreshLayout();
 </script>
 <!-- Instagram embeds (for reel embeds in the Instagram section) -->
 <script async src="https://www.instagram.com/embed.js"></script>
+<script>
+(function(){try{
+  var now=new Date(new Date().toLocaleString('en-US',{timeZone:'Australia/Sydney'}));
+  var d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+  var hrs={1:[510,1050],2:[510,1050],3:[510,1050],4:[510,1140],5:[510,1050],6:[480,780],0:null};
+  var h=hrs[d];
+  if(h&&m>=h[0]&&m<h[1]){document.querySelectorAll('.open-badge').forEach(function(b){b.style.display='inline-flex'})}
+}catch(e){}})();
+</script>
 </body>
 </html>

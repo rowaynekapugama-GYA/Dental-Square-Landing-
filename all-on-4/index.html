@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-AU">
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W4HVLTBW');</script>
+<!-- End Google Tag Manager -->
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="robots" content="noindex, follow">
@@ -214,7 +222,7 @@ fieldset.q legend{ font-size:.86rem; font-weight:600; color:var(--cloud); margin
 .opt:hover{ border-color:rgba(255,255,255,.3); color:var(--cloud); }
 .opt.is-selected{ color:#fff; border-color:var(--aqua); background:rgba(143,211,189,.16);
   box-shadow:0 0 0 3px rgba(143,211,189,.14), inset 0 1px 0 rgba(255,255,255,.2); }
-.opt.is-selected::after{ content:"✓"; margin-left:.45em; color:var(--aqua); font-weight:700; }
+.opt.is-selected::after{ content:""; margin-left:.45em; color:var(--aqua); font-weight:700; }
 .field{ display:block; margin:0 0 1rem; }
 .field-label{ display:block; font-size:.86rem; font-weight:600; color:var(--cloud); margin-bottom:.45rem; }
 .field input{ width:100%; padding:.85em 1em; border-radius:12px; font-size:1rem; color:#fff;
@@ -559,10 +567,28 @@ body.lead-submitted #thanks{ display:flex; }
 @keyframes dotBlink{0%,100%{opacity:1}50%{opacity:.3}}
 @media(max-width:700px){.open-badge{font-size:.62rem;padding:.35rem .7rem;gap:.35rem}}
 @media (prefers-reduced-motion:reduce){.open-badge,.open-badge .odot{animation:none}}
+
+.lp-nav{text-align:center;margin-top:1.8rem;padding-top:1.6rem;border-top:1px solid rgba(255,255,255,.12)}
+.lp-nav h3{font-family:var(--display,'Fraunces',serif);font-weight:500;font-size:1.05rem;color:#EAF4F0;margin:0 0 .8rem;letter-spacing:.01em}
+.lp-nav .lp-toggle{margin-top:0}
+
+/* light-theme contrast fixes */
+.form-head{background:linear-gradient(160deg,#17352C,#1E4A3E) !important;border-bottom:1px solid rgba(255,255,255,.10)}
+.form-sub{color:#CDE4DC !important}
+.free-callout b, .glass-callout b{color:var(--cloud)}
+.scroll-hint{color:var(--mist)}
+
+.pay-chip b{color:var(--cloud) !important}
+.pay-chip p{color:var(--mist)}
 </style>
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4HVLTBW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <!-- ambient background -->
 <div class="bg" aria-hidden="true">
   <span class="orb a"></span><span class="orb b"></span><span class="orb c"></span>
@@ -839,7 +865,7 @@ body.lead-submitted #thanks{ display:flex; }
       <p class="copy">© Dental Square, All rights reserved · Website Design by <a href="https://generateyouraudience.com/" target="_blank" rel="noopener">Generate Your Audience</a></p>
     </div>
   </div>
-  <div class="lp-toggle" aria-label="Switch between landing pages"><a href="/all-on-4/" class="on">All-on-4</a><a href="/new-patients/">New patients</a><a href="/veneers/">Veneers</a><a href="/invisalign/">Invisalign</a><a href="/cosmetic-dentistry/">Cosmetic</a></div>
+  <div class="lp-nav"><h3>Services we offer</h3><div class="lp-toggle" aria-label="Switch between landing pages"><a href="/all-on-4/" class="on">All-on-4</a><a href="/new-patients/">New patients</a><a href="/veneers/">Veneers</a><a href="/invisalign/">Invisalign</a><a href="/cosmetic-dentistry/">Cosmetic</a></div></div>
 </footer>
 
 <!-- ================= Desktop side progress nav ================= -->

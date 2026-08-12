@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en-AU">
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W4HVLTBW');</script>
+<!-- End Google Tag Manager -->
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
@@ -369,15 +377,33 @@ footer a{color:#D8EAE3}
 @keyframes dotBlink{0%,100%{opacity:1}50%{opacity:.3}}
 @media(max-width:700px){.open-badge{font-size:.62rem;padding:.35rem .7rem;gap:.35rem}}
 @media (prefers-reduced-motion:reduce){.open-badge,.open-badge .odot{animation:none}}
+
+.lp-nav{text-align:center;margin-top:1.8rem;padding-top:1.6rem;border-top:1px solid rgba(255,255,255,.12)}
+.lp-nav h3{font-family:var(--display,'Fraunces',serif);font-weight:500;font-size:1.05rem;color:#EAF4F0;margin:0 0 .8rem;letter-spacing:.01em}
+.lp-nav .lp-toggle{margin-top:0}
+
+/* contrast fixes over photo heroes */
+.hero-bgimg::after{background:linear-gradient(90deg,rgba(12,15,13,.90) 0%,rgba(12,15,13,.68) 52%,rgba(12,15,13,.36) 100%)}
+@media(max-width:760px){.hero-bgimg::after{background:linear-gradient(180deg,rgba(12,15,13,.88) 0%,rgba(12,15,13,.62) 100%)}}
+.hero-bgimg .hero-inner p[style], .hero-slider .hero-inner p[style]{color:#E4EEE9 !important}
+.hero-bgimg .from-price b{color:#9ad9c4}
+.hero-bgimg .from-price span[style], .hero-bgimg .from-price span{color:#CFE0DA !important}
+.hero-bgimg .stat, .hero-slider .price-card{background:rgba(255,255,255,.86) !important}
+.hero-bgimg .stat b{color:var(--mint-deep)}
 </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4HVLTBW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 
 <div class="infobar">
   <div class="wrap">
-    <div class="hours">🕐 <span>Mon–Fri 8:30am–5:30pm · Thu till 7pm · Sat 8am–1pm</span></div>
-    <div class="addr">📍 5 Chatham Rd, West Ryde NSW 2114</div>
-    <a href="tel:0280682109">📞 (02) 8068 2109</a>
+    <div class="hours"><span>Mon–Fri 8:30am–5:30pm · Thu till 7pm · Sat 8am–1pm</span></div>
+    <div class="addr">5 Chatham Rd, West Ryde NSW 2114</div>
+    <a href="tel:0280682109">(02) 8068 2109</a>
   </div>
 </div>
 
@@ -397,7 +423,7 @@ footer a{color:#D8EAE3}
   <img class="bg" src="https://www.dentalsquare.com.au/wordpress-responsive/wp-content/uploads/2026/08/shutterstock_2348528651.jpg" alt="">
   <div class="wrap">
     <div class="hero-inner">
-      <div class="review-chip reveal"><span class="stars">★★★★★</span> 5.0 · 309 Google reviews</div>
+      <div class="review-chip reveal"><span class="stars"></span> 5.0 · 309 Google reviews</div>
       <p class="eyebrow reveal">Invisalign® · Sydney</p>
       <h1 class="reveal">Straighten your teeth, <em>without anyone noticing</em></h1>
       <p class="reveal" style="color:var(--slate);max-width:520px;margin-top:1rem">Dental Square is an accredited Invisalign® provider in West Ryde. A sequence of clear, custom-made aligners gently moves your teeth into position, no metal wires, no brackets, and most people won't even know you're wearing them.</p>
@@ -406,7 +432,7 @@ footer a{color:#D8EAE3}
         <div class="stat"><b>18–30</b><span>aligners on average*</span></div>
         <div class="stat"><b>~2 wks</b><span>per aligner set</span></div>
       </div>
-      <span class="free-chip reveal">🎁 FREE initial consultation, valued at over $75</span>
+      <span class="free-chip reveal">FREE initial consultation, valued at over $75</span>
       <div class="hero-cta reveal">
         <a class="btn btn-coral" href="https://www.centaurportal.com/d4w/org-1378/extended_search?sourceID=null" target="_blank" rel="noopener">Book your free consult</a>
         <a class="btn btn-ghost" href="tel:0280682109">Call (02) 8068 2109</a>
@@ -507,7 +533,7 @@ footer a{color:#D8EAE3}
 <!-- ================= FINAL CTA ================= -->
 <section class="final">
   <div class="wrap">
-    <div class="review-chip reveal"><span class="stars">★★★★★</span> 5.0 · 309 Google reviews</div>
+    <div class="review-chip reveal"><span class="stars"></span> 5.0 · 309 Google reviews</div>
     <h2 class="reveal">Find out if Invisalign® is right for you</h2>
     <p class="reveal">Book your free initial consultation (valued at over $75), we'll assess your teeth, talk through your options and answer every question.</p>
     <div class="hero-cta reveal">
@@ -530,7 +556,7 @@ footer a{color:#D8EAE3}
       <p>© Dental Square. All rights reserved · Website design by <a href="https://generateyouraudience.com/" target="_blank" rel="noopener">Generate Your Audience</a></p>
     </div>
   </div>
-  <div class="lp-toggle" aria-label="Switch between landing pages"><a href="/all-on-4/">All-on-4</a><a href="/new-patients/">New patients</a><a href="/veneers/">Veneers</a><a href="/invisalign/" class="on">Invisalign</a><a href="/cosmetic-dentistry/">Cosmetic</a></div>
+  <div class="lp-nav"><h3>Services we offer</h3><div class="lp-toggle" aria-label="Switch between landing pages"><a href="/all-on-4/">All-on-4</a><a href="/new-patients/">New patients</a><a href="/veneers/">Veneers</a><a href="/invisalign/" class="on">Invisalign</a><a href="/cosmetic-dentistry/">Cosmetic</a></div></div>
 </footer>
 
 <div class="dock">

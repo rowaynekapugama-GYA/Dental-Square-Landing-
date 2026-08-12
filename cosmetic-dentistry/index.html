@@ -376,6 +376,14 @@ footer a{color:#D8EAE3}
 
 /* hero photo: full uncropped image, rounded square */
 .hero-photo img{height:auto !important;aspect-ratio:auto !important;object-fit:contain !important;border-radius:var(--r) !important}
+
+.free-chip{flex-direction:column;align-items:flex-start;gap:.1rem;padding:.75rem 1.25rem;line-height:1.25;text-align:left}
+.free-chip b{font-size:.95rem}
+.free-chip small{font-weight:600;font-size:.78rem;opacity:.9}
+
+@keyframes attnPulse{0%,100%{box-shadow:0 0 0 0 rgba(105,185,161,.55)}50%{box-shadow:0 0 0 11px rgba(105,185,161,0)}}
+.pulse-attn{animation:attnPulse 2s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){.pulse-attn{animation:none}}
 </style>
 </head>
 <body>
@@ -419,7 +427,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="badge">Smile makeovers</span>
         <span class="badge">Laser dentistry</span>
       </div>
-      <span class="free-chip reveal">FREE cosmetic consultation, valued at over $75</span>
+      <span class="free-chip reveal pulse-attn"><b>FREE cosmetic consultation</b><small>Valued at over $75</small></span>
       <div class="hero-cta reveal">
         <a class="btn btn-coral" href="https://www.centaurportal.com/d4w/org-1378/extended_search?sourceID=null" target="_blank" rel="noopener">Book your free consult</a>
         <a class="btn btn-ghost" href="tel:0280682109">Call (02) 8068 2109</a>

@@ -349,8 +349,8 @@ footer a{color:#D8EAE3}
 /* instagram reels */
 .reels{padding:3.8rem 0}
 .reels-grid{display:grid;grid-template-columns:repeat(auto-fit,280px);gap:1.1rem;justify-content:center}
-.reel{width:280px;height:498px;position:relative;overflow:hidden;border-radius:18px;background:#0b0f0d;border:1px solid rgba(31,59,50,.13);box-shadow:0 18px 44px -18px rgba(31,59,50,.20)}
-.reel iframe{position:absolute;width:280px;height:560px;left:50%;top:50%;transform:translate(-50%,-52%) scale(1.9);transform-origin:center;border:0}
+.reel{width:280px;height:492px;position:relative;overflow:hidden;border-radius:18px;background:#0b0f0d;border:1px solid rgba(31,59,50,.13);box-shadow:0 18px 44px -18px rgba(31,59,50,.20)}
+.reel iframe{position:absolute;width:280px;height:600px;left:50%;top:50%;transform:translate(-50%,-51%) scale(2.15);transform-origin:center;border:0;background:#0b0f0d}
 
 .lp-nav{text-align:center;margin-top:1.8rem;padding-top:1.6rem;border-top:1px solid rgba(255,255,255,.12)}
 .lp-nav h3{font-family:var(--display,'Fraunces',serif);font-weight:500;font-size:1.05rem;color:#EAF4F0;margin:0 0 .8rem;letter-spacing:.01em}
@@ -361,6 +361,10 @@ footer a{color:#D8EAE3}
 
 .btn-callico{display:none;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:rgba(143,211,189,.22);color:#2F7D68;border:1px solid rgba(31,59,50,.15)}
 @media(max-width:640px){.btn-callico{display:inline-flex}}
+
+@keyframes attnPulse{0%,100%{box-shadow:0 0 0 0 rgba(105,185,161,.55)}50%{box-shadow:0 0 0 11px rgba(105,185,161,0)}}
+.pulse-attn{animation:attnPulse 2s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){.pulse-attn{animation:none}}
 </style>
 </head>
 <body>
@@ -438,7 +442,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Every offer includes the same gentle, unhurried care our patients love.</p>
     </div>
     <div class="offer-grid">
-      <div class="offer reveal">
+      <div class="offer reveal pulse-attn">
         <span class="tag">Free</span>
         <h3>FREE consultation</h3>
         <div class="amt">$0</div>
@@ -564,7 +568,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="reel reveal"><iframe src="https://www.instagram.com/reel/DFMo9vlTRTV/embed/" title="Dental Square Instagram reel" loading="lazy" allowfullscreen></iframe></div>
       <div class="reel reveal"><iframe src="https://www.instagram.com/reel/DEjZZ4vJrJK/embed/" title="Dental Square Instagram reel" loading="lazy" allowfullscreen></iframe></div>
       <div class="reel reveal"><iframe src="https://www.instagram.com/reel/DJi1qLVyqfK/embed/" title="Dental Square Instagram reel" loading="lazy" allowfullscreen></iframe></div>
-      <div class="reel reveal"><iframe src="https://www.instagram.com/reel/DOVTwXNkhL4/embed/" title="Dental Square Instagram reel" loading="lazy" allowfullscreen></iframe></div>
     </div>
   </div>
 </section>

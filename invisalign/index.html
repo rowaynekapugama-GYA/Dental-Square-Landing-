@@ -399,6 +399,19 @@ footer a{color:#D8EAE3}
 
 /* why-photo: rounded square, no arch */
 .why-photo img{border-radius:var(--r) !important}
+
+.free-chip{flex-direction:column;align-items:flex-start;gap:.1rem;padding:.75rem 1.25rem;line-height:1.25;text-align:left}
+.free-chip b{font-size:.95rem}
+.free-chip small{font-weight:600;font-size:.78rem;opacity:.9}
+
+@keyframes attnPulse{0%,100%{box-shadow:0 0 0 0 rgba(105,185,161,.55)}50%{box-shadow:0 0 0 11px rgba(105,185,161,0)}}
+.pulse-attn{animation:attnPulse 2s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){.pulse-attn{animation:none}}
+
+.quick-facts{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;padding:0;margin:1.4rem 0 0}
+.quick-facts li{background:rgba(255,255,255,.88);border:1px solid rgba(31,59,50,.13);border-radius:999px;padding:.5rem 1.05rem;font-size:.84rem;color:#1E4A3E;white-space:nowrap;backdrop-filter:blur(10px)}
+.quick-facts b{color:#2F7D68;margin-right:.3rem}
+@media(max-width:420px){.quick-facts li{white-space:normal}}
 </style>
 </head>
 <body>
@@ -437,12 +450,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p class="eyebrow reveal">Invisalign® · Sydney</p>
       <h1 class="reveal">Straighten your teeth, <em>without anyone noticing</em></h1>
       <p class="reveal" style="color:var(--slate);max-width:520px;margin-top:1rem">Dental Square is an accredited Invisalign® provider in West Ryde. A sequence of clear, custom-made aligners gently moves your teeth into position, no metal wires, no brackets, and most people won't even know you're wearing them.</p>
-      <div class="stat-row reveal">
-        <div class="stat"><b>9–15</b><span>months, typically*</span></div>
-        <div class="stat"><b>18–30</b><span>aligners on average*</span></div>
-        <div class="stat"><b>~2 wks</b><span>per aligner set</span></div>
-      </div>
-      <span class="free-chip reveal">FREE initial consultation, valued at over $75</span>
+      <ul class="quick-facts reveal">
+        <li><b>9–15 months</b> typical treatment*</li>
+        <li><b>18–30 aligners</b> on average*</li>
+        <li><b>New set</b> every 2 weeks</li>
+      </ul>
+      <span class="free-chip reveal pulse-attn"><b>FREE initial consultation</b><small>Valued at over $75</small></span>
       <div class="hero-cta reveal">
         <a class="btn btn-coral" href="https://www.centaurportal.com/d4w/org-1378/extended_search?sourceID=null" target="_blank" rel="noopener">Book your free consult</a>
         <a class="btn btn-ghost" href="tel:0280682109">Call (02) 8068 2109</a>

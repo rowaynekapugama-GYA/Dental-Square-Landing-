@@ -1,19 +1,17 @@
-// api/lead.js — Dental Square lead relay (Vercel serverless function)
+// api/lead.js — Dental Square → SmileOx CRM intake relay (Vercel serverless)
 // ---------------------------------------------------------------------------
-// Receives the free-consultation POST from index.html and emails it to your
-// practice intake address via the SMTP2GO HTTP API. (A browser cannot send
-// SMTP email directly, so this small same-origin relay does it server-side.)
+// Receives the free-consultation POST from the All-on-4 page and forwards it
+// to the SmileOx intake address as a plain-text email whose body is the raw
+// JSON payload (per the SmileOx "Integrate Website Form Intake" spec).
+// Delivery is via the SMTP2GO HTTPS API (TLS enforced end to end).
 //
 // SET THESE as Environment Variables in Vercel, then redeploy:
-//   Project → Settings → Environment Variables
-//
-//   SMTP2GO_API_KEY   (required)  Your SMTP2GO API key, e.g. api-XXXXXXXXXXXX
-//   INTAKE_ADDRESS    (required)  Where leads are emailed (e.g. info@dentalsquare.com.au)
+//   SMTP2GO_API_KEY   (required)  SMTP2GO API key
+//   INTAKE_ADDRESS    (required)  SmileOx intake email address
 //   SMTP_FROM         (optional)  From header. Default: Dental Square <no-reply@dentalsquare.com.au>
-//   ALLOW_ORIGIN      (optional)  CORS origin. Default: "*" (same-origin needs nothing)
+//   ALLOW_ORIGIN      (optional)  CORS origin. Default: "*"
 //
-// Quick test once deployed:  GET https://YOURSITE/api/lead  →  {"ok":false,"error":"Method not allowed"}
-// (That JSON means the function is live. A 404 means it isn't deployed in an /api folder.)
+// Live test:  GET https://YOURSITE/api/lead  →  {"ok":false,"error":"Method not allowed"}
 // ---------------------------------------------------------------------------
 
 module.exports = async (req, res) => {
@@ -25,87 +23,61 @@ module.exports = async (req, res) => {
   if (req.method === "OPTIONS") { res.status(204).end(); return; }
   if (req.method !== "POST") { res.status(405).json({ ok: false, error: "Method not allowed" }); return; }
 
-  // ---- parse body (Vercel usually parses JSON; be defensive) ----
   let body = req.body;
   if (typeof body === "string") { try { body = JSON.parse(body); } catch (e) { body = {}; } }
   if (!body || typeof body !== "object") body = {};
 
-  // ---- honeypot: pretend success, send nothing ----
+  // honeypot: pretend success, send nothing
   if (body.company) { res.status(200).json({ ok: true }); return; }
 
-  // ---- required configuration ----
   const API_KEY = process.env.SMTP2GO_API_KEY;
   const TO = process.env.INTAKE_ADDRESS;
   const FROM = process.env.SMTP_FROM || "Dental Square <no-reply@dentalsquare.com.au>";
   const missing = [];
   if (!API_KEY) missing.push("SMTP2GO_API_KEY");
   if (!TO) missing.push("INTAKE_ADDRESS");
-  if (missing.length) { res.status(500).json({ ok: false, error: "Server not configured", missing: missing }); return; }
+  if (missing.length) { res.status(500).json({ ok: false, error: "Server not configured", missing }); return; }
 
-  // ---- assemble the lead ----
-  const v = (k) => (body[k] == null ? "" : String(body[k]).trim());
-  const firstName = v("firstName"), lastName = v("lastName");
-  const fullName = (firstName + " " + lastName).trim() || "(no name given)";
-  const email = v("email");
+  // ---- build the SmileOx JSON payload: required keys + any extra form fields ----
+  const clean = (x) => (x == null ? "" : String(x).trim());
+  const payload = {};
+  for (const k of Object.keys(body)) {
+    if (k === "company") continue;              // honeypot never forwarded
+    const val = clean(body[k]);
+    if (val !== "") payload[k] = val;
+  }
+  payload.firstName = clean(body.firstName);
+  payload.lastName = clean(body.lastName);
+  payload.email = clean(body.email);
+  payload.phoneNumber = clean(body.phoneNumber);
+  payload.source = payload.source || "All-on-4 landing page (Meta ads)";
+  payload.submittedAt = new Date().toISOString();
 
-  const textBody = [
-    "New All-on-4 / dental implant enquiry from the Dental Square landing page",
-    "------------------------------------------------------------------------",
-    "Name:           " + fullName,
-    "Email:          " + email,
-    "Phone:          " + v("phoneNumber"),
-    "Looking to replace: " + (v("situation") || "—"),
-    "Funding interest:   " + (v("funding") || "—"),
-    "",
-    "Submitted:      " + new Date().toISOString()
-  ].join("\n");
+  if (!payload.firstName || !payload.email || !payload.phoneNumber) {
+    res.status(400).json({ ok: false, error: "Missing required fields" });
+    return;
+  }
 
-  const htmlBody =
-    "<h2 style=\"font-family:Arial,sans-serif\">New All-on-4 / implant enquiry</h2>" +
-    "<table style=\"font-family:Arial,sans-serif;font-size:14px;border-collapse:collapse\">" +
-    row("Name", fullName) + row("Email", email) + row("Phone", v("phoneNumber")) +
-    row("Looking to replace", v("situation") || "—") + row("Funding interest", v("funding") || "—") +
-    "</table>" +
-    "<p style=\"color:#888;font-family:Arial,sans-serif;font-size:12px\">Submitted " + new Date().toISOString() + "</p>";
-
-  // ---- send via SMTP2GO HTTP API ----
+  // ---- send: plain-text body = JSON string, via SMTP2GO HTTPS API (TLS) ----
   try {
     const r = await fetch("https://api.smtp2go.com/v3/email/send", {
       method: "POST",
-      headers: { "Content-Type": "application/json", "Accept": "application/json", "X-Smtp2go-Api-Key": API_KEY },
+      headers: { "Content-Type": "application/json", "X-Smtp2go-Api-Key": API_KEY },
       body: JSON.stringify({
-        api_key: API_KEY,
-        to: [TO],
         sender: FROM,
-        subject: "New All-on-4 / implant enquiry — " + fullName,
-        text_body: textBody,
-        html_body: htmlBody,
-        custom_headers: email ? [{ header: "Reply-To", value: email }] : []
+        to: [TO],
+        subject: "Website form submission",
+        text_body: JSON.stringify(payload)
       })
     });
-
     const out = await r.json().catch(() => ({}));
-    const data = (out && out.data) ? out.data : {};
-    const sent = Number(data.succeeded || 0);
-    const failed = Number(data.failed || 0);
-
-    if (!r.ok || sent < 1 || failed > 0) {
-      let detail = data.failures || data.error || out.error || out.error_code || ("HTTP " + r.status);
-      if (typeof detail !== "string") detail = JSON.stringify(detail);
-      res.status(502).json({ ok: false, error: "Email send failed", detail: detail });
+    const sent = r.ok && out && out.data && out.data.succeeded >= 1;
+    if (!sent) {
+      res.status(502).json({ ok: false, error: "Email send failed", detail: (out && out.data) || null });
       return;
     }
-
     res.status(200).json({ ok: true });
   } catch (e) {
-    res.status(502).json({ ok: false, error: "Email send failed", detail: String(e && e.message ? e.message : e) });
+    res.status(502).json({ ok: false, error: "Email send failed" });
   }
 };
-
-function row(label, value) {
-  return "<tr><td style=\"padding:4px 14px 4px 0;color:#555;font-weight:bold;vertical-align:top\">" +
-    esc(label) + "</td><td style=\"padding:4px 0\">" + esc(value) + "</td></tr>";
-}
-function esc(s) {
-  return String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-}

@@ -4,7 +4,8 @@ One Vercel project, five landing pages:
 
 | Path | Page | Form? |
 |---|---|---|
-| `/all-on-4/` | All-on-4 & dental implants (dark liquid-glass) | Yes — posts to `/api/lead` |
+| `/all-on-4/` | All-on-4 & dental implants — META ADS variant | Yes — posts to `/api/lead` |
+| `/all-on-4-google/` | All-on-4 & dental implants — GOOGLE ADS variant (identical, no form) | No — Centaur portal + phone |
 | `/new-patients/` | New patient special $295 (warm white) | No — Centaur portal + phone |
 | `/veneers/` | Porcelain veneers (warm white) | No — Centaur portal + phone |
 | `/invisalign/` | Invisalign clear aligners (warm white) | No — Centaur portal + phone |

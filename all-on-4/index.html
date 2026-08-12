@@ -580,6 +580,25 @@ body.lead-submitted #thanks{ display:flex; }
 
 .pay-chip b{color:var(--cloud) !important}
 .pay-chip p{color:var(--mist)}
+.reviews .reviews-text strong{color:var(--cloud) !important}
+
+.btn-callico{display:none;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:rgba(143,211,189,.22);color:#2F7D68;border:1px solid rgba(31,59,50,.15)}
+@media(max-width:720px){.btn-callico{display:inline-flex}}
+
+/* hero: Dr Karim photo background with dark scrim, white heading restored */
+#hero .hero-bgphoto{position:absolute;inset:0;z-index:0;pointer-events:none}
+#hero .hero-bgphoto img{width:100%;height:100%;object-fit:cover;object-position:70% 22%}
+#hero .hero-bgphoto::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,15,13,.90) 0%,rgba(10,15,13,.72) 48%,rgba(10,15,13,.38) 100%)}
+@media(max-width:900px){#hero .hero-bgphoto::after{background:linear-gradient(180deg,rgba(10,15,13,.88) 0%,rgba(10,15,13,.62) 100%)}}
+#hero .hero-copy h1{color:#fff}
+#hero .hero-copy h1 .pop em{color:#9ad9c4}
+#hero .eyebrow{color:#9ad9c4}
+#hero .hero-sub{color:#E2EDE8 !important}
+#hero .lede{color:#DFEAE5}
+#hero .checklist li, #hero .hero-copy li{color:#DCE8E3}
+#hero .reviews .reviews-text{color:#CFE0DA}
+#hero .reviews .reviews-text strong{color:#fff !important}
+#hero .pay-chip{background:rgba(255,255,255,.90) !important}
 </style>
 </head>
 
@@ -599,6 +618,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="brand" href="#hero" aria-label="Dental Square. All-on-4 and dental implants" style="display:flex;align-items:center;text-decoration:none;">
     <img src="ds-logo.png" alt="Dental Square" style="height:40px;width:auto;display:block">
   </a>
+  <a class="btn-callico" href="tel:0280682109" aria-label="Call Dental Square"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg></a>
   <span class="open-badge"><span class="odot"></span>Open now</span>
   <button class="btn btn-primary js-book" type="button">Free consult</button>
 </header>
@@ -607,6 +627,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- ================= 1. HERO ================= -->
   <section class="panel" id="hero">
+    <div class="hero-bgphoto" aria-hidden="true"><img src="hero-karim.webp" alt=""></div>
     <div class="panel-inner">
       <div class="hero-copy">
         <p class="eyebrow reveal">Dental Square · West Ryde · All-on-4 &amp; dental implants</p>

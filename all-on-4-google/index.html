@@ -634,6 +634,9 @@ h2.title, .title{color:var(--cloud) !important}
 .lp-alt{margin:.7rem 0 0;font-size:.68rem;opacity:.35}
 .lp-alt a{color:#C9DED6;text-decoration:none}
 .lp-alt a:hover{text-decoration:underline}
+
+/* google variant: the injected form can never render */
+#heroFormMount,#bookFormMount{display:none !important;visibility:hidden !important;height:0 !important;max-height:0 !important;overflow:hidden !important;pointer-events:none !important}
 </style>
 </head>
 
@@ -693,7 +696,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       <div class="hero-form-wrap reveal d2">
-        <div class="glass form-card" id="heroFormMount"></div>
+        <div class="glass form-card" style="padding:1.8rem">
+          <h3 style="font-size:1.45rem;color:#fff;background:linear-gradient(160deg,#17352C,#1E4A3E);margin:-1.8rem -1.8rem 1rem;padding:1.3rem 1.6rem;border-radius:24px 24px 0 0;font-family:inherit">Book your FREE consultation</h3>
+          <p style="color:var(--mist);font-size:.92rem;margin:0 0 1.3rem">3D scans, smile preview, treatment plan and payment options, free, with no obligation. Book online in under a minute, or call us.</p>
+          <a class="btn btn-primary btn-lg" href="https://www.centaurportal.com/d4w/org-1378/extended_search?sourceID=null" target="_blank" rel="noopener" style="width:100%;justify-content:center;margin-bottom:.8rem">Book online now</a>
+          <a class="btn btn-ghost btn-lg" href="tel:0280682109" style="width:100%;justify-content:center">Call (02) 8068 2109</a>
+          <p style="color:var(--mist-dim);font-size:.78rem;margin:1rem 0 0">Mon–Wed &amp; Fri 8:30am–5:30pm · Thu till 7pm · Sat 8am–1pm</p>
+          <div id="heroFormMount" hidden></div>
+        </div>
       </div>
     </div>
   </section>

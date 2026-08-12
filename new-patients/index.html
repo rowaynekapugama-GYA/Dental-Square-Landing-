@@ -348,9 +348,16 @@ footer a{color:#D8EAE3}
 
 /* instagram reels */
 .reels{padding:3.8rem 0}
-.reels-grid{display:grid;grid-template-columns:repeat(auto-fit,280px);gap:1.1rem;justify-content:center}
-.reel{width:280px;height:492px;position:relative;overflow:hidden;border-radius:18px;background:#0b0f0d;border:1px solid rgba(31,59,50,.13);box-shadow:0 18px 44px -18px rgba(31,59,50,.20)}
-.reel iframe{position:absolute;width:280px;height:600px;left:50%;top:50%;transform:translate(-50%,-51%) scale(2.15);transform-origin:center;border:0;background:#0b0f0d}
+.reels-grid{display:grid;grid-template-columns:repeat(auto-fit,260px);gap:1.1rem;justify-content:center}
+.reelcard{position:relative;display:block;width:260px;aspect-ratio:9/16;border-radius:18px;overflow:hidden;border:1px solid rgba(31,59,50,.13);box-shadow:0 18px 44px -18px rgba(31,59,50,.22);text-decoration:none}
+.reelcard img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.reelcard:hover img{transform:scale(1.05)}
+.reelcard::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,15,13,.05) 40%,rgba(12,15,13,.55) 100%)}
+.reelcard .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;z-index:2;box-shadow:0 10px 26px rgba(12,15,13,.35);transition:transform .2s}
+.reelcard:hover .play{transform:translate(-50%,-50%) scale(1.08)}
+.reelcard .play svg{width:24px;height:24px;fill:#17352C;margin-left:3px}
+.reelcard .rc-cap{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:.8rem 1rem;color:#fff;font-weight:700;font-size:.85rem;display:flex;align-items:center;gap:.45rem}
+.reelcard .rc-cap svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2}
 
 .lp-nav{text-align:center;margin-top:1.8rem;padding-top:1.6rem;border-top:1px solid rgba(255,255,255,.12)}
 .lp-nav h3{font-family:var(--display,'Fraunces',serif);font-weight:500;font-size:1.05rem;color:#EAF4F0;margin:0 0 .8rem;letter-spacing:.01em}
@@ -418,7 +425,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span>Scale, clean &amp; polish</li>
           <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span>Fluoride treatment</li>
         </ul>
-        <div class="nogap">
+        <div class="nogap pulse-attn">
           <b>Pay NO GAP*</b>
           <span>if your health fund covers a minimum of $295, claimed on the spot with HICAPS. All health funds accepted.</span>
         </div>
@@ -565,9 +572,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>A peek inside the practice, real results and the team behind them.</p>
     </div>
     <div class="reels-grid">
-      <div class="reel reveal"><iframe src="https://www.instagram.com/reel/DFMo9vlTRTV/embed/" title="Dental Square Instagram reel" loading="lazy" allowfullscreen></iframe></div>
-      <div class="reel reveal"><iframe src="https://www.instagram.com/reel/DEjZZ4vJrJK/embed/" title="Dental Square Instagram reel" loading="lazy" allowfullscreen></iframe></div>
-      <div class="reel reveal"><iframe src="https://www.instagram.com/reel/DJi1qLVyqfK/embed/" title="Dental Square Instagram reel" loading="lazy" allowfullscreen></iframe></div>
+      <a class="reelcard reveal" href="https://www.instagram.com/reel/DFMo9vlTRTV/" target="_blank" rel="noopener" aria-label="Watch this Dental Square reel on Instagram">
+        <img src="https://www.dentalsquare.com.au/wordpress-responsive/wp-content/uploads/2026/08/DentalSquare-storefront-professional-enhanced.png" alt="Dental Square practice reel">
+        <span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="rc-cap"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.2" cy="6.8" r="1.2" fill="#fff" stroke="none"/></svg>Watch on Instagram</span>
+      </a>
+      <a class="reelcard reveal" href="https://www.instagram.com/reel/DEjZZ4vJrJK/" target="_blank" rel="noopener" aria-label="Watch this Dental Square reel on Instagram">
+        <img src="https://www.dentalsquare.com.au/wordpress-responsive/wp-content/uploads/2026/08/dental-treatment-room-professional-enhanced.png" alt="Dental Square treatment reel">
+        <span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="rc-cap"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.2" cy="6.8" r="1.2" fill="#fff" stroke="none"/></svg>Watch on Instagram</span>
+      </a>
+      <a class="reelcard reveal" href="https://www.instagram.com/reel/DJi1qLVyqfK/" target="_blank" rel="noopener" aria-label="Watch this Dental Square reel on Instagram">
+        <img src="https://www.dentalsquare.com.au/wordpress-responsive/wp-content/uploads/2026/08/DentalSquare-reception-professional-enhanced.png" alt="Inside Dental Square reel">
+        <span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="rc-cap"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.2" cy="6.8" r="1.2" fill="#fff" stroke="none"/></svg>Watch on Instagram</span>
+      </a>
     </div>
   </div>
 </section>
